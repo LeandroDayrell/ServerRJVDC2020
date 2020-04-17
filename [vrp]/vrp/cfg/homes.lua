@@ -1,53 +1,6 @@
-
 local cfg = {}
 
--- example of study transformer
-local itemtr_study = {
-  name="Bookcase", -- menu name
-  r=0,g=255,b=0, -- color
-  max_units=20,
-  units_per_minute=10,
-  x=0,y=0,z=0, -- pos (doesn't matter as home component)
-  radius=1.1, height=1.5, -- area
-  recipes = {
-    ["Chemicals book"] = { -- action name
-      description="Read a chemicals book", -- action description
-      in_money=0, -- money taken per unit
-      out_money=0, -- money earned per unit
-      reagents={}, -- items taken per unit
-      products={}, -- items given per unit
-      aptitudes={ -- optional
-        ["science.chemicals"] = 1 -- "group.aptitude", give 1 exp per unit
-      }
-    },
-    ["Mathematics book"] = { -- action name
-      description="Read a mathematics book", -- action description
-      in_money=0, -- money taken per unit
-      out_money=0, -- money earned per unit
-      reagents={}, -- items taken per unit
-      products={}, -- items given per unit
-      aptitudes={ -- optional
-        ["science.mathematics"] = 1 -- "group.aptitude", give 1 exp per unit
-      }
-    }
-  }
-}
-
--- example of radio stations
-local radio_stations = {
-  ["TechnoBase.FM"] = "http://mp3.stream.tb-group.fm:80/tt.ogg",
-  ["Phate Radio"] = "http://phate.io/listen.ogg",
-  ["RADIO 1 ROCK"] = "http://stream.radioreklama.bg:80/radio1rock.ogg",
-  ["R 247drumandbass.com"] = "http://stream.247drumandbass.com:8000/256k.ogg"
-}
-
--- default flats positions from https://github.com/Nadochima/HomeGTAV/blob/master/List
-
--- define the home slots (each entry coordinate should be unique for ALL types)
--- each slots is a list of home components
---- {component,x,y,z} (optional _config)
---- the entry component is required
-cfg.slot_types = { --
+cfg.slot_types = {
 ["H0"] = {
   {
     {"entry",-46.213134765625,832.87652587891,231.33203125},
