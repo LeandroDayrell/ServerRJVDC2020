@@ -1013,41 +1013,16 @@ local function build_garages(source)
 	local user_id = vRP.getUserId(source)
 	local address = vRP.getUserAddress(user_id)
 	if user_id then
-		if #address ~= nil then
-			if #address > 0 then
-				for k,v in pairs(cfg.garages) do
-					local i,x,y,z,pay,loc = table.unpack(v)
-					local g = cfg.garage_types[i]
+		if #address > 0 then
+			for k,v in pairs(cfg.garages) do
+				local i,x,y,z,pay,loc = table.unpack(v)
+				local g = cfg.garage_types[i]
 
-					if g then
-						for kk,vv in pairs(address) do
-							local cfg = g._config
-							if not cfg.ghome or cfg.ghome == vv.home then
-								local garage_enter = function(player,area)
-									if user_id and vRP.hasPermissions(user_id,cfg.permissions or {}) then
-										openGarage(source,i,pay,loc)
-									end
-								end
-
-								local garage_leave = function(player,area)
-									vRP.closeMenu(source)
-								end
-
-								vRPclient._addMarker(source,27,x,y,z-0.95,2,2,0.5,178, 34, 34,100,100)
-								vRP.setArea(source,"vRP:garage"..k,x,y,z,1.0,1.0,garage_enter,garage_leave)
-							end
-						end
-					end
-				end
-			else
-				for k,v in pairs(cfg.garages) do
-					local i,x,y,z,pay,loc = table.unpack(v)
-					local g = cfg.garage_types[i]
-
-					if g then
+				if g then
+					for kk,vv in pairs(address) do
 						local cfg = g._config
-							if not cfg.ghome then
-								local garage_enter = function(player,area)
+						if not cfg.ghome or cfg.ghome == vv.home then
+							local garage_enter = function(player,area)
 								if user_id and vRP.hasPermissions(user_id,cfg.permissions or {}) then
 									openGarage(source,i,pay,loc)
 								end
@@ -1060,6 +1035,29 @@ local function build_garages(source)
 							vRPclient._addMarker(source,27,x,y,z-0.95,2,2,0.5,178, 34, 34,100,100)
 							vRP.setArea(source,"vRP:garage"..k,x,y,z,1.0,1.0,garage_enter,garage_leave)
 						end
+					end
+				end
+			end
+		else
+			for k,v in pairs(cfg.garages) do
+				local i,x,y,z,pay,loc = table.unpack(v)
+				local g = cfg.garage_types[i]
+
+				if g then
+					local cfg = g._config
+						if not cfg.ghome then
+							local garage_enter = function(player,area)
+							if user_id and vRP.hasPermissions(user_id,cfg.permissions or {}) then
+								openGarage(source,i,pay,loc)
+							end
+						end
+
+						local garage_leave = function(player,area)
+							vRP.closeMenu(source)
+						end
+
+						vRPclient._addMarker(source,27,x,y,z-0.95,2,2,0.5,178, 34, 34,100,100)
+						vRP.setArea(source,"vRP:garage"..k,x,y,z,1.0,1.0,garage_enter,garage_leave)
 					end
 				end
 			end

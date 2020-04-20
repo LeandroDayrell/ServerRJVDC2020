@@ -11,11 +11,6 @@ for i=0,19 do
 end
 
 cfg.cloakroom_types = {
-    ["Sexo"] = {
-    _config = { not_uniform = true },
-    ["P homem"] = surgery_male,
-    ["P mulher"] = surgery_female,
-  },
 	["Fardamento H"] = {
 	_config = { permissions = {"paramedico.permissao"} },
 		["SAMU Masculino"] = {
@@ -991,8 +986,7 @@ cfg.cloakrooms = {
 	{ "Fardamento BOPE",820.90954589844,153.63053894043,89.945526123047 },
 	{ "Fardamento PF",477.20294189453,-1084.9420166016,38.706504821777 },
 	{ "Fardamento PC",457.30319213867,-991.01885986328,30.689584732056 },
-	{ "Fardamento",457.30319213867,-991.01885986328,30.689584732056 },
-	{"Sexo",-819.64923095703,-186.25273132324,37.568912506104}
+	{ "Fardamento",457.30319213867,-991.01885986328,30.689584732056 }
 }
 
 return cfg

@@ -1,0 +1,23 @@
+.esc {
+	width: 100%;
+	height: 100%;
+}
+
+.logo {
+	position: fixed;
+	top: 70px;
+	right: -32px;
+	width: 170px;
+	height: 100px;
+}
+
+
+
+.by {
+	position: fixed;
+	bottom: 3px;
+	right: 3px;
+	width: 160px;
+	height: 12px;
+	opacity: 100;
+}

@@ -1,13 +1,6 @@
-
--- this file is used to define additional static blips and markers to the map
--- some lists: https://wiki.gtanet.work/index.php?title=Blips
-
 local cfg = {}
 
--- list of blips
--- {x,y,z,idtype,idcolor,text}
 cfg.blips = {
-
 	{ 55.43,-876.19,30.66,357,3,"Garagem",0.6 },
 	{ 317.25,2623.14,44.46,357,3,"Garagem",0.6 },
 	{ -773.34,5598.15,33.60,357,3,"Garagem",0.6 },
@@ -155,12 +148,6 @@ cfg.blips = {
 	{ 1667.1077880859,-67.682571411133,188.84312438965,84,49,"C.V",0.6 },
 	{ 368.9528503418,-1852.0845947266,27.214151382446,84,43,"A.D.A",0.6 },
 	{ 714.42535400391,-286.98794555664,61.011547088623,84,42,"T.C.P",0.6 }
-  
-}
-
--- list of markers
--- {x,y,z,sx,sy,sz,r,g,b,a,visible_distance}
-cfg.markers = {
 }
 
 return cfg
