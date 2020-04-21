@@ -1,12 +1,16 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- VRP
+-----------------------------------------------------------------------------------------------------------------------------------------
 local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
 vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
-
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- CONEXÃO
+-----------------------------------------------------------------------------------------------------------------------------------------
 vRPN = {}
 Tunnel.bindInterface("vrp_identidade",vRPN)
 Proxy.addInterface("vrp_identidade",vRPN)
-
 local cfg = module("vrp","cfg/groups")
 local groups = cfg.groups
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -26,12 +30,13 @@ function vRPN.Identidade()
 		local paypal = vRP.getUData(user_id,"vRP:paypal")
 		local mypaypal = json.decode(paypal) or 0
 		local groupv = vRPN.getUserGroupByType(user_id,"job")
-		local cargo = vRP.getUserGroupByType(user_id,"cargo")
+		local cargo = vRPN.getUserGroupByType(user_id,"cargo")
+		local vip = vRPN.getUserGroupByType(user_id,"vip")
 		if cargo ~= "" then
 			groupv = cargo
 		end
 		if identity then
-			return identity.foto,identity.name,identity.firstname,identity.user_id,identity.registration,identity.age,identity.phone,vRP.format(parseInt(cash)),vRP.format(parseInt(banco)),vRP.format(parseInt(mymultas)),vRP.format(parseInt(mypaypal)),groupv
+			return identity.foto,identity.name,identity.firstname,identity.user_id,identity.registration,identity.age,identity.phone,vRP.format(parseInt(cash)),vip,vRP.format(parseInt(banco)),vRP.format(parseInt(mymultas)),vRP.format(parseInt(mypaypal)),groupv
 		end
 	end
 end

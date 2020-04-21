@@ -1,5 +1,11 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- VRP
+-----------------------------------------------------------------------------------------------------------------------------------------
 local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- CONEXÃO
+-----------------------------------------------------------------------------------------------------------------------------------------
 vRP = Proxy.getInterface("vRP")
 vRPNserver = Tunnel.getInterface("vrp_identidade")
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -13,7 +19,7 @@ local css = [[
 	}
 
 	#DocumentSection {
-		background-color: rgba(255, 255, 255,1.0);
+		background-color: rgba(15,15,15,0.8);
 		width: 300px;
 		min-height: 250px;
 		border-radius: 5px;
@@ -23,7 +29,7 @@ local css = [[
 		right: 0.5%;
 		bottom: 23%;
 		font-family: 'Muli';
-		color: #000000;
+		color: #f89406;
 		padding-bottom: 15px;
 		z-index: 1;
 		overflow: hidden;
@@ -38,7 +44,7 @@ local css = [[
 	}
 
 	#DocumentSection:before {
-		background-color: #be000f;
+		background-color: #e87e04;
 		top: -193%;
 		left: -100%;
 		transform: rotate(-5deg);
@@ -46,7 +52,7 @@ local css = [[
 	}
 
 	#DocumentSection:after {
-		background-color: #ff171a;
+		background-color: #f89406;
 		top: -191%;
 		left: -100%;
 		transform: rotate(-6deg);
@@ -81,11 +87,11 @@ local css = [[
 	}
 
 	#DocumentSection .each-info.person-job {
-		border-top: 1px solid rgba(255, 23, 26, 1.0);
-		border-bottom: 1px solid rgba(255, 23, 26, 1.0);
+		border-top: 1px solid rgba(248,148,6, 0.8);
+		border-bottom: 1px solid rgba(248,148,6, 0.8);
 		margin: 25px auto;
 		padding: 10px 0;
-		color: #ff171a;
+		color: #f2f1ef;
 		font-size: 18px;
 	}
 
@@ -106,7 +112,7 @@ local css = [[
 	#DocumentSection .secondary-info .each-info span {
 		float: right;
 		font-weight: bold;
-		color: #ff171a;
+		color: #f2f1ef;
 	}
 ]]
 
@@ -122,9 +128,12 @@ Citizen.CreateThread(function()
 				vRP._removeDiv("rg")
 				identity = false
 			else
-				local foto, name, firstname,user_id,registration,age,phone, carteira, banco, multas,paypal,groupname = vRPNserver.Identidade()
+				local foto, name, firstname,user_id,registration,age,phone, carteira, vip, banco, multas,paypal,groupname = vRPNserver.Identidade()
+				if vip == nil or vip == "" then
+					vip  = "Sem Vip"
+				end
 				if foto == nil or foto == "" then
-					foto  = "https://imgur.com/FKSnoJa.png"
+					foto  = "https://www.moxtra.com/service/themes/images/default/avatar-single-360.png"
 				end
 				local html = string.format("<div id='DocumentSection'><div class='avatar-img'><img src='%s'></div> <div class='infos'><div class='main-info'>"..
 					"<h1 class='each-info person-name'>%s %s</h1>"..
@@ -140,6 +149,8 @@ Citizen.CreateThread(function()
 					"<div class='clear'></div>"..
 					"<div class='each-info'><strong>Carteira:</strong><span class='person-phone'>$%s</span></div>"..
 					"<div class='clear'></div>"..
+					"<div class='each-info'><strong>Vip:</strong><span class='person-phone'>%s</span></div>"..
+					"<div class='clear'></div>"..
 					"<div class='each-info'><strong>Banco:</strong><span class='person-phone'>$%s</span></div>"..
 					"<div class='clear'></div>"..
 					"<div class='each-info'><strong>Multas:</strong><span class='person-phone'>$%s</span></div>"..
@@ -148,7 +159,7 @@ Citizen.CreateThread(function()
 					"<div class='clear'></div>"..
 					"</div>"..
 					"</div>"..
-					"</div>", foto, name, firstname, age, groupname, user_id, registration, phone, carteira, banco, multas, paypal)
+					"</div>", foto, name, firstname, age, groupname, user_id, registration, phone, carteira, vip, banco, multas, paypal)
 				
 				vRP._setDiv("rg", css, html)
 				identity = true
@@ -162,9 +173,12 @@ end)
 				vRP._removeDiv("rg")
 				identity = false
 			else
-				local foto, name, firstname,user_id,registration,age,phone, carteira, banco, multas,paypal,groupname = vRPNserver.Identidade()
+				local foto, name, firstname,user_id,registration,age,phone, carteira, vip, banco, multas,paypal,groupname = vRPNserver.Identidade()
+				if vip == nil or vip == "" then
+					vip  = "Sem Vip"
+				end
 				if foto == nil or foto == "" then
-					foto  = "https://imgur.com/FKSnoJa.png"
+					foto  = "https://www.moxtra.com/service/themes/images/default/avatar-single-360.png"
 				end
 				local html = string.format("<div id='DocumentSection'><div class='avatar-img'><img src='%s'></div> <div class='infos'><div class='main-info'>"..
 					"<h1 class='each-info person-name'>%s %s</h1>"..
@@ -180,6 +194,8 @@ end)
 					"<div class='clear'></div>"..
 					"<div class='each-info'><strong>Carteira:</strong><span class='person-phone'>$%s</span></div>"..
 					"<div class='clear'></div>"..
+					"<div class='each-info'><strong>Vip:</strong><span class='person-phone'>%s</span></div>"..
+					"<div class='clear'></div>"..
 					"<div class='each-info'><strong>Banco:</strong><span class='person-phone'>$%s</span></div>"..
 					"<div class='clear'></div>"..
 					"<div class='each-info'><strong>Multas:</strong><span class='person-phone'>$%s</span></div>"..
@@ -188,7 +204,7 @@ end)
 					"<div class='clear'></div>"..
 					"</div>"..
 					"</div>"..
-					"</div>", foto, name, firstname, age, groupname, user_id, registration, phone, carteira, banco, multas, paypal)
+					"</div>", foto, name, firstname, age, groupname, user_id, registration, phone, carteira, vip, banco, multas, paypal)
 				
 				vRP._setDiv("rg", css, html)
 				identity = true
