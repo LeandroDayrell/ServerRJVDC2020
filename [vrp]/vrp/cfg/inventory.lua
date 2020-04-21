@@ -400,7 +400,7 @@ cfg.static_chest_types = {
 	},
 	["trafico"] = {
 		weight = 5000,
-		permissions = { "trafico.permissao" }
+		permissions = { "trafico.permissao" } -- CASA DO HACKER
 	},
 	
 	["cv"] = {
