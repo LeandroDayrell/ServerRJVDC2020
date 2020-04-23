@@ -7,13 +7,13 @@ vRPclient = Tunnel.getInterface("vRP")
 -----------------------------------------------------------------------------------------------------------------------------------------
 local valores = {
 	{ item = "wbody|WEAPON_VINTAGEPISTOL", quantidade = 1, compra = 25000, venda = 12500 },
-	{ item = "wbody|WEAPON_PISTOL", quantidade = 1, compra = 30000, venda = 15000 },
+	{ item = "wbody|WEAPON_PISTOL", quantidade = 1, compra = 50000, venda = 15000 },
 	{ item = "wbody|WEAPON_PISTOL_MK2", quantidade = 1, compra = 35000, venda = 17500 },
 	{ item = "wbody|WEAPON_MUSKET", quantidade = 1, compra = 80000, venda = 25000 },
 	{ item = "wbody|WEAPON_FLARE", quantidade = 1, compra = 1000, venda = 500 },
 
 	{ item = "wammo|WEAPON_VINTAGEPISTOL", quantidade = 50, compra = 1000, venda = 500 },
-	{ item = "wammo|WEAPON_PISTOL", quantidade = 50, compra = 1250, venda = 625 },
+	{ item = "wammo|WEAPON_PISTOL", quantidade = 50, compra = 2500, venda = 625 },
 	{ item = "wammo|WEAPON_PISTOL_MK2", quantidade = 50, compra = 1500, venda = 750 },
 	{ item = "wammo|WEAPON_MUSKET", quantidade = 50, compra = 3000, venda = 1500 },
 	{ item = "wammo|WEAPON_FLARE", quantidade = 10, compra = 1000, venda = 500 },

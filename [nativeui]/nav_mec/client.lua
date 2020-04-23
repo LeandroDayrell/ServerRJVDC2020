@@ -45,7 +45,7 @@ Citizen.CreateThread(function()
 			local x,y,z = table.unpack(mark)
 			local distance = GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()),x,y,z,true)
 			if distance <= 1.2 then
-				if IsControlJustPressed(0,38) then
+				if IsControlJustPressed(0,38) and emP.checkPermission() then
 					ToggleActionMenu()
 				end
 			end

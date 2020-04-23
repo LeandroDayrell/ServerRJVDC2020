@@ -18,6 +18,114 @@ RegisterNetEvent('deletarveiculo')
 AddEventHandler('deletarveiculo',function(vehicle)
     TriggerServerEvent("vrp_garages:admDelete",VehToNet(vehicle))
 end)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- UNCUFF
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('tiraralgema',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	if user_id then
+		if vRP.hasPermission(user_id,"admin.permissao") then
+			TriggerClientEvent("admcuff",source)
+		end
+	end
+end)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-- APAGAO
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('apagao',function(source,args,rawCommand)
+    local user_id = vRP.getUserId(source)
+    if user_id ~= nil then
+        local player = vRP.getUserSource(user_id)
+        if vRP.hasPermission(user_id,"admin.permissao") and args[1] ~= nil then
+            local cond = tonumber(args[1])
+            --TriggerEvent("cloud:setApagao",cond)
+            TriggerClientEvent("cloud:setApagao",-1,cond)                    
+        end
+    end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- KICK ALL TERREMOTO
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('terremoto',function(source,args,rawCommand)
+    local user_id = vRP.getUserId(source)
+    if vRP.hasPermission(user_id,"admin.permissao") then
+        local users = vRP.getUsers()
+        for k,v in pairs(users) do
+            local id = vRP.getUserSource(parseInt(k))
+            if id then
+                vRP.kick(id,"Você foi vitima do terremoto.")
+            end
+        end
+    end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- PLAYERSON
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('pon',function(source,args,rawCommand)
+    local user_id = vRP.getUserId(source)
+	if vRP.hasPermission(user_id,"admin.permissao") or vRP.hasPermission(user_id,"suporte.permissao") or vRP.hasPermission(user_id,"mod.permissao") then
+        local users = vRP.getUsers()
+        local players = ""
+        local quantidade = 0
+        for k,v in pairs(users) do
+            if k ~= #users then
+                players = players..", "
+            end
+            players = players..k
+            quantidade = quantidade + 1
+        end
+        TriggerClientEvent('chatMessage',source,"TOTAL ONLINE",{255,160,0},quantidade)
+        TriggerClientEvent('chatMessage',source,"ID's ONLINE",{255,160,0},players)
+    end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- LIMPARBOLSA
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('limparbolsa',function(source,args,rawCommand)
+    local user_id = vRP.getUserId(source)
+	local player = vRP.getUserSource(user_id)
+	if vRP.hasPermission(user_id,"admin.permissao") or vRP.hasPermission(user_id,"mod.permissao")  then
+		local tuser_id = tonumber(args[1])
+		local tplayer = vRP.getUserSource(tonumber(tuser_id))
+		local tplayerID = vRP.getUserId (tonumber(tplayer))
+			if tplayerID ~= nil then
+			local identity = vRP.getUserIdentity(user_id)
+			vRP.clearInventory(user_id)
+				TriggerClientEvent("Notify",source,"sucesso","Limpou inventario do <id>"..args[1].."</b>.")
+			else
+				TriggerClientEvent("Notify",source,"negado","O usuário não foi encontrado ou está offline.")
+        end
+	end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- ID
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('idp',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	local nplayer = vRPclient.getNearestPlayer(source,5)
+	if nplayer then
+		local nuser_id = vRP.getUserId(nplayer)
+		TriggerClientEvent("Notify",source,"importante","Jogador próximo: <b>ID:"..nuser_id.."</b>.")
+	else
+		TriggerClientEvent('chatMessage', source, "ERROR", {50, 205, 50},"Nenhum Jogador Próximo")
+		TriggerClientEvent("Notify",source,"aviso","<b>Nenhum Jogador Próximo</b>")
+	end
+end)
+-- KILL
+RegisterCommand('kill',function(source,args,rawCommand)
+	local user_id = vRP.getUserId(source)
+	if vRP.hasPermission(user_id,"admin.permissao") then
+		if args[1] then
+			local nplayer = vRP.getUserSource(parseInt(args[1]))
+			if nplayer then
+				vRPclient.setHealth(nplayer,50)
+			end
+		else
+			vRPclient.setHealth(source,50)
+			vRPclient.setArmour(source,0)
+		end
+	end
+end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- TRYDELETEVEH
 -----------------------------------------------------------------------------------------------------------------------------------------

@@ -219,7 +219,7 @@ RegisterServerEvent("reanimar:pagamento")
 AddEventHandler("reanimar:pagamento",function()
 	local user_id = vRP.getUserId(source)
 	if user_id then
-		pagamento = math.random(50,80)
+		pagamento = math.random(1000,4000)
 		vRP.giveMoney(user_id,pagamento)
 		TriggerClientEvent("Notify",source,"sucesso","Recebeu <b>$"..pagamento.." dólares</b> de gorjeta do americano.")
 	end

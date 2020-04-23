@@ -1855,6 +1855,7 @@ cfg.groups = {
     "emergency.shop",
     "emergency.service",
 	"paramedico.permissao",
+	"reviver.permissao",
 	-- Salario
 	"SocorristaSAMU.permissao"
   },
@@ -1872,6 +1873,7 @@ cfg.groups = {
     "emergency.shop",
     "emergency.service",
 	"paramedico.permissao",
+	"reviver.permissao",
 	-- Salario
 	"TecSAMU.permissao"
   },
@@ -1889,6 +1891,7 @@ cfg.groups = {
     "emergency.shop",
     "emergency.service",
 	"paramedico.permissao",
+	"reviver.permissao",
 	-- Salario
 	"EnfermeiroSAMU.permissao"
   },
@@ -1906,6 +1909,7 @@ cfg.groups = {
     "emergency.shop",
     "emergency.service",
 	"paramedico.permissao",
+	"reviver.permissao",
 	-- Salario
 	"MedicoSAMU.permissao"
   },
@@ -1923,6 +1927,7 @@ cfg.groups = {
     "emergency.shop",
     "emergency.service",
 	"paramedico.permissao",
+	"reviver.permissao",
 	-- Salario
 	"CoordenadorSAMU.permissao"
   },
@@ -1940,6 +1945,7 @@ cfg.groups = {
     "emergency.shop",
     "emergency.service",
 	"paramedico.permissao",
+	"reviver.permissao",
 	-- Salario
 	"ChefeSAMU.permissao"
   },
@@ -2429,49 +2435,57 @@ cfg.groups = {
     _config = {
       gtype = "vip",
     },
-    "vip.permissao"
+    "vip.permissao",
+	"bronze.permissao"
   },
   ["VIP Prata"] = {
     _config = {
       gtype = "vip",
     },
-    "vipp.permissao"
+    "vipp.permissao",
+	"prata.permissao"
   }, 
   ["VIP Ouro"] = {
     _config = {
       gtype = "vip",
     },
-    "vippp.permissao"
+    "vippp.permissao",
+	"ouro.permissao"
   }, 
   ["VIP Diamante"] = {
     _config = {
       gtype = "vip",
     },
-    "vipppp.permissao"
+    "vipppp.permissao",
+	"diamante.permissao"
   },
    ["VIP Platina"] = {
     _config = {
       gtype = "vip",
     },
-    "vipppp.permissao"
+    "vipppp.permissao",
+	"platina.permissao"
   },
    ["VIP Mafioso"] = {
     _config = {
       gtype = "vip",
     },
-    "vipppp.permissao"
+    "vipppp.permissao",
+	"mafioso.permissao"
   },
   ["VIP Supremo"] = {
     _config = {
       gtype = "vip",
     },
-    "vippppp.permissao"
+    "vippppp.permissao",
+	"supremo.permissao"
   },
   ["VIP Magnata"] = {
     _config = {
       gtype = "vip",
     },
-    "vippppppp.permissao"
+    "vippppppp.permissao",
+	"supremo.permissao"
   },
   
   --== Sets ==--

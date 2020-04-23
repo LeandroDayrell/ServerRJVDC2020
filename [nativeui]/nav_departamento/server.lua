@@ -8,7 +8,7 @@ local valores = {
 	{ item = "isca", quantidade = 10, compra = 500, venda = 250 },
 	{ item = "garrafavazia", quantidade = 5, compra = 15, venda = 7 },
 	{ item = "militec", quantidade = 1, compra = 2500, venda = 1250 },
-	{ item = "repairkit", quantidade = 1, compra = 2500, venda = 500 },
+	{ item = "repairkit", quantidade = 1, compra = 10000, venda = 1500 },
 	{ item = "ferramenta", quantidade = 1, compra = 20, venda = 10 },
 	{ item = "bandagem", quantidade = 3, compra = 3000, venda = 1500 },
 	{ item = "croquettes", quantidade = 1, compra = 40, venda = 20 },

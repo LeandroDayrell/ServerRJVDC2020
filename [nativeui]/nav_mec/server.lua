@@ -2,11 +2,13 @@ local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
 vRP = Proxy.getInterface("vRP")
 vRPclient = Tunnel.getInterface("vRP")
+emP = {}
+Tunnel.bindInterface("nav_mec",emP)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- ARRAY
 -----------------------------------------------------------------------------------------------------------------------------------------
 local valores = {
-	{ item = "nitro", quantidade = 1, compra = 5000, venda = 2500 },
+	--{ item = "nitro", quantidade = 1, compra = 5000, venda = 2500 },
 	{ item = "repairkit", quantidade = 1, compra = 2000, venda = 1000 },
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -62,3 +64,9 @@ AddEventHandler("mecanicos-vender",function(item)
 		end
 	end
 end)
+
+function emP.checkPermission()
+	local source = source
+	local user_id = vRP.getUserId(source)
+	return vRP.hasPermission(user_id,"bennyscar.permissao")
+end
