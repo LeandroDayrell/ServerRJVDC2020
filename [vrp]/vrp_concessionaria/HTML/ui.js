@@ -67,7 +67,7 @@ $(document).ready(function(){
                 </div>
                 <div class="description">
                   <h1>` + veiculos_data[item].nome + `</h1>
-                  <h2>Carro sendo vendido pela concessionária de FiveM Brasil</h2>
+                  <h2>Carro sendo vendido pela concessionária do RJVDC 3.0</h2>
                   <p>` + veiculos_data[item].descricao + `</p>
                   <p class="read-more">
                     <a id="comprar" data-id="` + item + `" onclick="animation()">Comprar</a>

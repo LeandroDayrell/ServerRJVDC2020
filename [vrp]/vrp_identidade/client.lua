@@ -130,7 +130,7 @@ Citizen.CreateThread(function()
 			else
 				local foto, name, firstname,user_id,registration,age,phone, carteira, vip, banco, multas,paypal,groupname = vRPNserver.Identidade()
 				if vip == nil or vip == "" then
-					vip  = "Sem Vip"
+					vip  = "Sem VIP"
 				end
 				if foto == nil or foto == "" then
 					foto  = "https://www.moxtra.com/service/themes/images/default/avatar-single-360.png"
@@ -149,7 +149,7 @@ Citizen.CreateThread(function()
 					"<div class='clear'></div>"..
 					"<div class='each-info'><strong>Carteira:</strong><span class='person-phone'>$%s</span></div>"..
 					"<div class='clear'></div>"..
-					"<div class='each-info'><strong>Vip:</strong><span class='person-phone'>%s</span></div>"..
+					"<div class='each-info'><strong>VIP:</strong><span class='person-phone'>%s</span></div>"..
 					"<div class='clear'></div>"..
 					"<div class='each-info'><strong>Banco:</strong><span class='person-phone'>$%s</span></div>"..
 					"<div class='clear'></div>"..
@@ -175,7 +175,7 @@ end)
 			else
 				local foto, name, firstname,user_id,registration,age,phone, carteira, vip, banco, multas,paypal,groupname = vRPNserver.Identidade()
 				if vip == nil or vip == "" then
-					vip  = "Sem Vip"
+					vip  = "Sem VIP"
 				end
 				if foto == nil or foto == "" then
 					foto  = "https://www.moxtra.com/service/themes/images/default/avatar-single-360.png"
@@ -194,7 +194,7 @@ end)
 					"<div class='clear'></div>"..
 					"<div class='each-info'><strong>Carteira:</strong><span class='person-phone'>$%s</span></div>"..
 					"<div class='clear'></div>"..
-					"<div class='each-info'><strong>Vip:</strong><span class='person-phone'>%s</span></div>"..
+					"<div class='each-info'><strong>VIP:</strong><span class='person-phone'>%s</span></div>"..
 					"<div class='clear'></div>"..
 					"<div class='each-info'><strong>Banco:</strong><span class='person-phone'>$%s</span></div>"..
 					"<div class='clear'></div>"..

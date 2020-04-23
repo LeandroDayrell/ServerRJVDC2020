@@ -123,8 +123,68 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('players',function(source,args,rawCommand)
     local onlinePlayers = GetNumPlayerIndices()
-    TriggerClientEvent('chatMessage',source,"ALERTA",{255,70,50},"Jogadores online: "..onlinePlayers)
+    TriggerClientEvent('chatMessage',source,"ALERTA:",{255,70,50},"Jogadores online: "..onlinePlayers)
 end)  
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- PLAYERS ON2
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('jogadores',function(source,args,rawCommand)
+    local onlinePlayers = GetNumPlayerIndices()
+    TriggerClientEvent('chatMessage',source,"ALERTA:",{255,70,50},"Jogadores online: "..onlinePlayers)
+end) 
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- MEU ID
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('meuid',function(source,args,rawCommand)
+    local user_id = vRP.getUserId(source)
+    TriggerClientEvent('chatMessage',source,"Seu ID É:",{255,70,50}," "..user_id)
+end) 
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- Dinheiro
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('dinheiro',function(source,args,rawCommand)
+    local user_id = vRP.getUserId(source)
+    local cash = vRP.getMoney(user_id)
+	local banco = vRP.getBankMoney(user_id)
+    TriggerClientEvent('chatMessage',source,"Seu Saldo Na Mão É:",{82,195,65}," "..cash)
+	TriggerClientEvent('chatMessage',source,"Seu Saldo No Banco É:",{82,195,65}," "..banco)
+end) 
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- Emprego
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('emprego',function(source,args,rawCommand)
+    local user_id = vRP.getUserId(source)
+    local cargo = vRP.getUserGroupByType(user_id,"cargo")
+	local cargos = vRP.getUserGroupByType(user_id,"cargos")
+	if cargo == nil or cargo == "" then
+	if cargos == nil or cargos == "" then
+	cargo  = TriggerClientEvent('chatMessage',source,"ALERTA:",{255,70,50}," Você Não Possui um Emprego Primario!")
+	cargos  = TriggerClientEvent('chatMessage',source,"ALERTA:",{255,70,50}," Você Não Possui um Emprego Secundario!")
+	end
+end
+	if cargo == nil or cargo == vRP.getUserGroupByType(user_id,"cargo") then
+	if cargos == nil or cargos == vRP.getUserGroupByType(user_id,"cargos") then
+    TriggerClientEvent('chatMessage',source,"ALERTA:",{255,70,50}," Seu Emprego Primario é:"..cargo)
+	if cargos == nil or cargos == "" then
+	TriggerClientEvent('chatMessage',source,"ALERTA:",{255,70,50}," Seu Emprego Secundario é:"..cargos)
+	TriggerClientEvent('chatMessage',source,"OBS:",{19,161,28}," Caso você não tenha um emprego secundario, poderá aparecer apenas a mensagem sem  ao menos detalhar seu emprego secundario.")
+	end
+	end
+end
+end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- VIP
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand('vip',function(source,args,rawCommand)
+    local user_id = vRP.getUserId(source)
+    local vip = vRP.getUserGroupByType(user_id,"vip")
+	if vip == nil or vip == "" then
+	vip  = TriggerClientEvent('chatMessage',source,"ALERTA:",{255,70,50}," Você Não Possui Nenhum VIP Ativo!")
+    end
+	if vip == nil or vip == vRP.getUserGroupByType(user_id,"vip") then
+    TriggerClientEvent('chatMessage',source,"Seu VIP É:",{255,70,50}," " ..vip)
+	end
+end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- HASH
 -----------------------------------------------------------------------------------------------------------------------------------------

@@ -13,52 +13,22 @@ local cfg = {}
 cfg.groups = {
 
   --== ADMINISTRAÇÃO ==--
-  --== ADMINISTRAÇÃO ==--
-  --== ADMINISTRAÇÃO ==--
-  ["admin"] = {
-		"admin.permissao",
-		"fix.permissao",
-		"dv.permissao",
-		"god.permissao",
-		"wl.permissao",
-		"kick.permissao",
-		"ban.permissao",
-		"unban.permissao",
-		"money.permissao",
-		"noclip.permissao",
-		"ticket.permissao",
-		"tp.permissao",
-		"spawncar.permissao",
-		"msg.permissao"
-	},
-	["mod"] = {
-		"admin.permissao",
-		"fix.permissao",
-		"dv.permissao",
-		"god.permissao",
-		"ticket.permissao",
-		"wl.permissao",
-		"kick.permissao",
-		"ban.permissao",
-		"unban.permissao",
-		"noclip.permissao",
-		"tp.permissao",
-		"spawncar.permissao",
-		"msg.permissao"
-	},
-	["sup"] = {
-		"admin.permissao",
-		"ticket.permissao",
-		"fix.permissao",
-		"dv.permissao",
-		"wl.permissao",
-		"kick.permissao"
-	},
-	["aprovadorwl"] = {
-		"wl.permissao"
-	},
-  ["user"] = {
-	-- Permissão de adm pra testar base (remover) --
+  ["FundadorCMDRJ"] = {
+	"admin.permissao",
+	"fix.permissao",
+	"dv.permissao",
+	"god.permissao",
+	"wl.permissao",
+	"kick.permissao",
+	"ban.permissao",
+	"unban.permissao",
+	"money.permissao",
+	"noclip.permissao",
+	"ticket.permissao",
+	"tp.permissao",
+	"spawncar.permissao",
+	"msg.permissao",
+	-- Administração
 	"player.group.add",
     "player.group.remove",
     "player.givemoney",
@@ -86,8 +56,42 @@ cfg.groups = {
     "player.coords",
     "player.tptome",
     "player.tpto",
-	-- Permissão de adm pra testar base (remover) --
-  
+	-- Salario
+	"Administrador.permissao"
+	},
+	["ModeradorCMDRJ"] = {
+	"admin.permissao",
+	"fix.permissao",
+	"dv.permissao",
+	"god.permissao",
+	"ticket.permissao",
+	"wl.permissao",
+	"kick.permissao",
+	"ban.permissao",
+	"unban.permissao",
+	"noclip.permissao",
+	"tp.permissao",
+	"spawncar.permissao",
+	"msg.permissao",
+	-- Salario
+	"Moderador.permissao"
+	},
+	["SuporteCMDRJ"] = {
+	"admin.permissao",
+	"ticket.permissao",
+	"fix.permissao",
+	"dv.permissao",
+	"wl.permissao",
+	"kick.permissao",
+	-- Salario
+	"Suporte.permissao"
+	},
+	["aprovadorwl"] = {
+	"wl.permissao",
+	-- Salario
+	"AprovadorWL.permissao"
+	},
+  ["user"] = {
     "player.phone",
     "player.calladmin",
 	"player.loot",
@@ -102,15 +106,17 @@ cfg.groups = {
 	"store.bodyarmor",
 	"store.weapons",
     "police.askid",
-    "police.seizable", -- can be seized
+    "police.seizable",
 	"coma.skipper",
-	"coma.caller"
+	"coma.caller",
+	-- Salario
+	"Player.permissao"
   },
   
   --== PMERJ ==--
   ["CMD PMERJ"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -151,12 +157,15 @@ cfg.groups = {
 	"pmcar.permissao",
 	"pmheli.permissao",
 	"cmdgeral.permissao",
-	"helipmerj.permissao"
+	"helipmerj.permissao",
+	-- Salario
+	"CmdGeral.permissao"
+	
   },
 
-  ["PMERJ"] = {
+  ["[PMRJ] - Recruta"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -197,12 +206,14 @@ cfg.groups = {
 	"pmcar.permissao",
 	"pmheli.permissao",
 	"pmerj.permissao",
-	"helipmerj.permissao"
+	"helipmerj.permissao",
+	-- Salario
+	"Recruta.permissao"
   },
-  
-  ["RECOM PMERJ"] = {
+
+  ["[PMRJ] - Soldado"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -242,13 +253,594 @@ cfg.groups = {
 	-- NOVOS
 	"pmcar.permissao",
 	"pmheli.permissao",
-	"recom.permissao",
-	"helipmerj.permissao"
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"Soldado.permissao"
+  },
+
+  ["[PMRJ] - Cabo"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"Cabo.permissao"
+  },
+
+  ["[PMRJ] - 3° Sargento"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"3Sargento.permissao"
   },
   
-  ["BPCHQ PMERJ"] = {
+  ["[PMRJ] - 2° Sargento"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"2Sargento.permissao"
+  },
+  
+  ["[PMRJ] - 1° Sargento"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"1Sargento.permissao"
+  },
+
+  ["[PMRJ] - Subtenente"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"SubTenente.permissao"
+  },
+
+  ["[PMRJ] - 2° Tenente"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"2Tenente.permissao"
+  },
+
+  ["[PMRJ] - 1° Tenente"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"1Tenente.permissao"
+  },
+
+  ["[PMRJ] - Capitão"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"Capitao.permissao"
+  },
+
+  ["[PMRJ] - Major"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"Major.permissao"
+  },
+
+  ["[PMRJ] - Tenente Coronel"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"TenenteCoronel.permissao"
+  },
+  
+  ["[PMRJ] - Coronel"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"pmerj.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"Coronel.permissao"
+  },
+
+----------------------------------------- RECOM PMERJ --------------------------------------------- 
+ 
+  ["[PMRJ] - Recom"] = {
+    _config = {
+      gtype = "cargos",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"pm3.arsenal",
+	"pm3.garagem",
+	"pm3.cloakroom",
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"pmcar.permissao",
+	"pmheli.permissao",
+	"recom.permissao",
+	"helipmerj.permissao",
+	-- Salario
+	"Recom.permissao"
+  },
+
+----------------------------------------- CHOQUE PMERJ --------------------------------------------- 
+ 
+  ["[PMRJ] - BPCHQ"] = {
+    _config = {
+      gtype = "cargos",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -289,13 +881,15 @@ cfg.groups = {
 	"pmcar.permissao",
 	"pmheli.permissao",
 	"bpchq.permissao",
-	"helipmerj.permissao"
+	"helipmerj.permissao",
+	-- Salario
+	"Choque.permissao"
   },
 
 ----------------------------------------- BOPE ---------------------------------------------
-  ["BOPE"] = {
+  ["[BOPE] - Coronel"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -331,14 +925,231 @@ cfg.groups = {
     "-police.seizable",
 	-- NOVOS
 	"bope.permissao",
-	"bopecar.permissao"
+	"bopecar.permissao",
+	-- Salario
+	"CoronelBOPE.permissao"
   }, 
+  
+  ["[BOPE] - Tenente Coronel"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"bope.permissao",
+	"bopecar.permissao",
+	-- Salario
+	"TenenteCoronelBOPE.permissao"
+  },
+
+  ["[BOPE] - Major"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"bope.permissao",
+	"bopecar.permissao",
+	-- Salario
+	"MajorBOPE.permissao"
+  },
+  
+  ["[BOPE] - Capitão"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"bope.permissao",
+	"bopecar.permissao",
+	-- Salario
+	"CapitaoBOPE.permissao"
+  },
+
+  ["[BOPE] - Tenente"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"bope.permissao",
+	"bopecar.permissao",
+	-- Salario
+	"TenenteBOPE.permissao"
+  },
+  
+  ["[BOPE] - Aspirante"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+	-----------------
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"bope.permissao",
+	"bopecar.permissao",
+	-- Salario
+	"AspiranteBOPE.permissao"
+  },
  
 ----------------------------------------- Policia Civil ---------------------------------------------
 
-  ["Policia Civil"] = {
+  ["[PCRJ] - Delegado Geral"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -374,12 +1185,231 @@ cfg.groups = {
 	-- NOVOS
 	"helipc.permissao",
 	"carropc.permissao",
-	"pcivil.permissao"
+	"pcivil.permissao",
+	-- Salario
+	"DelegadoGeralPC.permissao"
   },
+  
+  ["[PCRJ] - Delegado(a)"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"helipc.permissao",
+	"carropc.permissao",
+	"pcivil.permissao",
+	-- Salario
+	"DelegadoPC.permissao"
+  },
+  
+  ["[PCRJ] - Delegado Adjunto"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"helipc.permissao",
+	"carropc.permissao",
+	"pcivil.permissao",
+	-- Salario
+	"DelegadoAdjuntoPC.permissao"
+  },
+  
+  ["[PCRJ] - Investigador"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"helipc.permissao",
+	"carropc.permissao",
+	"pcivil.permissao",
+	-- Salario
+	"InvestigadorPC.permissao"
+  },
+ 
+  ["[PCRJ] - Perito Criminal"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"helipc.permissao",
+	"carropc.permissao",
+	"pcivil.permissao",
+	-- Salario
+	"PeritoCriminalPC.permissao"
+  },
+
+  ["[PCRJ] - Escrivão"] = {
+    _config = {
+      gtype = "cargo",
+      onjoin = function(player) vRPclient._setCop(player,true) end,
+      onspawn = function(player) vRPclient._setCop(player,true) end,
+      onleave = function(player) vRPclient._setCop(player,false) end
+    },
+	"mission.policia",
+	"coronelpm.paycheck",
+	"policia.permissao",
+	"pm3.whitelisted",
+	"portas.policia",
+	"police.assalto",
+	"naotoma.multa",
+    "police.menu",
+	"police.spikes",
+    "police.pc",
+	"police.freeze",
+	"police.jail",
+	"police.bmjail",
+	"police.bmfine",
+	"police.bmunjail",
+	"police.bmcuff",
+	"police.fine",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+    "police.service",
+    "police.wanted",
+    "police.seize.weapons",
+    "police.seize.items",
+	"police.asklc",
+    "police.announce",
+    "-police.seizable",
+	-- NOVOS
+	"helipc.permissao",
+	"carropc.permissao",
+	"pcivil.permissao",
+	-- Salario
+	"EscrivaoPC.permissao"
+  },
+ 
+----------------------------------------- Policia Federal --------------------------------------------- 
   
   ["[Delegado] Policia Federal"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -418,7 +1448,7 @@ cfg.groups = {
   },
   ["[Investigador] Policia Federal"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -457,7 +1487,7 @@ cfg.groups = {
   },
   ["[Escrivão] Policia Federal"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -496,7 +1526,7 @@ cfg.groups = {
   },
   ["[Perito Criminal] Policia Federal"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -535,7 +1565,7 @@ cfg.groups = {
   },
   ["[Agente] Policia Federal"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -574,7 +1604,7 @@ cfg.groups = {
   },
   ["[Oficial] Policia Federal"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -611,10 +1641,12 @@ cfg.groups = {
     "police.announce",
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
-  
+
+----------------------------------------- Policia Rodoviaria ---------------------------------------------  
+ 
   ["[Diretor Geral] - Policial Rodoviario"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -653,7 +1685,7 @@ cfg.groups = {
   },
   ["[Diretor Auxiliar] - Policial Rodoviario"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -692,7 +1724,7 @@ cfg.groups = {
   },
   ["[Agente Especial] - Policial Rodoviario"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -731,7 +1763,7 @@ cfg.groups = {
   },
   ["[Agente] - Policial Rodoviario"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -770,7 +1802,7 @@ cfg.groups = {
   },
   ["[Agente Administrativo] - Policial Rodoviario"] = {
     _config = {
-      gtype = "job",
+      gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
       onspawn = function(player) vRPclient._setCop(player,true) end,
       onleave = function(player) vRPclient._setCop(player,false) end
@@ -808,12 +1840,9 @@ cfg.groups = {
     "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
   },
   
-  --== SAMU ==--
-  --== SAMU ==--
-  --== SAMU ==--
-
-  ["[Socorrista] - SAMU"] = {
-    _config = { gtype = "job" },
+----------------------------------------- SAMU --------------------------------------------- 
+  ["[SOCORRISTA] - SAMU"] = {
+    _config = { gtype = "cargo" },
 	"emergency.garagem",
 	"emergency.arsenal",
 	"emergency.cloakroom",
@@ -825,9 +1854,12 @@ cfg.groups = {
     "emergency.revive",
     "emergency.shop",
     "emergency.service",
+	"paramedico.permissao",
+	-- Salario
+	"SocorristaSAMU.permissao"
   },
-  ["[Paramedico] - SAMU"] = {
-    _config = { gtype = "job" },
+  ["[TÉCNICO DE ENFERMAGEM] - SAMU"] = {
+    _config = { gtype = "cargo" },
 	"emergency.garagem",
 	"emergency.arsenal",
 	"emergency.cloakroom",
@@ -839,9 +1871,12 @@ cfg.groups = {
     "emergency.revive",
     "emergency.shop",
     "emergency.service",
+	"paramedico.permissao",
+	-- Salario
+	"TecSAMU.permissao"
   },
-  ["[Medico] - SAMU"] = {
-    _config = { gtype = "job" },
+  ["[ENFERMEIRO] - SAMU"] = {
+    _config = { gtype = "cargo" },
 	"emergency.garagem",
 	"emergency.arsenal",
 	"emergency.cloakroom",
@@ -853,9 +1888,12 @@ cfg.groups = {
     "emergency.revive",
     "emergency.shop",
     "emergency.service",
+	"paramedico.permissao",
+	-- Salario
+	"EnfermeiroSAMU.permissao"
   },
-  ["[Doutor] - SAMU"] = {
-    _config = { gtype = "job" },
+  ["[MÉDICO(A)] - SAMU"] = {
+    _config = { gtype = "cargo" },
 	"emergency.garagem",
 	"emergency.arsenal",
 	"emergency.cloakroom",
@@ -867,9 +1905,12 @@ cfg.groups = {
     "emergency.revive",
     "emergency.shop",
     "emergency.service",
+	"paramedico.permissao",
+	-- Salario
+	"MedicoSAMU.permissao"
   },
-  ["[Medico-Chefe] - SAMU"] = {
-    _config = { gtype = "job" },
+  ["[COORDENADOR] - SAMU"] = {
+    _config = { gtype = "cargo" },
 	"emergency.garagem",
 	"emergency.arsenal",
 	"emergency.cloakroom",
@@ -881,9 +1922,12 @@ cfg.groups = {
     "emergency.revive",
     "emergency.shop",
     "emergency.service",
+	"paramedico.permissao",
+	-- Salario
+	"CoordenadorSAMU.permissao"
   },
-  ["[Chefe] - SAMU"] = {
-    _config = { gtype = "job" },
+  ["[CHEFE] - SAMU"] = {
+    _config = { gtype = "cargo" },
 	"emergency.garagem",
 	"emergency.arsenal",
 	"emergency.cloakroom",
@@ -895,11 +1939,12 @@ cfg.groups = {
     "emergency.revive",
     "emergency.shop",
     "emergency.service",
+	"paramedico.permissao",
+	-- Salario
+	"ChefeSAMU.permissao"
   },
   
-  --== FACÇÕES ==--
-  --== FACÇÕES ==--
-  --== FACÇÕES ==--
+----------------------------------------- MotoClub --------------------------------------------- 
   
   ["[Lider] - Moto Clube"] = {
     _config = { 
@@ -1094,8 +2139,9 @@ cfg.groups = {
 	"mission.UBER.passenger"
   },
   
-  ["Mecânico"] = {
-    _config = { gtype = "job" },
+  ["Bennys"] = {
+    _config = { gtype = "cargo" },
+	"mecanico.permissao",
     "mecanico.service",
 	"mecanico.kit",
 	"mecanico.garagem",
@@ -1103,7 +2149,8 @@ cfg.groups = {
 	"vehicle.repair",
     "vehicle.replace",
 	"mission.mecanico",
-	"mecanico.paycheck",
+	"mecanicopay.permissao",
+	"bennyscar.permissao",
   },
   
   -- ["Motorista de Onibus"] = {
@@ -1196,7 +2243,7 @@ cfg.groups = {
 	"prostituta.paycheck",
   },
   
-  --== JORNAL ==--
+----------------------------------------- Jornalista --------------------------------------------- 
   
   ["Jornalista"] = {
     _config = { gtype = "job"},
@@ -1204,7 +2251,9 @@ cfg.groups = {
 	"jornal.service",
 	"jornal.cloakroom",
     "jornalista.paycheck",
-	"jornal.whitelisted"
+	"jornal.whitelisted",
+	-- Salario
+	"Jornalista.permissao"
   },
   ["Repórter"] = {
     _config = { gtype = "job"},
@@ -1212,7 +2261,9 @@ cfg.groups = {
 	"jornal.service",
 	"jornal.cloakroom",
     "reporter.paycheck",
-	"jornal.whitelisted"
+	"jornal.whitelisted",
+	-- Salario
+	"Reporter.permissao"
   },
   ["Diretor do Jornal"] = {
     _config = { gtype = "job"},
@@ -1220,10 +2271,12 @@ cfg.groups = {
 	"jornal.service",
 	"jornal.cloakroom",
     "diretorjornal.paycheck",
-	"jornal.whitelisted"
+	"jornal.whitelisted",
+	-- Salario
+	"DiretorJornal.permissao"
   },
   
-  --== EMPREGOS JUDICIAIS ==--
+----------------------------------------- Advocacia --------------------------------------------- 
   
   ["Advogado"] = {
     _config = { 
@@ -1235,7 +2288,9 @@ cfg.groups = {
 	"advogado.oab",
 	"advogado.cloakroom",
 	"advogado.paycheck",
-	"adv.whitelisted"
+	"adv.whitelisted",
+	-- Salario
+	"Advogado.permissao"
   },
   ["Presidente da Justiça"] = {
     _config = { 
@@ -1247,7 +2302,9 @@ cfg.groups = {
 	"advogado.oab",
 	"advogado.cloakroom",
 	"presidentej.paycheck",
-	"adv.whitelisted"
+	"adv.whitelisted",
+	-- Salario
+	"PresidenteDaJustica.permissao"
   },
   ["Promotor de Justiça"] = {
     _config = { 
@@ -1259,7 +2316,9 @@ cfg.groups = {
 	"advogado.oab",
 	"advogado.cloakroom",
 	"promotorj.paycheck",
-	"adv.whitelisted"
+	"adv.whitelisted",
+	-- Salario
+	"PromotorDaJustica.permissao"
   },
   
   ["Juiz"] = {
@@ -1294,7 +2353,9 @@ cfg.groups = {
     "police.seize.items",
 	"police.asklc",
     "police.announce",
-    "-police.seizable" -- negative permission, police can't seize itself, even if another group add the permission
+    "-police.seizable",
+	-- Salario
+	"Juiz.permissao"
   },
 
   ["Desempregado"] = {
@@ -1302,12 +2363,10 @@ cfg.groups = {
 		gtype = "job",
 		onspawn = function(player) vRPclient._notify(player,"~b~Desempregado ~w~arrume um Emprego.") end
 	},
-    "desempregado.paycheck"
+    "desempregado.permissao"
   },
   
-  --== EMPREGOS ILEGAIS ==--
-  --== EMPREGOS ILEGAIS ==--
-  --== EMPREGOS ILEGAIS ==--
+----------------------------------------- Empregos Ilegais --------------------------------------------- 
 
   ["Traficante de Maconha"] = {
     _config = { 
@@ -1364,21 +2423,55 @@ cfg.groups = {
 	"mugger.mug"
   },
   
-  --== VIPs ==--
-  --== VIPs ==--
-  --== VIPs ==--
+----------------------------------------- VIPS --------------------------------------------- 
   
-  ["diamante"] = {
-    "dimavip.paycheck"
+  ["VIP Bronze"] = {
+    _config = {
+      gtype = "vip",
+    },
+    "vip.permissao"
   },
-  ["ouro"] = {
-    "ourovip.paycheck"
+  ["VIP Prata"] = {
+    _config = {
+      gtype = "vip",
+    },
+    "vipp.permissao"
   }, 
-  ["cobre"] = {
-    "cobrevip.paycheck"
+  ["VIP Ouro"] = {
+    _config = {
+      gtype = "vip",
+    },
+    "vippp.permissao"
   }, 
-  ["prata"] = {
-    "pratavip.paycheck"
+  ["VIP Diamante"] = {
+    _config = {
+      gtype = "vip",
+    },
+    "vipppp.permissao"
+  },
+   ["VIP Platina"] = {
+    _config = {
+      gtype = "vip",
+    },
+    "vipppp.permissao"
+  },
+   ["VIP Mafioso"] = {
+    _config = {
+      gtype = "vip",
+    },
+    "vipppp.permissao"
+  },
+  ["VIP Supremo"] = {
+    _config = {
+      gtype = "vip",
+    },
+    "vippppp.permissao"
+  },
+  ["VIP Magnata"] = {
+    _config = {
+      gtype = "vip",
+    },
+    "vippppppp.permissao"
   },
   
   --== Sets ==--

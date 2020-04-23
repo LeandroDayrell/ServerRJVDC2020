@@ -22,7 +22,7 @@ AddEventHandler('receber:Cocaine', function(loadWeed)
 	if weight >= vRP.getInventoryMaxWeight(user_id) then
 		TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Espaço insuficiente no seu inventário.")
 	else
-		if vRP.hasGroup(user_id,"CV") then
+		if vRP.hasGroup(user_id,"[C.V] - Lider") then
 		  vRP.giveInventoryItem(user_id, "acetofenetidina", 1,true)
 		  vRP.giveInventoryItem(user_id, "benzoilecgonina", 1,true)
 		  vRP.giveInventoryItem(user_id, "cloridratoecgonina", 1,true)

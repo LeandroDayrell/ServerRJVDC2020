@@ -29,9 +29,9 @@ function vRPN.Identidade()
 		local mymultas = json.decode(multas) or 0
 		local paypal = vRP.getUData(user_id,"vRP:paypal")
 		local mypaypal = json.decode(paypal) or 0
-		local groupv = vRPN.getUserGroupByType(user_id,"job")
-		local cargo = vRPN.getUserGroupByType(user_id,"cargo")
-		local vip = vRPN.getUserGroupByType(user_id,"vip")
+		local groupv = vRP.getUserGroupByType(user_id,"job")
+		local cargo = vRP.getUserGroupByType(user_id,"cargo")
+		local vip = vRP.getUserGroupByType(user_id,"vip")
 		if cargo ~= "" then
 			groupv = cargo
 		end
