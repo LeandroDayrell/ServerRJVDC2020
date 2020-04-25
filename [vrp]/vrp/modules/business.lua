@@ -57,10 +57,10 @@ local function business_enter(source)
 			end }
 		else
 			menu["Comprar"] = { function(player,choice)
-				local ok = vRP.request(source,"Deseja compra da empresa por <b>$2.000.000</b> dólares?",30)
+				local ok = vRP.request(source,"Deseja compra da empresa por <b>$500.000.000</b> dólares?",30)
 				if ok then
-					if vRP.tryPayment(user_id,2000000) then
-						vRP.execute("vRP/create_business",{ user_id = user_id, capital = 50000, time = os.time() })
+					if vRP.tryPayment(user_id,500000000) then
+						vRP.execute("vRP/create_business",{ user_id = user_id, capital = 500000000, time = os.time() })
 						TriggerClientEvent("Notify",player,"sucesso","Compra concluida.")
 						vRP.closeMenu(player)
 					else

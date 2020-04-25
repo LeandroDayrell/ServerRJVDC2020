@@ -331,7 +331,13 @@ INSERT INTO `concessionaria` (`id`, `nomecarro`, `estoquecarro`) VALUES
 	(542, 'zombieb', 63),
 	(543, 'blazer', 20),
 	(544, 'blazer4', 63),
-	(545, 'deathbike', 21);
+	(545, 'deathbike', 21),
+	(546, '608', 100),
+	(547, 'atroncar', 100),
+	(548, 'mule6', 100),
+	(549, 'mule', 100),
+	(550, 'benson', 100),
+	(551, 'pounder', 100);
 /*!40000 ALTER TABLE `concessionaria` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

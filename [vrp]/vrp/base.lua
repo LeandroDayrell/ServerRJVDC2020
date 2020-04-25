@@ -282,7 +282,7 @@ AddEventHandler("queue:playerConnecting",function(source,ids,name,setKickReason,
 						deferrals.done()
 					end
 				else
-					deferrals.done("Envie para a equipe de administração o seu ID: "..user_id)
+					deferrals.done("RJVDC 3.0 EM BREVÊ... SEU ID: "..user_id)
 					TriggerEvent("queue:playerConnectingRemoveQueues",ids)
 				end
 			else

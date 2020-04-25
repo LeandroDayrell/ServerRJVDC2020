@@ -6,10 +6,10 @@ Config.SafeMax = 0				-- Maximo que dá ao furar um caixa
 Config.Solda = "bombaadesiva" 					-- Item solda
 Config.Furadeira = "Furadeira" 			-- Item furadeira
 Config.DinheiroSujo = "dinheirosujo" 	-- Item de dinheiro sujo
-Config.Cops = 6					-- Quantidade minima de PMS
+Config.Cops = 0					-- Quantidade minima de PMS
 Config.PermCops = "policia.permissao" 	-- Permissao para os policiais
-Config.MinPegar = 2500 					-- Valor minimo que o personagem pega do dinheiro
-Config.MaxPegar = 5000 					-- Valor maximo que o personagem pega do dinheiro
+Config.MinPegar = 5000 					-- Valor minimo que o personagem pega do dinheiro
+Config.MaxPegar = 10000 					-- Valor maximo que o personagem pega do dinheiro
 Config.Tempo = 1600						-- Tempo (em segundos) pro roubo resetar
 
 Config.AllowedBags = {40, 41, 44, 45}

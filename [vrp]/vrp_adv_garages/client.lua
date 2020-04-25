@@ -418,6 +418,11 @@ local spawnLocs = {
 		[1] = { ['x'] = 842.876, ['y'] = 158.13, ['z'] = 82.81, ['h'] = 272.65 },
 		[2] = { ['x'] = 838.92, ['y'] = 153.16, ['z'] = 82.81, ['h'] = 272.65 }
 	},
+	[34] = {
+		[1] = { ['x'] = 50.66, ['y'] = -873.02, ['z'] = 30.45, ['h'] = 159.65 },
+		[2] = { ['x'] = 47.34, ['y'] = -871.81, ['z'] = 30.45, ['h'] = 159.65 },
+		[3] = { ['x'] = 44.17, ['y'] = -870.50, ['z'] = 30.45, ['h'] = 159.65 }
+	},
 }
 
 function vRPg.spawnGarageVehicle(name,custom,enginehealth,bodyhealth,fuellevel,loc)
@@ -584,6 +589,9 @@ AddEventHandler("syncLock",function(index)
 		end
 	end
 end)
+
+
+Citizen.CreateThread(function() while true do Citizen.Wait(30000) collectgarbage() end end)
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- CSS

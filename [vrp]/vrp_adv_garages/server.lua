@@ -1,5 +1,3 @@
-local discord_webhook1 = "https://discordapp.com/api/webhooks/687862400497614852/cJBdOSctJmt46DxyXzvSWNuIhbsu8EF3YnIVRoAgN6XKmYquXA2pR8NvW4D_GTJCyS5Q"
-
 local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
 local Tools = module("vrp","lib/Tools")
@@ -38,7 +36,32 @@ end
 
 local carros = {
 	["blista"] = { price = 60000 },
+	["lamtmc"] = { price = 0 },
+	["laferrari15"] = { price = 0 },
+	["rmodfordgt"] = { price = 0 },
+	["fxxk"] = { price = 0 },
+	["veneno"] = { price = 0 },
+	["rmodx6"] = { price = 0 },
+	["chiron17"] = { price = 0 },
+	["deathbike2"] = { price = 0 },
+	["350zrb"] = { price = 0 },
+	["mlnovitec"] = { price = 0 },
+	["fpacehm"] = { price = 0 },
+	["urus"] = { price = 0 },
+	["chevys10"] = { price = 0 },
+	["bmws"] = {price = 0},
+	["amarok"] = {price = 0},
+	["pistas"] = {price = 0},
+	["mk7pandem"] = {price = 0},
+	["20trailboss"] = {price = 0},
+	["sadler"] = {price = 0},
+	["dm1200"] = {price = 0},
+	["z1000"] = {price = 0},
+	["z4bmw"] = {price = 0},
+	["c63"] = { price = 0 },
+	["porsche"] = {price = 0},
 	["brioso"] = { price = 30000 },
+	["608"] = { price = 2000000 },
 	["dilettante"] = { price = 60000 },
 	["issi2"] = { price = 90000 },
 	["panto"] = { price = 5000 },
@@ -283,26 +306,23 @@ local carros = {
 	["xa21"] = { price = 550000 },
 	["tezeract"] = { price = 800000 },
 	["prototipo"] = { price = 900000 },
-	["ferrariitalia"] = { price = 10000000 }, --VIP
-	["cayenneturbo"] = { price = 10000000 }, --VIP
-	["124spider"] = { price = 700000 },
-	["acuransx"] = { price = 850000 },
+	["ferrariitalia"] = { price = 1500000 },
 	["paganihuayra"] = { price = 1500000 },
 	["fordmustang"] = { price = 1000000 },
 	["fordmustanggt"] = { price = 1000000 },
 	["nissangtr"] = { price = 1150000 },
 	["nissangtrnismo"] = { price = 1200000 },
 	["teslaprior"] = { price = 700000 },
-	["nissanskyliner34"] = { price = 10000000 }, --VIP
-	["audirs6"] = { price = 10000000 }, --VIP
-	["bmwm3f80"] = { price = 10000000 }, --VIP
-	["bmwm4gts"] = { price = 10000000 }, --VIP
-	["lancerevolutionx"] = { price = 10000000 }, --VIP
-	["mercedesamgc63"] = { price = 10000000 }, --VIP
-	["toyotasupra"] = { price = 10000000 }, --VIP
+	["nissanskyliner34"] = { price = 1100000 },
+	["audirs6"] = { price = 850000 },
+	["bmwm3f80"] = { price = 900000 },
+	["bmwm4gts"] = { price = 950000 },
+	["lancerevolutionx"] = { price = 850000 },
+	["mercedesamgc63"] = { price = 850000 },
+	["toyotasupra"] = { price = 1050000 },
 	["nissan370z"] = { price = 550000 },
-	["lamborghinihuracan"] = { price = 10000000 }, --VIP
-	["dodgechargersrt"] = { price = 10000000 }, --VIP
+	["lamborghinihuracan"] = { price = 1300000 },
+	["dodgechargersrt"] = { price = 1400000 },
 	["patriot2"] = { price = 550000 },
 	["speedo4"] = { price = 240000 },
 	["stafford"] = { price = 400000 },
@@ -402,51 +422,49 @@ local carros = {
 	["toro"] = { price = 100000 },
 	["toro2"] = { price = 100000 },
 	["tropic"] = { price = 100000 },
-	["ds4"] = { price = 73000 },
-	["punto"] = { price = 70000 },
-	["f150"] = { price = 175000 },
+	["tropic2"] = { price = 100000 },
+	["voyage"] = { price = 100000 },
+	["punto"] = { price = 100000 },
+	["f150"] = { price = 100000 },
+	["ds4"] = { price = 100000 },
+	["fordka"] = { price = 100000 },
 	["fusion"] = { price = 100000 },
-	["fordka"] = { price = 45000 },
-	["vwgolf"] = { price = 60000 },
-	["civic"] = { price = 55000 },
-	["eletran17"] = { price = 110000 },
-	["sonata18"] = { price = 120000 },
-	["veloster"] = { price = 85000 },
-	["monza"] = { price = 13000 },
-	["p207"] = { price = 23000 },
-	["vwpolo"] = { price = 90000 },
-	["evoq"] = { price = 220000 },
-	["santafe"] = { price = 140000 },
-	["celta"] = { price = 17000 },
-	["amarok"] = { price = 185000 },
-	["civic2016"] = { price = 120000 },
-	["fiat"] = { price = 10000 },
-	["jetta2017"] = { price = 200000 },
-	["l200civil"] = { price = 180000 },
-	["saveiro"] = { price = 70000 },
-	["upzinho"] = { price = 20000 },
-	["voyage"] = { price = 40000 },
-	["golg7"] = { price = 85000 },
-	["fiattoro"] = { price = 80000 },
-	["palio"] = { price = 20000 },
-	["fiatuno"] = { price = 15000 },
-	["fiatstilo"] = { price = 80000 },
-	["biz25"] = { price = 10000 },
-	["150"] = { price = 13000 },
-	["bros60"] = { price = 25000 },
-	["xt66"] = { price = 40000 },
+	["vwgolf"] = { price = 100000 },
+	["civic"] = { price = 100000 },
+	["eletran17"] = { price = 100000 },
+	["sonata18"] = { price = 100000 },
+	["celta"] = { price = 100000 },
+	["monza"] = { price = 100000 },
+	["p207"] = { price = 100000 },
+	["santafe"] = { price = 100000 },
+	["vwpolo"] = { price = 100000 },
+	["evoq"] = { price = 100000 },
+	["veloster"] = { price = 100000 },
+	["fiat"] = { price = 100000 },
+	["honci4"] = { price = 100000 },
+	["l200civil"] = { price = 100000 },
+	["golg7"] = { price = 100000 },
+	["saveiro"] = { price = 100000 },
+	["upzinho"] = { price = 100000 },
+	["fiatstilo"] = { price = 100000 },
+	["fiatuno"] = { price = 100000 },
+	["ftoro"] = { price = 100000 },
+	["palio"] = { price = 100000 },
+	["crv"] = { price = 100000 },
+	["150"] = { price = 100000 },
 	["450crf"] = { price = 100000 },
-	["xj"] = { price = 240000 },
-	["hornet"] = { price = 260000 },
-	["dm1200"] = { price = 300000 },
-	["z1000"] = { price = 290000 },
-	["r1250"] = { price = 320000 },
-	["hiluxpf "] = { price = 0 },
-	["trailpf "] = { price = 0 },
-	["hiluxsrvbope "] = { price = 0 },
-	["2015polstang "] = { price = 0 },
-	["trailblazerbope"] = { price = 0 },
-	["tropic2"] = { price = 100000 }
+	["biz25"] = { price = 100000 },
+	["bros60"] = { price = 100000 },
+	["cbrr"] = { price = 100000 },
+	["dm1200"] = { price = 100000 },
+	["hornet"] = { price = 100000 },
+	["r1250"] = { price = 100000 },
+	["xj"] = { price = 100000 },
+	["xt66"] = { price = 100000 },
+	["z1000"] = { price = 100000 },
+	["r1"] = { price = 100000 },
+	["r6"] = { price = 100000 },
+	["jetta2017"] = { price = 100000 },
 --	["rumpo3"] = { price = 15000 },
 --	["benson"] = { price = 50000 },
 --	["mule2"] = { price = 30000 },
@@ -685,6 +703,11 @@ function openGarage(source,gid,payprice,location)
 												return
 											end
 										elseif vRP.hasPermission(user_id,"platina.permissao") then
+											if parseInt(totalv[1].quantidade) >= totalgaragem + 10 then
+												TriggerClientEvent("Notify",source,"importante","Atingiu o número máximo de veículos em sua garagem.")
+												return
+											end
+										elseif vRP.hasPermission(user_id,"diamante.permissao") then
 											if parseInt(totalv[1].quantidade) >= totalgaragem + 10 then
 												TriggerClientEvent("Notify",source,"importante","Atingiu o número máximo de veículos em sua garagem.")
 												return
@@ -1032,7 +1055,7 @@ local function build_garages(source)
 								vRP.closeMenu(source)
 							end
 
-							vRPclient._addMarker(source,27,x,y,z-0.95,2,2,0.5,178, 34, 34,100,100)
+							vRPclient._addMarker(source,23,x,y,z-0.95,2,2,0.5,0,95,140,10,100)
 							vRP.setArea(source,"vRP:garage"..k,x,y,z,1.0,1.0,garage_enter,garage_leave)
 						end
 					end
@@ -1056,7 +1079,7 @@ local function build_garages(source)
 							vRP.closeMenu(source)
 						end
 
-						vRPclient._addMarker(source,27,x,y,z-0.95,2,2,0.5,178, 34, 34,100,100)
+						vRPclient._addMarker(source,23,x,y,z-0.95,2,2,0.5,0,95,140,10,100)
 						vRP.setArea(source,"vRP:garage"..k,x,y,z,1.0,1.0,garage_enter,garage_leave)
 					end
 				end
@@ -1115,6 +1138,11 @@ RegisterCommand('vehs',function(source,args,rawCommand)
 							TriggerClientEvent("Notify",source,"importante","A pessoa atingiu o número máximo de veículos na garagem.")
 							return
 						end
+					elseif vRP.hasPermission(tuser_id,"diamante.permissao") then
+						if parseInt(totalv[1].quantidade) >= totalgaragem + 10 then
+							TriggerClientEvent("Notify",source,"importante","A pessoa atingiu o número máximo de veículos na garagem.")
+							return
+						end
 					else
 						if parseInt(totalv[1].quantidade) >= totalgaragem then
 							TriggerClientEvent("Notify",source,"importante","A pessoa atingiu o número máximo de veículos na garagem.")
@@ -1136,7 +1164,6 @@ RegisterCommand('vehs',function(source,args,rawCommand)
 									vRP.giveMoney(user_id,parseInt(price))
 									TriggerClientEvent("Notify",nplayer,"sucesso","Pagou <b>$"..vRP.format(parseInt(price)).." dólares</b>.")
 									TriggerClientEvent("Notify",source,"sucesso","Recebeu <b>$"..vRP.format(parseInt(price)).." dólares</b>.")
-									TriggerEvent('logs:ToDiscord', discord_webhook1 , "VENDA", "```Player "..user_id.." \nVendeu o veiculo: "..vname.." \nPara: "..tuser_id.." \nPreço: "..vRP.format(parseInt(price)).."```", "https://www.tumarcafacil.com/wp-content/uploads/2017/06/RegistroDeMarca-01-1.png", false, false)
 								else
 									TriggerClientEvent("Notify",nplayer,"negado","Dinheiro insuficiente.")
 									TriggerClientEvent("Notify",source,"negado","Dinheiro insuficiente.")

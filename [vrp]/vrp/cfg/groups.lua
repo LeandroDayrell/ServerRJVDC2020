@@ -158,6 +158,7 @@ cfg.groups = {
 	"pmheli.permissao",
 	"cmdgeral.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
 	-- Salario
 	"CmdGeral.permissao"
 	
@@ -207,6 +208,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"Recruta.permissao"
   },
@@ -255,6 +258,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"Soldado.permissao"
   },
@@ -303,6 +308,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"Cabo.permissao"
   },
@@ -351,6 +358,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"3Sargento.permissao"
   },
@@ -399,6 +408,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"2Sargento.permissao"
   },
@@ -447,6 +458,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"1Sargento.permissao"
   },
@@ -495,6 +508,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"SubTenente.permissao"
   },
@@ -543,6 +558,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"2Tenente.permissao"
   },
@@ -591,6 +608,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"1Tenente.permissao"
   },
@@ -634,6 +653,8 @@ cfg.groups = {
 	"police.asklc",
     "police.announce",
     "-police.seizable",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- NOVOS
 	"pmcar.permissao",
 	"pmheli.permissao",
@@ -687,6 +708,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"Major.permissao"
   },
@@ -735,6 +758,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"TenenteCoronel.permissao"
   },
@@ -783,6 +808,8 @@ cfg.groups = {
 	"pmheli.permissao",
 	"pmerj.permissao",
 	"helipmerj.permissao",
+	"policiaheli.permissao",
+	"pmerj.permissao",
 	-- Salario
 	"Coronel.permissao"
   },
@@ -832,6 +859,7 @@ cfg.groups = {
 	"pmheli.permissao",
 	"recom.permissao",
 	"helipmerj.permissao",
+	"recom.permissao",
 	-- Salario
 	"Recom.permissao"
   },
@@ -882,6 +910,7 @@ cfg.groups = {
 	"pmheli.permissao",
 	"bpchq.permissao",
 	"helipmerj.permissao",
+	"bpchq.permissao",
 	-- Salario
 	"Choque.permissao"
   },
