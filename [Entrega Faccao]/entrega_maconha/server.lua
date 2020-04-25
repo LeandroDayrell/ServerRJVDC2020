@@ -19,7 +19,6 @@ AddEventHandler('entrega_maconha:permissao',function()
 				end
 			end
 		end
-	end
 end)
 
 

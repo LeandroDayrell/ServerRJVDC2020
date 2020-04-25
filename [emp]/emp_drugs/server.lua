@@ -193,10 +193,14 @@ RegisterServerEvent('amarelos:permissao')
 AddEventHandler('amarelos:permissao', function(loadWeed)
 	local user_id = vRP.getUserId(source)
 	local player = vRP.getUserSource(user_id)
-	if vRP.hasGroup(user_id,"TCP") then
-	  TriggerClientEvent('amarelos:permissao', player)
-	else
-	  TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Você não é desse gueto.")
+	if vRP.hasGroup(user_id,"[T.C.P] - Lider") then
+		if vRP.hasGroup(user_id,"[T.C.P] - Gerente") then
+			if vRP.hasGroup(user_id,"[T.C.P] - Membro") then
+			  TriggerClientEvent('amarelos:permissao', player)
+			else
+			  TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Você não é desse gueto.")
+			end
+		end
 	end
 end)
 
@@ -204,10 +208,14 @@ RegisterServerEvent('verdes:permissao')
 AddEventHandler('verdes:permissao', function(loadWeed)
 	local user_id = vRP.getUserId(source)
 	local player = vRP.getUserSource(user_id)
-	if vRP.hasGroup(user_id,"CV") then
-	  TriggerClientEvent('verdes:permissao', player)
-	else
-	  TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Você não é desse gueto.")
+	if vRP.hasGroup(user_id,"[C.V] - Lider") then
+		if vRP.hasGroup(user_id,"[C.V] - Gerente") then
+			if vRP.hasGroup(user_id,"[C.V] - Membro") then
+			  TriggerClientEvent('verdes:permissao', player)
+			else
+			  TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Você não é desse gueto.")
+			end
+		end
 	end
 end)
 
@@ -215,9 +223,14 @@ RegisterServerEvent('roxos:permissao')
 AddEventHandler('roxos:permissao', function(loadWeed)
 	local user_id = vRP.getUserId(source)
 	local player = vRP.getUserSource(user_id)
-		if vRP.hasGroup(user_id,"ADA") then
-			TriggerClientEvent('roxos:permissao', player)
-		else
-			TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Você não é desse gueto.")
+	if vRP.hasGroup(user_id,"[A.D.A] - Lider") then
+		if vRP.hasGroup(user_id,"[A.D.A] - Gerente") then
+			if vRP.hasGroup(user_id,"[A.D.A] - Membro") then
+					TriggerClientEvent('roxos:permissao', player)
+				else
+					TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Você não é desse gueto.")
+			end
+		end
 	end
+	
 end)

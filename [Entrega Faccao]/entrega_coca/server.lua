@@ -20,7 +20,6 @@ AddEventHandler('entrega_coca:permissao',function()
 				end
 			end
 		end
-	end
 end)
 
 RegisterServerEvent('entrega_coca:itensReceber')
