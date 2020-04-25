@@ -12,8 +12,14 @@ AddEventHandler('entrega_coca:permissao',function()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	local player = vRP.getUserSource(user_id)
-	if vRP.hasGroup(user_id,"Verdes") then 
-	    TriggerClientEvent('entrega_coca:permissao', player)
+	if vRP.hasGroup(user_id,"[C.V] - Lider") then 
+		if vRP.hasGroup(user_id,"[C.V] - Gerente") then
+				if vRP.hasGroup(user_id,"[C.V] - Membro") then
+		
+					TriggerClientEvent('entrega_metafetamina:permissao', player)
+				end
+			end
+		end
 	end
 end)
 

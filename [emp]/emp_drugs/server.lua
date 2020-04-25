@@ -23,12 +23,16 @@ AddEventHandler('receber:Cocaine', function(loadWeed)
 		TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Espaço insuficiente no seu inventário.")
 	else
 		if vRP.hasGroup(user_id,"[C.V] - Lider") then
+		if vRP.hasGroup(user_id,"[C.V] - Gerente") then
+		if vRP.hasGroup(user_id,"[C.V] - Membro") then
 		  vRP.giveInventoryItem(user_id, "acetofenetidina", 1,true)
 		  vRP.giveInventoryItem(user_id, "benzoilecgonina", 1,true)
 		  vRP.giveInventoryItem(user_id, "cloridratoecgonina", 1,true)
 		else
 		  TriggerClientEvent('sem:Reagentes', player)
 		end
+	end
+	end
 	end
 end)
 RegisterServerEvent('processar:Cocaine')
@@ -88,12 +92,16 @@ AddEventHandler('receber:Reagentes', function(loadWeed)
 	if weight >= vRP.getInventoryMaxWeight(user_id) then
 		TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Espaço insuficiente no seu inventário.")
 	else
-		if vRP.hasGroup(user_id,"TCP") then
+		if vRP.hasGroup(user_id,"[T.C.P] - Lider") then
+		if vRP.hasGroup(user_id,"[T.C.P] - Gerente") then
+		if vRP.hasGroup(user_id,"[T.C.P] - Membro") then
 		  vRP.giveInventoryItem(user_id, "anfetamina", 1,true)
 		  vRP.giveInventoryItem(user_id, "ritalina", 1,true)
 		else
 			TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Sem reagentes.")
 		end
+	end
+	end
 	end
 end)
 
@@ -141,11 +149,15 @@ AddEventHandler('receber:Maconha', function(loadWeed)
 	if weight >= vRP.getInventoryMaxWeight(user_id) then
 		TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Espaço insuficiente no seu inventário.")
 	else
-		if vRP.hasGroup(user_id,"ADA") then
+		if vRP.hasGroup(user_id,"[A.D.A] - Lider") then
+		if vRP.hasGroup(user_id,"[A.D.A] - Gerente") then
+		if vRP.hasGroup(user_id,"[A.D.A] - Membro") then
 		  vRP.giveInventoryItem(user_id, "cannabis", randommaconha,true)
 		else
 			TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Sem reagentes.")
 		end
+	end
+	end
 	end
 end)
 
@@ -156,7 +168,9 @@ AddEventHandler('processar:Maconha', function(loadWeed)
 	local weight = vRP.getInventoryWeight(user_id)
 	local quantidadeMaconha = 1
 	if ChecarPeso('maconha', 1) then
-		if vRP.hasGroup(user_id,"ADA") then
+		if vRP.hasGroup(user_id,"[A.D.A] - Lider") then
+		if vRP.hasGroup(user_id,"[A.D.A] - Gerente") then
+		if vRP.hasGroup(user_id,"[A.D.A] - Membro") then
 		  if vRP.tryGetInventoryItem(user_id,"cannabis",2,true) then
 				vRP.giveInventoryItem(user_id,"maconha",quantidadeMaconha,false)
 		  else
@@ -167,6 +181,8 @@ AddEventHandler('processar:Maconha', function(loadWeed)
 		end
 	else
 		TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Espaço insuficiente no seu inventário.")
+	end
+	end
 	end
 end)
 

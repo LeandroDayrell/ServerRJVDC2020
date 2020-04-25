@@ -1983,7 +1983,7 @@ cfg.groups = {
   
   ["[Lider] - Moto Clube"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~p~Moto Clube") end
     },
 	"mc.garagem",
@@ -2005,7 +2005,7 @@ cfg.groups = {
   },
   ["[Membro] - Moto Clube"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~p~Moto Clube") end
     },
 	"mc.garagem",
@@ -2028,7 +2028,7 @@ cfg.groups = {
   
   ["[P.C.C] - Líder"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~r~PCC") end
     },
 	"fac.armas",
@@ -2049,7 +2049,7 @@ cfg.groups = {
   },
   ["[P.C.C] - Membro"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~r~PCC") end
     },
 	"fac.armas",
@@ -2070,8 +2070,29 @@ cfg.groups = {
   },
   ["[C.V] - Lider"] = {
     _config = { 
-		gtype = "job",
-		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~r~CV") end
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um lider do ~r~CV") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[C.V] - Gerente"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um gerente do ~r~CV") end
     },
 	"fac.armas",
 	-----------------
@@ -2091,8 +2112,134 @@ cfg.groups = {
   },  
   ["[C.V] - Membro"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~r~CV") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[T.C.P] - Lider"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um lider do ~r~TCP") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[T.C.P] - Gerente"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um gerente do ~r~TCP") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[T.C.P] - Membro"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~r~TCP") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[A.D.A] - Lider"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um lider da ~r~ADA") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[A.D.A] - Gerente"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um gerente da ~r~ADA") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[A.D.A] - Membro"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um membro da ~r~ADA") end
     },
 	"fac.armas",
 	-----------------
@@ -2112,7 +2259,7 @@ cfg.groups = {
   },
   ["[Milicia] - Lider"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"Você é um ~y~miliciano") end
     },
     "mlc.garagem",
@@ -2134,7 +2281,7 @@ cfg.groups = {
   },  
   ["[Milicia] - Membro"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"Você é um ~y~miliciano") end
     },
 	"mlc.garagem",
@@ -2281,7 +2428,7 @@ cfg.groups = {
 ----------------------------------------- Jornalista --------------------------------------------- 
   
   ["Jornalista"] = {
-    _config = { gtype = "job"},
+    _config = { gtype = "cargo"},
     "jornal.garagem",
 	"jornal.service",
 	"jornal.cloakroom",
@@ -2291,7 +2438,7 @@ cfg.groups = {
 	"Jornalista.permissao"
   },
   ["Repórter"] = {
-    _config = { gtype = "job"},
+    _config = { gtype = "cargo"},
 	"jornal.garagem",
 	"jornal.service",
 	"jornal.cloakroom",
@@ -2301,7 +2448,7 @@ cfg.groups = {
 	"Reporter.permissao"
   },
   ["Diretor do Jornal"] = {
-    _config = { gtype = "job"},
+    _config = { gtype = "cargo"},
 	"jornal.garagem",
 	"jornal.service",
 	"jornal.cloakroom",
@@ -2315,7 +2462,7 @@ cfg.groups = {
   
   ["Advogado"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"À serviço da lei como ~b~Advogado.") end
 	},
 	"advogado.vehicle",
@@ -2329,7 +2476,7 @@ cfg.groups = {
   },
   ["Presidente da Justiça"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"À serviço da lei como ~b~Presidente da Justiça.") end
 	},
 	"advogado.garagem",
@@ -2343,7 +2490,7 @@ cfg.groups = {
   },
   ["Promotor de Justiça"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"À serviço da lei como ~b~Promotor de Justiça.") end
 	},
 	"advogado.garagem",
@@ -2358,7 +2505,7 @@ cfg.groups = {
   
   ["Juiz"] = {
     _config = { 
-		gtype = "job",
+		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"À serviço da lei como ~b~Juiz.") end
 	},
 	"advogado.garagem",

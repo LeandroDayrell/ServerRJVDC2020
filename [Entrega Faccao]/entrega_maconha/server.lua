@@ -12,10 +12,16 @@ AddEventHandler('entrega_maconha:permissao',function()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	local player = vRP.getUserSource(user_id)
-	if vRP.hasGroup(user_id,"Roxos") then
-	    TriggerClientEvent('entrega_maconha:permissao', player)
+	if vRP.hasGroup(user_id,"[A.D.A] - Lider") then 
+		if vRP.hasGroup(user_id,"[A.D.A] - Gerente") then
+				if vRP.hasGroup(user_id,"[A.D.A] - Membro") then	
+					TriggerClientEvent('entrega_metafetamina:permissao', player)
+				end
+			end
+		end
 	end
 end)
+
 
 RegisterServerEvent('entrega_maconha:itensReceber')
 AddEventHandler('entrega_maconha:itensReceber', function(quantidade)

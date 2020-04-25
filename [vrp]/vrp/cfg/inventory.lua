@@ -404,70 +404,106 @@ cfg.vehicle_chest_weights = {
 		["124spider"] = 40
 }
 cfg.static_chest_types = {
-	["policia"] = {
-		weight = 5000,
-		permissions = { "policia.permissao" }
-	},
-	["motoclub"] = {
-		weight = 5000,
-		permissions = { "motoclub.permissao" }
-	},
-	["trafico"] = {
-		weight = 5000,
-		permissions = { "trafico.permissao" } -- CASA DO HACKER
-	},
+	    ["BAU ADA"] = {
+    weight = 700,
+    permissions={"bau.ada"},
+  },
+	["BAU TCP"] = {
+    weight = 700,
+    permissions={"bau.tcp"},
+  },
+	["BAU CV"] = {
+    weight = 700,
+    permissions={"bau.cv"},
+  },
+   ["BAU PCC"] = {
+    weight = 700,
+    permissions={"bau.pcc"},
+  },
+  ["BAU FDN"] = {
+    weight = 700,
+    permissions={"bau.fdn"},
+  },
+    ["BAU COSA NOSTRA"] = {
+    weight = 700,
+    permissions={"bau.cosanostra"},
+  },
+  	["BAU MILICIA"] = {
+    weight = 700,
+	permissions={"bau.milicia"},
+  },
+	["BAU MC"] = {
+    weight = 700,
+    permissions={"bau.mc"},
+  },
+	["BAU DK"] = {
+    weight = 700,
+    permissions={"bau.dk"},
+  },
+    ["BAU BD"] = {
+    weight = 700,
+    permissions={"bau.bd"},
+  }, 
+  ------- POLICIA
+  ["POLICIA PMRJ"] = {
+    weight = 1200,
+    permissions={"bau.pm"},
+  },
+  ["BOPE"] = {
+    weight = 1200,
+    permissions={"bau.bope"},
+  },
+  ["POLICIA PC"] = {
+    weight = 1200,
+    permissions={"bau.bope"},
+  },
+  ["POLICIA PRF"] = {
+    weight = 1200,
+    permissions={"bau.bope"},
+  },
+  ["POLICIA PF"] = {
+    weight = 1200,
+    permissions={"bau.bope"},
+  },
+  
 	
-	["cv"] = {
-		weight = 5000,
-		permissions = { "cv.permissao" }
-	},
-	
-	["tcp"] = {
-		weight = 5000,
-		permissions = { "tcp.permissao" }
-	},
-	
-	["ada"] = {
-		weight = 5000,
-		permissions = { "ada.permissao" }
-	},
-	
-	["mafia"] = { -- Na casa
-		weight = 5000,
-		permissions = { "mafia.permissao" }
-	},
-	
-	["yakuza"] = { -- No templo
-		weight = 5000,
-		permissions = { "yakuza.permissao" }
-	},
-	
-	["hospital"] = {
+	["HOSPITAL"] = {
 		weight = 5000,
 		permissions = { "paramedico.permissao" }
 	},
 	
-	["bunker"] = {
+	["NULO"] = {
 		weight = 5000,
 		permissions = { "mafia.permissao" }
 	},
 }
 
 cfg.static_chests = {
-	{ "policia",461.58,-981.16,30.68 },
-	{ "policia",-2044.5174560547,-457.06552124023,16.424423217773 },
-	{ "policia",828.53796386719,162.86877441406,86.386734008789 },
-	{ "bunker",903.62664794922,-3199.4765625,-97.187950134277 },
-	{ "policia",459.57,-990.62,24.91 },
 --	{ "motoclub",977.10,-104.13,74.84 }, MC do GAME
-	{ "motoclub",904.01873779297,-2105.5119628906,30.762208938599 }, -- mc do LAFA
-	{ "hospital",310.30255126953,-599.46258544922,43.291793823242 },
-	{ "trafico",1272.19,-1712.52,54.77 },
-	{ "cv",1663.0850830078,-49.509803771973,168.31231689453 },
-	{ "tcp",704.92437744141,-303.61239624023,59.241886138916 },
-	{ "ada",393.26049804688,-1813.7811279297,28.993871688843 },
-	{ "mafia",-2674.6604003906,1328.1508789063,140.8815612793 },
-	{ "yakuza",-867.47369384766,-1458.3139648438,7.5268001556396 },
+	{ "HOSPITAL",310.30255126953,-599.46258544922,43.291793823242 },
+		
+	
+	  {"BAU UNIMED",310.49554443359,-597.5693359375,43.29178237915},
+  {"BAU AD",-14.933985710144,-588.48193359375,79.430725097656},
+  {"BAU RIO EXPRESS",-62.688159942627,-2517.0256347656,7.4011726379395},
+ --------------------------------ilegal------------------------------------------------- 
+  {"BAU ADA",1684.5864257813,34.929256439209,161.87205505371},
+  {"BAU TCP",1359.2154541016,-2504.0139160156,51.229232788086},
+  {"BAU CV",800.32678222656,1154.2896728516,321.65823364258},
+  {"BAU PCC",53.745746612549,3716.2651367188,39.77458190918},
+  {"BAU DK",1707.9921875,3240.380859375,43.21997833252},
+  {"BAU MC",977.51098632813,-101.0481338701,74.845176696777},
+  {"BAU COSA NOSTRA",563.88793945313,-3126.931640625,18.76861000061},
+  {"BAU MILICIA",845.36437988281,3048.5798339844,42.960983276367},
+  {"BAU YAKUZA",93.477554321289,-1291.8569335938,29.268743515015},
+  -- POLICIA
+  {"POLICIA PMRJ",454.12213134766,-980.31683349609,30.689603805542},
+  {"POLICIA PC",454.12213134766,-980.31683349609,30.689603805542},
+  {"POLICIA PF",454.12213134766,-980.31683349609,30.689603805542},
+  {"POLICIA PRF",454.12213134766,-980.31683349609,30.689603805542},
+  {"BOPE",828.39599609375,162.9892578125,86.386444091797},
+  
+  
 }
 
 return cfg
