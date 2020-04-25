@@ -753,7 +753,7 @@ cfg.item_transformers = {
     r=0,g=200,b=0, -- color
     max_units=500,
     units_per_minute=50,
-    x=798.35308837891,y=1144.6127929688,z=324.57705688477, 
+    x=-815.98858642578,y=528.00115966797,z=102.19954681396, 
     radius=5.0, height=1.5, -- area
     recipes = {
     ["Combat Pistol"] = { -- action name
@@ -848,7 +848,7 @@ cfg.item_transformers = {
     r=0,g=200,b=0, -- color
     max_units=500,
     units_per_minute=50,
-    x=1405.5555419922,y=-2507.0239257813,z=59.496555328369, 
+    x=801.09753417969,y=1153.8760986328,z=21.65850830078, 
     radius=5.0, height=1.5, -- area
     recipes = {
     ["Combat Pistol"] = { -- action name
@@ -933,7 +933,7 @@ cfg.item_transformers = {
     r=0,g=200,b=0, -- color
     max_units=500,
     units_per_minute=50,
-    x=1461.1785888672,y=-103.55963897705,z=146.12188720703, 
+    x=1496.6263427734,y=-1686.9703369141,z=88.199043273926, 
     radius=5.0, height=1.5, -- area
     recipes = {
     ["Combat Pistol"] = { -- action name

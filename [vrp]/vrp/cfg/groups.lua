@@ -1981,51 +1981,6 @@ cfg.groups = {
   
 ----------------------------------------- MotoClub --------------------------------------------- 
   
-  ["[Lider] - Moto Clube"] = {
-    _config = { 
-		gtype = "cargo",
-		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~p~Moto Clube") end
-    },
-	"mc.garagem",
-	"mc.armas",
-	-----------------
-	"hacker.service",
-	"contrabandista.service",
-	"tartaruga.service",
-	"metanfetamina.service",
-	"cocaina.service",
-	"maconha.service",
-	-----------------
-	"police.menu",
-	"police.bmcuff",
-    "police.drag",
-    "police.putinveh",
-    "police.getoutveh",
-    "police.check",
-  },
-  ["[Membro] - Moto Clube"] = {
-    _config = { 
-		gtype = "cargo",
-		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~p~Moto Clube") end
-    },
-	"mc.garagem",
-	"mc.armas",
-	-----------------
-	"hacker.service",
-	"contrabandista.service",
-	"tartaruga.service",
-	"metanfetamina.service",
-	"cocaina.service",
-	"maconha.service",
-	-----------------
-	"police.menu",
-	"police.bmcuff",
-    "police.drag",
-    "police.putinveh",
-    "police.getoutveh",
-    "police.check",
-  },
-  
   ["[P.C.C] - Líder"] = {
     _config = { 
 		gtype = "cargo",
@@ -2039,6 +1994,29 @@ cfg.groups = {
 	"metanfetamina.service",
 	"cocaina.service",
 	"maconha.service",
+	"build.gun.pcc",   -- ITEM TRANSFORME
+	-----------------
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },
+  ["[P.C.C] - Gerente"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~r~PCC") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	"build.gun.pcc",   -- ITEM TRANSFORME
 	-----------------
 	"police.menu",
 	"police.bmcuff",
@@ -2061,6 +2039,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"build.gun.pcc",   -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
     "police.drag",
@@ -2082,6 +2061,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"build.gun.cv", -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
     "police.drag",
@@ -2103,6 +2083,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"build.gun.cv", -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
     "police.drag",
@@ -2124,6 +2105,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"build.gun.cv", -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
     "police.drag",
@@ -2145,6 +2127,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"build.gun.tcp", -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
     "police.drag",
@@ -2167,6 +2150,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"build.gun.tcp", -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
     "police.drag",
@@ -2188,6 +2172,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"build.gun.tcp", -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
     "police.drag",
@@ -2209,6 +2194,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"build.gun.ada", -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
     "police.drag",
@@ -2230,6 +2216,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"build.gun.ada", -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
     "police.drag",
@@ -2251,6 +2238,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"build.gun.ada", -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
     "police.drag",
@@ -2302,7 +2290,207 @@ cfg.groups = {
     "police.getoutveh",
     "police.check",
   },
+  ----------- NEWS
   
+  ["[YAKUZA] - Lider"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um lider do ~r~CV") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.yakuza", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[YAKUZA] - Gerente"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um gerente do ~r~CV") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.yakuza", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[YAKUZA] - Membro"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~r~CV") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.yakuza", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[MOTOCLUB] - Lider"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um lider do ~r~TCP") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.motoclub", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+	"build.gun.cv",
+  },  
+  ["[MOTOCLUB] - Gerente"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um gerente do ~r~TCP") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.motoclub", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[MOTOCLUB] - Membro"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~r~TCP") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.motoclub", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[COSA NOSTRA] - Lider"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um lider da ~r~ADA") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.cosanostra", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[COSA NOSTRA] - Gerente"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um gerente da ~r~ADA") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.cosanostra", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },  
+  ["[COSA NOSTRA] - Membro"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um membro da ~r~ADA") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.cosanostra", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+  },
   --== EMPREGOS LEGAIS ==--
   --== EMPREGOS LEGAIS ==--
   --== EMPREGOS LEGAIS ==--
