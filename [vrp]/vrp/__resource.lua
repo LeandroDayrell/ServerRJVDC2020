@@ -20,7 +20,9 @@ server_scripts {
 	"modules/aptitude.lua",
 	"modules/basic_items.lua",
 	"modules/basic_skinshop.lua",
-	"modules/cloakroom.lua"
+	"modules/cloakroom.lua",
+	"modules/item_transformer.lua",
+	"modules/basic_mercadonegro.lua",
 }
 
 client_scripts {

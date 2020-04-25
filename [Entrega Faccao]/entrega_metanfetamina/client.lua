@@ -89,8 +89,8 @@ end)
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1)
-		if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), 696.38690185547,-305.33325195313,59.247798919678,true) <= 1 then
-			DrawText3Ds(696.38690185547,-305.33325195313,59.247798919678+0.5,"PRESSIONE ~r~E~w~ PARA COMEÇAR MISSÃO")
+		if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), 800.13146972656,1168.3526611328,323.64105224609,true) <= 1 then
+			DrawText3Ds(800.13146972656,1168.3526611328,323.64105224609+0.5,"PRESSIONE ~r~E~w~ PARA COMEÇAR MISSÃO")
             if IsControlJustPressed(0,38) then	
 				TriggerEvent('entrega_metafetamina:permissao') 
 			end

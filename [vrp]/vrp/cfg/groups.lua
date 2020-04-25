@@ -2151,6 +2151,7 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"build.gun.cv",
   },  
   ["[T.C.P] - Gerente"] = {
     _config = { 

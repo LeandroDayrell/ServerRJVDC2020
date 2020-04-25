@@ -8,4 +8,6 @@ cfg.db = {
 	password = ""
 }
 
+cfg.lang = "br"
+
 return cfg

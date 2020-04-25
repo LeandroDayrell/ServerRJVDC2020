@@ -90,7 +90,6 @@ cfg.items = {
 	["placa"] = { "Placa",0.8 },
 	["rebite"] = { "Rebite",0.8 },
 	["capsula"] = { "Cápsula",0.03 },
-	["polvora"] = { "Pólvora",0.03 },
 	["carbono"] = { "Carbono",0.0038 },
 	["ferro"] = { "Ferro",0.0038 },
 	["aco"] = { "Aço",0.0038 },
@@ -118,7 +117,27 @@ cfg.items = {
 	-- Farm de Cocaína
 	["farinha"] = { "Farinha",0.8 },
 	["po"] = { "Pó",0.8 },
-	["cocaina"] = { "Cocaína",0.8 }
+	["cocaina"] = { "Cocaína",0.8 },
+	
+	
+	["cano_parts"] = {"Cano",10}, --
+	["carregador_parts"] = {"Carregador",5}, --
+	["ferrolho_parts"] = {"Ferrelho", 5},  --
+	["canoestendido_parts"] = {"Cano Estendido",20},  --
+	
+	
+	
+	
+	  ["polvora"] = {"Polvora", 0.30},
+  ["capsula"] = {"Capsula", 0.30},
+  ["kevlar"] = {"Kevlar", 1},
+  ["kitcostura"] = {"Kit De Costura",  1},
+  ["ecstasy"] = {"ecstasy", 1}, -- no choices
+  ["docedeecstasy"] = {"docedeecstasy", 0.50}, -- no choices
+  ["pastadecocaina"] = {"pastadecocaina", 1}, -- no choices 
+  ["pinodecoca"] = {"pinodecoca",  0.50}, -- no choices
+  ["pastadecrack"] = {"pastadecrack", 1}, 
+  ["pedradecrack"] = {"pedradecrack", 0.50},
 }
 
 local function load_item_pack(name)

@@ -209,14 +209,10 @@ AddEventHandler('verdes:permissao', function(loadWeed)
 	local user_id = vRP.getUserId(source)
 	local player = vRP.getUserSource(user_id)
 	if vRP.hasGroup(user_id,"[C.V] - Lider") then
-		if vRP.hasGroup(user_id,"[C.V] - Gerente") then
-			if vRP.hasGroup(user_id,"[C.V] - Membro") then
 			  TriggerClientEvent('verdes:permissao', player)
 			else
 			  TriggerClientEvent('chatMessage',player, "ALERTA",{255,70,50},"Você não é desse gueto.")
 			end
-		end
-	end
 end)
 
 RegisterServerEvent('roxos:permissao')

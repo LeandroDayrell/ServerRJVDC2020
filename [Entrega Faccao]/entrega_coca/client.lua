@@ -89,8 +89,8 @@ end)
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1)
-		if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), 1668.6556396484,-62.852230072021,173.86544799805,true) <= 1 then
-			DrawText3Ds(1668.6556396484,-62.852230072021,173.86544799805+0.5,"PRESSIONE ~r~E~w~ PARA COMEÇAR MISSÃO")
+		if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), -835.67590332031,624.53424072266,129.71591186523,true) <= 1 then
+			DrawText3Ds(-835.67590332031,624.53424072266,129.71591186523+0.5,"PRESSIONE ~r~E~w~ PARA COMEÇAR MISSÃO")
             if IsControlJustPressed(0,38) then	
 				TriggerEvent('entrega_coca:permissao')
 			end
