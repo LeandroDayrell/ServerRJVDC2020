@@ -35,7 +35,7 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 	elseif data == "armamentos-vender-uzi" then
 		TriggerServerEvent("yakuza-vender","wbody|WEAPON_MICROSMG")
 	elseif data == "armamentos-vender-ak103" then
-		TriggerServerEvent("yakuza-vender","wbody|WEAPON_ASSAULTRIFLE")
+		TriggerServerEvent("yakuza-vender","wbody|WEAPON_ASSAULTSMG")
     elseif data == "armamentos-vender-pumpshotgun" then
 	    TriggerServerEvent("yakuza-vender","wbody|WEAPON_PUMPSHOTGUN_MK2")
 	-- elseif data == "armamentos-vender-thompson" then
@@ -75,7 +75,7 @@ Citizen.CreateThread(function()
 	SetNuiFocus(false,false)
 	while true do
 		Citizen.Wait(1)
-		local distance = GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()),-898.67681884766,-1444.7736816406,7.5268030166626,true)
+		local distance = GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()),-876.46911621094,-1458.8293457031,7.5268054008484,true)
 		if distance <= 30 then
 			DrawMarker(23,-2679.37,1332.54,140.88-0.97,0,0,0,0,0,0,1.0,1.0,0.5,240,200,80,50,0,0,0,0)
 			if distance <= 1.1 then

@@ -99,7 +99,9 @@ items["carregadorroubado"] = {"none", 0 ,0 ,0 , "carregadorroubado.png"}
 
 items["folhadecoca"] = {"none", 0 ,0 ,0 , "folhadecoca.png"}
 items["pastadecoca"] = {"none", 0 ,0 ,0 , "pastadecoca.png"}
+items["pastadecrack"] = {"none", 0 ,0 ,0 , "pastadecoca.png"}
 items["cocaina"] = {"cocaina", 0 ,0 ,0 , "cocaina.png"}
+items["pedradecrack"] = {"crack", 0 ,0 ,0 , "cocaina.png"}
 items["acetofenetidina"] = {"none", 0 ,0 ,0 , "acetofenetidina.png"}
 items["benzoilecgonina"] = {"none", 0 ,0 ,0 , "benzoilecgonina.png"}
 items["cloridratoecgonina"] = {"none", 0 ,0 ,0 , "cloridratoecgonina.png"}

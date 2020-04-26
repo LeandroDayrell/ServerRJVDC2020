@@ -43,6 +43,7 @@ cfg.items = {
 	["cloridratoecgonina"] = { "Cloridratoecgonina",0.5 },
 	["cloridratococa"] = { "Cloridratococa",0.5 },
 	["pastadecoca"] = { "Pasta de Cocaina",0.5 },	
+	["pastadecrack"] = { "Pasta de Crack",0.5 },
 	
 	["mouro"] = { "Ouro",0.8 },	
 	["mferro"] = { "Ferro",0.5 },	
@@ -118,6 +119,7 @@ cfg.items = {
 	["farinha"] = { "Farinha",0.8 },
 	["po"] = { "Pó",0.8 },
 	["cocaina"] = { "Cocaína",0.8 },
+	["crack"] = { "Crack",0.8 },
 	
 	
 	["cano_parts"] = {"Cano",10}, --
@@ -136,7 +138,6 @@ cfg.items = {
   ["docedeecstasy"] = {"docedeecstasy", 0.50}, -- no choices
   ["pastadecocaina"] = {"pastadecocaina", 1}, -- no choices 
   ["pinodecoca"] = {"pinodecoca",  0.50}, -- no choices
-  ["pastadecrack"] = {"pastadecrack", 1}, 
   ["pedradecrack"] = {"pedradecrack", 0.50},
 }
 

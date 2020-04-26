@@ -79,7 +79,7 @@ Citizen.CreateThread(function()
 	SetNuiFocus(false,false)
 	while true do
 		Citizen.Wait(1)
-		local distance = GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()),-592.22637939453,-1617.6531982422,33.01,true)
+		local distance = GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()),856.04931640625,3053.2658691406,42.065105438232,true)
 		if distance <= 30 then
 			DrawMarker(23,-592.22637939453,-1617.6531982422,33.01053237915-0.97,0,0,0,0,0,0,1.0,1.0,0.5,240,200,80,20,0,0,0,0)
 			if distance <= 1.1 then

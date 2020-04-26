@@ -455,15 +455,15 @@ cfg.static_chest_types = {
   },
   ["POLICIA PC"] = {
     weight = 1200,
-    permissions={"bau.bope"},
+    permissions={"bau.pc"},
   },
   ["POLICIA PRF"] = {
     weight = 1200,
-    permissions={"bau.bope"},
+    permissions={"bau.prf"},
   },
   ["POLICIA PF"] = {
     weight = 1200,
-    permissions={"bau.bope"},
+    permissions={"bau.pf"},
   },
   
 	
@@ -479,11 +479,8 @@ cfg.static_chest_types = {
 }
 
 cfg.static_chests = {
---	{ "motoclub",977.10,-104.13,74.84 }, MC do GAME
-	{ "HOSPITAL",310.30255126953,-599.46258544922,43.291793823242 },
-		
-	
-	  {"BAU UNIMED",310.49554443359,-597.5693359375,43.29178237915},
+  { "HOSPITAL",310.30255126953,-599.46258544922,43.291793823242 },
+  {"BAU UNIMED",310.49554443359,-597.5693359375,43.29178237915},
   {"BAU AD",-14.933985710144,-588.48193359375,79.430725097656},
   {"BAU RIO EXPRESS",-62.688159942627,-2517.0256347656,7.4011726379395},
  --------------------------------ilegal------------------------------------------------- 

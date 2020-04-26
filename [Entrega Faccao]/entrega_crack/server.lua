@@ -12,8 +12,12 @@ AddEventHandler('entrega_crack:permissao',function()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	local player = vRP.getUserSource(user_id)
-	if vRP.hasGroup(user_id,"Amarelos") then
+	if vRP.hasGroup(user_id,"[P.C.C] - Lider") then
+		if vRP.hasGroup(user_id,"[P.C.C] - Gerente") then
+		if vRP.hasGroup(user_id,"[P.C.C] - Membro") then
 	    TriggerClientEvent('entrega_crack:permissao', player)
+		end
+		end
 	end
 end)
 
@@ -25,7 +29,7 @@ AddEventHandler('entrega_crack:itensReceber', function(quantidade)
     if user_id then
         local new_weight = vRP.getInventoryWeight(user_id)+vRP.getItemWeight("dinheirosujo")*pagamento*quantidade
         if new_weight <= vRP.getInventoryMaxWeight(user_id) then
-            if vRP.tryGetInventoryItem(user_id,"crack",quantidade,true) then
+            if vRP.tryGetInventoryItem(user_id,"pedradecrack",quantidade,true) then
                 vRPclient._playAnim(src,true,{{"mp_common","givetake1_a",1}},false)
 				vRP.giveInventoryItem(user_id,"dinheirosujo",pagamento*quantidade,false)
                 local typemessage = "sucesso"

@@ -2,16 +2,16 @@ local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
 vRP = Proxy.getInterface("vRP")
 emP = {}
-Tunnel.bindInterface("nav_motoclub",emP)
+Tunnel.bindInterface("nav_mc",emP)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- ARRAY
 -----------------------------------------------------------------------------------------------------------------------------------------
 local valores = {
 	{ item = "wbody|WEAPON_PISTOL_MK2", quantidade = 1, compra = 3000, venda = 1500 },
 	{ item = "wbody|WEAPON_MICROSMG", quantidade = 1, compra = 20000, venda = 10000 },
-	{ item = "wbody|WEAPON_ASSAULTSMG", quantidade = 1, compra = 12000, venda = 6000 },
+	{ item = "wbody|WEAPON_ASSAULTSMG", quantidade = 1, compra = 10000, venda = 6000 },
 	{ item = "wbody|WEAPON_ASSAULTRIFLE", quantidade = 1, compra = 21000, venda = 10500 },
-	{ item = "wbody|WEAPON_PUMPSHOTGUN", quantidade = 1, compra = 10000, venda = 5000 },
+	{ item = "colete", quantidade = 1, compra = 500, venda = 250 },
 --	{ item = "wbody|WEAPON_GUSENBERG", quantidade = 1, compra = 15000, venda = 7500 },
   
 	{ item = "wammo|WEAPON_SNSPISTOL", quantidade = 50, compra = 100, venda = 50 },

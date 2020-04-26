@@ -160,7 +160,8 @@ cfg.groups = {
 	"helipmerj.permissao",
 	"policiaheli.permissao",
 	-- Salario
-	"CmdGeral.permissao"
+	"CmdGeral.permissao",
+	"bau.pm"
 	
   },
 
@@ -510,6 +511,7 @@ cfg.groups = {
 	"helipmerj.permissao",
 	"policiaheli.permissao",
 	"pmerj.permissao",
+	"bau.pm",
 	-- Salario
 	"SubTenente.permissao"
   },
@@ -544,6 +546,7 @@ cfg.groups = {
 	"police.fine",
     "police.drag",
     "police.putinveh",
+	"bau.pm",
     "police.getoutveh",
     "police.check",
     "police.service",
@@ -579,6 +582,7 @@ cfg.groups = {
 	"policia.permissao",
 	"pm3.whitelisted",
 	"portas.policia",
+	"bau.pm",
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
@@ -625,6 +629,7 @@ cfg.groups = {
 	"pm3.garagem",
 	"pm3.cloakroom",
 	"mission.policia",
+	"bau.pm",
 	"coronelpm.paycheck",
 	"policia.permissao",
 	"pm3.whitelisted",
@@ -678,6 +683,7 @@ cfg.groups = {
 	"coronelpm.paycheck",
 	"policia.permissao",
 	"pm3.whitelisted",
+	"bau.pm",
 	"portas.policia",
 	"police.assalto",
 	"naotoma.multa",
@@ -726,6 +732,7 @@ cfg.groups = {
 	"pm3.cloakroom",
 	"mission.policia",
 	"coronelpm.paycheck",
+	"bau.pm",
 	"policia.permissao",
 	"pm3.whitelisted",
 	"portas.policia",
@@ -779,6 +786,7 @@ cfg.groups = {
 	"policia.permissao",
 	"pm3.whitelisted",
 	"portas.policia",
+	"bau.pm",
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
@@ -827,6 +835,7 @@ cfg.groups = {
 	"pm3.garagem",
 	"pm3.cloakroom",
 	"mission.policia",
+	"bau.pm",
 	"coronelpm.paycheck",
 	"policia.permissao",
 	"pm3.whitelisted",
@@ -883,6 +892,7 @@ cfg.groups = {
 	"portas.policia",
 	"police.assalto",
 	"naotoma.multa",
+	"bau.pm",
 	-----------------
     "police.menu",
 	"police.spikes",
@@ -925,6 +935,7 @@ cfg.groups = {
     },
 	"mission.policia",
 	"coronelpm.paycheck",
+	"bau.bope",
 	"policia.permissao",
 	"pm3.whitelisted",
 	"portas.policia",
@@ -978,6 +989,7 @@ cfg.groups = {
 	"police.spikes",
     "police.pc",
 	"police.freeze",
+	"bau.bope",
 	"police.jail",
 	"police.bmjail",
 	"police.bmfine",
@@ -1013,6 +1025,7 @@ cfg.groups = {
 	"coronelpm.paycheck",
 	"policia.permissao",
 	"pm3.whitelisted",
+	"bau.bope",
 	"portas.policia",
 	"police.assalto",
 	"naotoma.multa",
@@ -1054,6 +1067,7 @@ cfg.groups = {
     },
 	"mission.policia",
 	"coronelpm.paycheck",
+	"bau.bope",
 	"policia.permissao",
 	"pm3.whitelisted",
 	"portas.policia",
@@ -1104,6 +1118,7 @@ cfg.groups = {
 	"naotoma.multa",
 	-----------------
     "police.menu",
+	"bau.bope",
 	"police.spikes",
     "police.pc",
 	"police.freeze",
@@ -1145,6 +1160,7 @@ cfg.groups = {
 	"portas.policia",
 	"police.assalto",
 	"naotoma.multa",
+	"bau.bope",
 	-----------------
     "police.menu",
 	"police.spikes",
@@ -1189,6 +1205,7 @@ cfg.groups = {
 	"pm3.whitelisted",
 	"portas.policia",
 	"police.assalto",
+	"bau.pc",
 	"naotoma.multa",
     "police.menu",
 	"police.spikes",
@@ -1230,6 +1247,7 @@ cfg.groups = {
 	"coronelpm.paycheck",
 	"policia.permissao",
 	"pm3.whitelisted",
+	"bau.pc",
 	"portas.policia",
 	"police.assalto",
 	"naotoma.multa",
@@ -1271,6 +1289,7 @@ cfg.groups = {
     },
 	"mission.policia",
 	"coronelpm.paycheck",
+	"bau.pc",
 	"policia.permissao",
 	"pm3.whitelisted",
 	"portas.policia",
@@ -1328,6 +1347,7 @@ cfg.groups = {
 	"police.bmfine",
 	"police.bmunjail",
 	"police.bmcuff",
+	"bau.pc",
 	"police.fine",
     "police.drag",
     "police.putinveh",
@@ -1360,6 +1380,7 @@ cfg.groups = {
 	"policia.permissao",
 	"pm3.whitelisted",
 	"portas.policia",
+	"bau.pc",
 	"police.assalto",
 	"naotoma.multa",
     "police.menu",
@@ -1981,7 +2002,7 @@ cfg.groups = {
   
 ----------------------------------------- MotoClub --------------------------------------------- 
   
-  ["[P.C.C] - Líder"] = {
+  ["[P.C.C] - Lider"] = {
     _config = { 
 		gtype = "cargo",
 		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~r~PCC") end
@@ -2002,6 +2023,8 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"pccfarm.permissao",
+	"bau.pcc",
   },
   ["[P.C.C] - Gerente"] = {
     _config = { 
@@ -2024,6 +2047,8 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"pccfarm.permissao",
+	"bau.pcc",
   },
   ["[P.C.C] - Membro"] = {
     _config = { 
@@ -2046,6 +2071,7 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"pccfarm.permissao",
   },
   ["[C.V] - Lider"] = {
     _config = { 
@@ -2068,6 +2094,7 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"cvfarm.permissao",
   },  
   ["[C.V] - Gerente"] = {
     _config = { 
@@ -2090,6 +2117,7 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"cvfarm.permissao",
   },  
   ["[C.V] - Membro"] = {
     _config = { 
@@ -2112,6 +2140,7 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"cvfarm.permissao",
   },  
   ["[T.C.P] - Lider"] = {
     _config = { 
@@ -2135,6 +2164,8 @@ cfg.groups = {
     "police.getoutveh",
     "police.check",
 	"build.gun.cv",
+	"tcpfarm.permissao",
+	"bau.tcp",
   },  
   ["[T.C.P] - Gerente"] = {
     _config = { 
@@ -2157,6 +2188,8 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"tcpfarm.permissao",
+	"bau.tcp",
   },  
   ["[T.C.P] - Membro"] = {
     _config = { 
@@ -2179,6 +2212,7 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"tcpfarm.permissao",
   },  
   ["[A.D.A] - Lider"] = {
     _config = { 
@@ -2201,6 +2235,8 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"adafarm.permissao",
+	"bau.ada",
   },  
   ["[A.D.A] - Gerente"] = {
     _config = { 
@@ -2223,6 +2259,8 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"adafarm.permissao",
+	"bau.ada",
   },  
   ["[A.D.A] - Membro"] = {
     _config = { 
@@ -2245,6 +2283,7 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"adafarm.permissao",
   },
   ["[Milicia] - Lider"] = {
     _config = { 
@@ -2267,6 +2306,10 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"miliciarmas.permissao",
+	"miliciaentrada.permissao",
+	"miliciafarm.permissao",
+	"bau.milicia",
   },  
   ["[Milicia] - Membro"] = {
     _config = { 
@@ -2289,13 +2332,15 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"merryweather.permissao",
+	"miliciaentrada.permissao",
+	"miliciafarm.permissao"
   },
   ----------- NEWS
-  
-  ["[YAKUZA] - Lider"] = {
+  ["[MAFIA] - Lider"] = {
     _config = { 
 		gtype = "cargo",
-		onspawn = function(player) vRPclient._notify(player,"Você é um lider do ~r~CV") end
+		onspawn = function(player) vRPclient._notify(player,"Você é um lider da ~r~Mafia") end
     },
 	"fac.armas",
 	-----------------
@@ -2313,11 +2358,89 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"mafiafarm.permissao",
+	"mafiaarmas.permissao",
+	"bau.cosanostra",
+  },
+  ["[MAFIA] - Gerente"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um gerente da ~r~Mafia") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.yakuza", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+	"mafiafarm.permissao",
+	"mafiaarmas.permissao",
+	"bau.cosanostra",
+  },
+  ["[MAFIA] - Membro"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um membro da ~r~Mafia") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.yakuza", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+	"mafiafarm.permissao",
+	"mafiaarmas.permissao",
+  },
+  ["[YAKUZA] - Lider"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um lider da ~r~Yakuza") end
+    },
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"build.gun.yakuza", -- ITEM TRANSFORME
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+	"yakuzafarm.permissao",
+	"yakuzaentrada.permissao",
+	"yakuzaarmas.permissao",
+	"yakuzaliderentrada.permissao"
   },  
   ["[YAKUZA] - Gerente"] = {
     _config = { 
 		gtype = "cargo",
-		onspawn = function(player) vRPclient._notify(player,"Você é um gerente do ~r~CV") end
+		onspawn = function(player) vRPclient._notify(player,"Você é um gerente da ~r~Yakuza") end
     },
 	"fac.armas",
 	-----------------
@@ -2335,11 +2458,14 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"yakuzafarm.permissao",
+	"yakuzaentrada.permissao",
+	"yakuzaarmas.permissao"
   },  
   ["[YAKUZA] - Membro"] = {
     _config = { 
 		gtype = "cargo",
-		onspawn = function(player) vRPclient._notify(player,"Você é um membro do ~r~CV") end
+		onspawn = function(player) vRPclient._notify(player,"Você é um membro da ~r~Yakuza") end
     },
 	"fac.armas",
 	-----------------
@@ -2357,6 +2483,9 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"yakuzafarm.permissao",
+	"yakuzaentrada.permissao",
+	"yakuzaarmas.permissao"
   },  
   ["[MOTOCLUB] - Lider"] = {
     _config = { 
@@ -2380,6 +2509,11 @@ cfg.groups = {
     "police.getoutveh",
     "police.check",
 	"build.gun.cv",
+	"motoclub.permissao",
+	"entrada.permissao",
+	"motoclub.permissao",
+	"motoclubliderentrada.permissao",
+	"bau.mc",
   },  
   ["[MOTOCLUB] - Gerente"] = {
     _config = { 
@@ -2402,6 +2536,10 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"motoclub.permissao",
+	"entrada.permissao",
+	"motoclub.permissao",
+	"bau.mc",
   },  
   ["[MOTOCLUB] - Membro"] = {
     _config = { 
@@ -2424,6 +2562,9 @@ cfg.groups = {
     "police.putinveh",
     "police.getoutveh",
     "police.check",
+	"motoclub.permissao",
+	"entrada.permissao",
+	"motoclub.permissao",
   },  
   ["[COSA NOSTRA] - Lider"] = {
     _config = { 
@@ -2856,73 +2997,6 @@ cfg.groups = {
   --== Sets ==--
   --== Sets ==--
   --== Sets ==--
-  
-  ["lf"] = {
-    "lf.whitelisted"
-  },
-  ["pcc"] = {
-    "pcc.whitelisted"
-  },
-  ["cv"] = {
-    "cv.whitelisted"
-  },
-  ["milicia"] = {
-    "milicia.whitelisted"
-  },
-  ["ems1"] = {
-    "ems1.whitelisted"
-  },
-  ["ems2"] = {
-    "ems2.whitelisted"
-  },
-  ["ems3"] = {
-    "ems3.whitelisted"
-  },
-  ["ems4"] = {
-    "ems4.whitelisted"
-  },
-  ["ems5"] = {
-    "ems5.whitelisted"
-  },
-  ["pm1"] = {
-    "pm1.whitelisted"
-  },
-  ["pm2"] = {
-    "pm2.whitelisted"
-  },
-  ["pm3"] = {
-    "pm3.whitelisted"
-  },
-  ["BOPE1"] = {
-    "BOPE1.whitelisted"
-  },
-  ["BOPE2"] = {
-    "BOPE2.whitelisted"
-  },
-  ["BOPE3"] = {
-    "BOPE3.whitelisted"
-  },
-  ["ftesp1"] = {
-    "ftesp1.whitelisted"
-  },
-  ["ftesp2"] = {
-    "ftesp2.whitelisted"
-  },
-  ["ftesp3"] = {
-    "ftesp3.whitelisted"
-  },
-  ["prf"] = {
-    "prf.whitelisted"
-  },
-  ["pf"] = {
-    "pf.whitelisted"
-  },
-  ["jornal"] = {
-    "jornalista.whitelisted"
-  },
-  ["advogado"] = {
-    "adv.whitelisted"
-  },
 }
 
 -- groups are added dynamically using the API or the menu, but you can add group when an user join here
@@ -2967,179 +3041,6 @@ cfg.selectors = {
 	"Ladrão de carros",
 	"Hacker",
   },
-  
-  ["Jornalista"] = {
-    _config = {x = -598.38677978516, y = -927.21087646484, z = 23.869129180908, permissions = {"jornalista.whitelisted"} },
-	"Jornalista",
-	"Repórter",
-	"Diretor do Jornal",
-	"Desempregado"
-  },
-  ["Empregos Judiciais"] = {
-    _config = {x = -1910.4616699219, y = -571.91119384766, z = 19.097234725952, permissions = {"adv.whitelisted"}},
-    "Advogado",
-	"Juiz",
-	"Promotor de Justiça",
-	"Presidente da Justiça",
-	"Desempregado"
-  },
-  
-  ["Moto Clube"] = {
-    _config = {x = 90.147964477539, y = 3749.693359375, z = 40.774719238281, blipid = 351, blipcolor = 38, permissions = {"lf.whitelisted"} }, -- 90.147964477539,3749.693359375,40.774719238281
-    "[Lider] - Moto Clube",
-	"[Membro] - Moto Clube",
-    "Desempregado"
-  },
-  ["CV"] = {
-    _config = {x = 772.00939941406, y = -260.08010864258, z = 68.945838928223, blipid = 351, blipcolor = 38, permissions = {"cv.whitelisted"} },
-	"[C.V] - Lider",
-	"[C.V] - Membro",
-	"Desempregado"
-  },
-  ["PCC"] = { 
-    _config = {x = 1362.5460205078, y = -601.0849609375, z = 77.328430175782, blipid = 351, blipcolor = 38, permissions = {"pcc.whitelisted"} },
-	"[P.C.C] - Líder",
-	"[P.C.C] - Membro",
-	"Desempregado"
-  },
-  ["Milicia"] = {
-    _config = {x = 2045.7077636719, y = -150.96459960938, z = 271.07241821289, blipid = 351, blipcolor = 38, permissions = {"milicia.whitelisted"} }, -- 2045.7077636719,-150.96459960938,271.07241821289
-	"[Milicia] - Lider",
-	"[Milicia] - Membro",
-	"Desempregado"
-  },
-  
-  ["PMESP1"] = {
-    _config = {x = 440.92984008789, y = -975.92669677734, z = 30.689586639404, permissions = {"pm1.whitelisted"} },
-	"[Recruta] - PMERJ",
-	"[Soldado] - PMERJ",
-	"[Cabo] - PMERJ",
-	"Desempregado"
-  },  
-  ["PMESP2"] = {
-    _config = {x = 440.92984008789, y = -975.92669677734, z = 30.689586639404, permissions = {"pm2.whitelisted"} },
-	"[3ºSargento] - PMERJ",
-	"[2ºSargento] - PMERJ",
-	"[1ºSargento] - PMERJ",
-	"[Sub-Tenente] - PMERJ",
-	"[2ºTenente] - PMERJ",
-	"[1ºTenente] - PMERJ",
-	"[GRPAe] - PMERJ",
-	"ROCAM",
-	"Desempregado"
-  },  
-  ["PMESP3"] = {
-    _config = {x = 440.92984008789, y = -975.92669677734, z = 30.689586639404, permissions = {"pm3.whitelisted"} },
-	"[Capitão] - PMERJ",
-	"[Major] - PMERJ",
-	"[Tenente Coronel] - PMERJ",
-	"[Coronel] - PMERJ",
-	"Desempregado"
-  },
-  ["BOPE1"] = {
-    _config = {x = 440.92984008789, y = -975.92669677734, z = 30.689586639404, permissions = {"BOPE1.whitelisted"} },
-	"[Recruta] - BOPE",
-	"[Soldado] - BOPE",
-	"[Cabo] - BOPE",
-	"Desempregado"
-  },  
-  ["BOPE2"] = {
-    _config = {x = 440.92984008789, y = -975.92669677734, z = 30.689586639404, permissions = {"BOPE2.whitelisted"} },
-	"[3ºSargento] - BOPE",
-	"[2ºSargento] - BOPE",
-	"[1ºSargento] - BOPE",
-	"[Sub-Tenente] - BOPE",
-	"[2ºTenente] - BOPE",
-	"[1ºTenente] - BOPE",
-	"Desempregado"
-  },  
-  ["BOPE3"] = {
-    _config = {x = 440.92984008789, y = -975.92669677734, z = 30.689586639404, permissions = {"BOPE3.whitelisted"} },
-	"[Capitão] - BOPE",
-	"[Major] - BOPE",
-	"[Tenente Coronel] - BOPE",
-	"[Coronel] - BOPE",
-	"Desempregado"
-  },
-  ["FTESP1"] = {
-    _config = {x = 440.92984008789, y = -975.92669677734, z = 30.689586639404, permissions = {"ftesp1.whitelisted"} },
-	"[Recruta] - FTESP",
-	"[Soldado] - FTESP",
-	"[Cabo] - FTESP",
-	"Desempregado"
-  },  
-  ["FTESP2"] = {
-    _config = {x = 440.92984008789, y = -975.92669677734, z = 30.689586639404, permissions = {"ftesp2.whitelisted"} },
-	"[3ºSargento] - FTESP",
-	"[2ºSargento] - FTESP",
-	"[1ºSargento] - FTESP",
-	"[Sub-Tenente] - FTESP",
-	"[2ºTenente] - FTESP",
-	"[1ºTenente] - FTESP",
-	"Desempregado"
-  },  
-  ["FTESP3"] = {
-    _config = {x = 440.92984008789, y = -975.92669677734, z = 30.689586639404, permissions = {"ftesp3.whitelisted"} },
-	"[Capitão] - FTESP",
-	"[Major] - FTESP",
-	"[Tenente Coronel] - FTESP",
-	"[Coronel] - FTESP",
-	"Desempregado"
-  },
-  ["PF"] = {
-    _config = {x = 125.66634368896, y = -766.67309570313, z = 242.1520690918, permissions = {"pf.whitelisted"} },
-	"[Delegado] Policia Federal",
-	"[Investigador] Policia Federal",
-	"[Escrivão] Policia Federal",
-	"[Perito Criminal] Policia Federal",
-	"[Agente] Policia Federal",
-	"[Oficial] Policia Federal",
-	"Desempregado"
-  },
-  ["PRF"] = {
-    _config = {x = 440.92984008789, y = -975.92669677734, z = 30.689586639404, permissions = {"prf.whitelisted"} },
-	"[Diretor Geral] - Policial Rodoviario",
-	"[Diretor Auxiliar] - Policial Rodoviario",
-	"[Agente Especial] - Policial Rodoviario",
-	"[Agente] - Policial Rodoviario",
-	"[Agente Administrativo] - Policial Rodoviario",
-	"Desempregado"
-  },
-  ["PRF2"] = {
-    _config = {x = 1851.0864257813, y = 3690.6123046875, z = 34.267082214355, permissions = {"prf.whitelisted"} },
-	"[Diretor Geral] - Policial Rodoviario",
-	"[Diretor Auxiliar] - Policial Rodoviario",
-	"[Agente Especial] - Policial Rodoviario",
-	"[Agente] - Policial Rodoviario",
-	"[Agente Administrativo] - Policial Rodoviario",
-	"Desempregado"
-  },
-  ["SAMU1"] = {
-    _config = {x = 230.88018798828, y = -1368.2880859375, z = 39.534374237061, permissions = {"ems1.whitelisted"} },
-	"[Socorrista] - SAMU",
-	"Desempregado"
-  }, 
-  ["SAMU2"] = {
-    _config = {x = 230.88018798828, y = -1368.2880859375, z = 39.534374237061, permissions = {"ems2.whitelisted"} },
-	"[Paramedico] - SAMU",
-	"Desempregado"
-  }, 
-  ["SAMU3"] = {
-    _config = {x = 230.88018798828, y = -1368.2880859375, z = 39.534374237061, permissions = {"ems3.whitelisted"} },
-	"[Medico] - SAMU",
-	"Desempregado"
-  }, 
-  ["SAMU4"] = {
-    _config = {x = 230.88018798828, y = -1368.2880859375, z = 39.534374237061, permissions = {"ems4.whitelisted"} },
-	"[Doutor] - SAMU",
-	"[Medico-Chefe] - SAMU",
-	"Desempregado"
-  }, 
-  ["SAMU5"] = {
-    _config = {x = 230.88018798828, y = -1368.2880859375, z = 39.534374237061, permissions = {"ems5.whitelisted"} },
-	"[Chefe] - SAMU",
-	"Desempregado"
-  }, 
 }
 
 return cfg

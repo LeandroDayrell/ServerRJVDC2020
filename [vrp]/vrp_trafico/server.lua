@@ -22,11 +22,11 @@ local src = {
 
 	[7] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 40 },
 	[8] = { ['re'] = "carbono", ['reqtd'] = 40, ['item'] = "ferro", ['itemqtd'] = 40 },
-	[9] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 80 },
+	[9] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 40 },
 	
 	[10] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 40 },
 	[11] = { ['re'] = "carbono", ['reqtd'] = 40, ['item'] = "ferro", ['itemqtd'] = 40 },
-	[12] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 80 },
+	[12] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 40 },
 	
 	-- [13] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "capsula", ['itemqtd'] = 40 },
 	-- [14] = { ['re'] = "capsula", ['reqtd'] = 40, ['item'] = "polvora", ['itemqtd'] = 40 },
@@ -35,6 +35,31 @@ local src = {
     [16] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 40 },
 	[17] = { ['re'] = "carbono", ['reqtd'] = 40, ['item'] = "ferro", ['itemqtd'] = 40 },
 	[18] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 40 },
+	
+	[19] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 40 },
+	[20] = { ['re'] = "carbono", ['reqtd'] = 40, ['item'] = "ferro", ['itemqtd'] = 40 },
+	[21] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 40 },
+	
+	-- FACÇÃO
+	-- CV
+	[22] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "acetofenetidina", "benzoilecgonina", "cloridratoecgonina", ['itemqtd'] = 1 },
+	[23] = { ['re'] = "acetofenetidina", "benzoilecgonina", "cloridratoecgonina", ['reqtd'] = 3, ['item'] = "pastadecoca", ['itemqtd'] = 2 },
+	[24] = { ['re'] = "pastadecoca", ['reqtd'] = 2, ['item'] = "cocaina", ['itemqtd'] = 3 },
+	
+	--TCP
+	[25] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "anfetamina", ['itemqtd'] = 1 },
+	[26] = { ['re'] = "anfetamina", ['reqtd'] = 1, ['item'] = "metasuja", ['itemqtd'] = 2 },
+	[27] = { ['re'] = "metasuja", ['reqtd'] = 2, ['item'] = "metanfetamina", ['itemqtd'] = 3 },
+	
+	--ADA
+	[28] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "adubo", ['itemqtd'] = 1 },
+	[29] = { ['re'] = "adubo", ['reqtd'] = 1, ['item'] = "cannabis", ['itemqtd'] = 2 },
+	[30] = { ['re'] = "cannabis", ['reqtd'] = 2, ['item'] = "maconha", ['itemqtd'] = 3 },
+	
+	--PCC
+	[31] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "adubo", ['itemqtd'] = 1 },
+	[32] = { ['re'] = "adubo", ['reqtd'] = 1, ['item'] = "pastadecrack", ['itemqtd'] = 2 },
+	[33] = { ['re'] = "pastadecrack", ['reqtd'] = 2, ['item'] = "pedradecrack", ['itemqtd'] = 3 },
 	
 	-- [16] = { ['re'] = "polvora", ['reqtd'] = 40, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
 	-- [17] = { ['re'] = "polvora", ['reqtd'] = 40, ['item'] = "wammo|WEAPON_SAWNOFFSHOTGUN", ['itemqtd'] = 50 },

@@ -67,7 +67,7 @@ function AddPlayerToScoreboard(source, update)
 		connectedPlayers[playerId].ping = GetPlayerPing(source)
 		connectedPlayers[playerId].id = playerId
 		connectedPlayers[playerId].name = GetPlayerName(source)
-		connectedPlayers[playerId].job = vRP.getUserGroupByType(playerId,"job") or "Desempregado"
+		connectedPlayers[playerId].job = vRP.getUserGroupByType(playerId,"cargo") or "Desempregado"
 
 		if update then
 			TriggerClientEvent('vrp_scoreboard:updateConnectedPlayers', -1, connectedPlayers)

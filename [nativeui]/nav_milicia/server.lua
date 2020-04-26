@@ -2,29 +2,29 @@ local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
 vRP = Proxy.getInterface("vRP")
 emP = {}
-Tunnel.bindInterface("nav_merryweather",emP)
+Tunnel.bindInterface("nav_milicia",emP)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- ARRAY
 -----------------------------------------------------------------------------------------------------------------------------------------
 local valores = {
 	{ item = "wbody|WEAPON_PISTOL_MK2", quantidade = 1, compra = 3000, venda = 1500 },
-	{ item = "wbody|WEAPON_SAWNOFFSHOTGUN", quantidade = 1, compra = 20000, venda = 10000 },
+	{ item = "wbody|WEAPON_MICROSMG", quantidade = 1, compra = 20000, venda = 10000 },
 	{ item = "wbody|WEAPON_ASSAULTSMG", quantidade = 1, compra = 12000, venda = 6000 },
-	{ item = "wbody|WEAPON_ASSAULTRIFLE", quantidade = 1, compra = 20000, venda = 10500 },
-	{ item = "wbody|WEAPON_MACHINEPISTOL", quantidade = 1, compra = 10000, venda = 5000 },
-	{ item = "wbody|WEAPON_GUSENBERG", quantidade = 1, compra = 15000, venda = 7500 },
-
---	{ item = "wammo|WEAPON_SNSPISTOL", quantidade = 50, compra = 100, venda = 50 },
---	{ item = "wammo|WEAPON_MICROSMG", quantidade = 50, compra = 100, venda = 50 },
---	{ item = "wammo|WEAPON_ASSAULTRIFLE", quantidade = 50, compra = 120, venda = 60 },
---	{ item = "wammo|WEAPON_REVOLVER", quantidade = 50, compra = 120, venda = 60 },
---	{ item = "wammo|WEAPON_GUSENBERG", quantidade = 50, compra = 120, venda = 60 }
+	{ item = "wbody|WEAPON_ASSAULTRIFLE", quantidade = 1, compra = 21000, venda = 10500 },
+	{ item = "wbody|WEAPON_PUMPSHOTGUN_MK2", quantidade = 1, compra = 10000, venda = 5000 },
+--	{ item = "wbody|WEAPON_GUSENBERG", quantidade = 1, compra = 15000, venda = 7500 },
+  
+	{ item = "wammo|WEAPON_PISTOL_MK2", quantidade = 50, compra = 100, venda = 50 },
+    { item = "wammo|WEAPON_MICROSMG", quantidade = 50, compra = 100, venda = 50 },
+	{ item = "wammo|WEAPON_ASSAULTRIFLE", quantidade = 50, compra = 100, venda = 60 },
+    { item = "wammo|WEAPON_PUMPSHOTGUN_MK2", quantidade = 50, compra = 120, venda = 60 }
+	--{ item = "wammo|WEAPON_GUSENBERG", quantidade = 50, compra = 120, venda = 60 }
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- COMPRAR
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterServerEvent("merryweather-comprar")
-AddEventHandler("merryweather-comprar",function(item)
+RegisterServerEvent("milicia-comprar")
+AddEventHandler("milicia-comprar",function(item)
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
@@ -47,8 +47,8 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- VENDER
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterServerEvent("merryweather-vender")
-AddEventHandler("merryweather-vender",function(item)
+RegisterServerEvent("milicia-vender")
+AddEventHandler("milicia-vender",function(item)
 	local source = source
 	local user_id = vRP.getUserId(source)
 	if user_id then
@@ -68,5 +68,5 @@ end)
 function emP.checkPermission()
 	local source = source
 	local user_id = vRP.getUserId(source)
-	return vRP.hasPermission(user_id,"merryweather.permissao")
+	return vRP.hasPermission(user_id,"miliciarmas.permissao")
 end

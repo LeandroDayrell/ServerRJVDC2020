@@ -28,7 +28,7 @@ Citizen.CreateThread(function()
 	SendNUIMessage({
 		action = 'updateServerInfo',
 
-		maxPlayers = GetConvarInt('sv_maxclients', 128),
+		maxPlayers = GetConvarInt('sv_maxclients', 1024),
 		uptime = 'unknown',
 		playTime = '00h 00m'
 	})
@@ -71,7 +71,7 @@ end)
 
 function UpdatePlayerTable(connectedPlayers)
 	local formattedPlayerList, num = {}, 1
-	local ems, police, taxi, mechanic, cardealer, estate, players = 0, 0, 0, 0, 0, 0, 0
+	local bopee, police, ems, mechanic, pcc, cv, tcp, ada, dk, motoclub, milicia, cosanostra, players = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 
 	for k,v in pairs(connectedPlayers) do
 
@@ -85,20 +85,30 @@ function UpdatePlayerTable(connectedPlayers)
 
 		players = players + 1
 
-
-
-		if (v.job == 'Enfermeiro' or v.job == 'Paramedico' or v.job == 'Diretor') then
-			ems = ems + 1
-		elseif (v.job == 'COMANDANTE' or v.job == 'PF' or v.job == 'PRF' or v.job == 'PC' or v.job == 'RECOM' or v.job == 'BOPE' or v.job == 'BPCHQ' or v.job == 'GAM' or v.job == 'PMERJ') then
+        if (v.job == 'BOPE' or v.job == '[BOPE] - Aspirante' or v.job == '[BOPE] - Tenente' or v.job == '[BOPE] - Capitão' or v.job == '[BOPE] - Major' or v.job == '[BOPE] - Tenente Coronel' or v.job == '[BOPE] - Coronel') then
+			bopee = bopee + 1
+		elseif (v.job == 'Policia' or v.job == '[PMRJ] - Recruta' or v.job == '[PMRJ] - Soldado' or v.job == '[PMRJ] - Cabo' or v.job == '[PMRJ] - 1º Sargento' or v.job == '[PMRJ] - 2º Sargento' or v.job == '[PMRJ] - 3º Sargento' or v.job == '[PMRJ] - Subtenente' or v.job == '[PMRJ] - 2º Tenente' or v.job == '[PMRJ] - 1º Tenente' or v.job == '[PMRJ] - Capitão' or v.job == '[PMRJ] - Major' or v.job == '[PMRJ] - Tenente Coronel' or v.job == '[PMRJ] - Coronel') then
 			police = police + 1
-		elseif (v.job == 'Taxista' or v.job == 'Lider Taxista') then
-			taxi = taxi + 1
-		elseif (v.job == 'Mecanico' or v.job == 'Lider Mecanico') then
+		elseif (v.job == '[CHEFE] - SAMU' or v.job == '[COORDENADOR] - SAMU' or v.job == '[MÉDICO(A)] - SAMU' or v.job == '[ENFERMEIRO] - SAMU' or v.job == '[TÉCNICO DE ENFERMAGEM] - SAMU' or v.job == '[SOCORRISTA] - SAMU') then
+			ems = ems + 1
+		elseif (v.job == 'Bennys') then
 			mechanic = mechanic + 1
-		elseif (v.job == 'Advogado' or v.job == 'Juiz') then
-			cardealer = cardealer + 1
-		elseif v.job == 'Weazel' then
-			estate = estate + 1
+		elseif (v.job == '[P.C.C] - Líder' or v.job == '[P.C.C] - Gerente' or v.job == '[P.C.C] - Membro' ) then
+			pcc = pcc + 1
+		elseif (v.job == '[C.V] - Lider' or v.job == '[C.V] - Gerente' or v.job == '[C.V] - Membro' or v.job == 'VAPOR-CV') then
+			cv = cv + 1
+		elseif (v.job == '[T.C.P] - Lider' or v.job == '[T.C.P] - Gerente' or v.job == '[T.C.P] - Membro' ) then
+			tcp = tcp + 1
+		elseif (v.job == '[A.D.A] - Lider' or v.job == '[A.D.A] - Gerente' or v.job == '[A.D.A] - Membro') then
+			ada = ada + 1
+		elseif (v.job == '[D.K] - Lider' or v.job == '[D.K] - Gerente' or v.job == '[D.K] - Membro') then
+			dk = dk + 1
+		elseif (v.job == '[Lider] - Moto Clube' or v.job == '[Membro] - Moto Clube' ) then
+			motoclub = motoclub + 1
+		elseif (v.job == '[MILICIA] - Lider' or v.job == '[MILICIA] - Geremte' or v.job == '[MILICIA] - Membro' ) then
+			milicia = milicia + 1
+		elseif (v.job == '[MAFIA] - Lider' or v.job == '[MAFIA] - Gerente' or v.job == '[MAFIA] - Membro') then
+			cosanostra = cosanostra + 1
 		end
 	end
 
@@ -113,7 +123,7 @@ function UpdatePlayerTable(connectedPlayers)
 
 	SendNUIMessage({
 		action = 'updatePlayerJobs',
-		jobs   = {ems = ems, police = police, taxi = taxi, mechanic = mechanic, cardealer = cardealer, estate = estate, player_count = players}
+		jobs   = {bopee = bopee, police = police, ems = ems, mechanic = mechanic, pcc = pcc, cv = cv, tcp = tcp, ada = ada, dk = dk, motoclub = motoclub, milicia = milicia, cosanostra = cosanostra, player_count = players}
 	})
 end
 
