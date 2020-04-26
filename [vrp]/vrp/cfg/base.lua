@@ -7,6 +7,7 @@ cfg.db = {
 	user = "root",
 	password = ""
 }
+cfg.whitelist = true -- enable/disable whitelist   true wl ON false wl off
 
 cfg.lang = "br"
 

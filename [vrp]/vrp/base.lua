@@ -282,7 +282,7 @@ AddEventHandler("queue:playerConnecting",function(source,ids,name,setKickReason,
 						deferrals.done()
 					end
 				else
-					deferrals.done("RJVDC 3.0 EM BREVÊ... SEU ID: "..user_id)
+					deferrals.done("RJVDC 3.0  ... SEU ID: "..user_id.. "ENTRE NO NOSSO DISCORD: Discord.gg/VUmdPh5")
 					TriggerEvent("queue:playerConnectingRemoveQueues",ids)
 				end
 			else

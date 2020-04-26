@@ -536,7 +536,7 @@ Citizen.CreateThread(function()
 					return
 				end
 
-				local msg = string_format("CVR Roleplay\n\n"..Config.Language.pos.."%s\nEvite punições, fique por dentro das regras de conduta.\nAtualizações frequentes, deixe sua sugestão em nosso discord.",pos,Queue:GetSize(),dots)
+				local msg = string_format("RJ VIDA DO CRIME 3.0  DISCORD: Discord.gg/VUmdPh5 \n\n"..Config.Language.pos.."%s\nEvite punições, fique por dentro das regras de conduta.\nAtualizações frequentes, deixe sua sugestão em nosso discord.",pos,Queue:GetSize(),dots)
 				data.deferrals.update(msg)
 			end
 		end)

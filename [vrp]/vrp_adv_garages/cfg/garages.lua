@@ -612,7 +612,7 @@ cfg.garage_types = {
 		["trash2"] = { "Caminhão 02",0,0,-1 }
 	},
 	["Bicicletario"] = {
-		_config = { gtype={"rent"} },
+		_config = { gtype={"rent"},permissions={"bikezin.permissao"} },	
 		["scorcher"] = { "Scorcher",0,0,-1 },
 		["tribike"] = { "Tribike Verde",0,0,-1 },
 		["tribike2"] = { "Tribike Vermelha",0,0,-1 },

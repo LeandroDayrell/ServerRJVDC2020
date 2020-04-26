@@ -77,7 +77,6 @@ cfg.groups = {
 	"Moderador.permissao"
 	},
 	["SuporteCMDRJ"] = {
-	"admin.permissao",
 	"ticket.permissao",
 	"fix.permissao",
 	"dv.permissao",
@@ -96,7 +95,6 @@ cfg.groups = {
     "player.calladmin",
 	"player.loot",
 	"player.menu",
-	"player.inspect",
 	"player.fixhaircut",
 	"player.mask",
 	"player.userlist",
@@ -105,6 +103,8 @@ cfg.groups = {
 	"store.money",
 	"store.bodyarmor",
 	"store.weapons",
+	"bikezin.permissao",
+	"playerzin.permissao",
     "police.askid",
     "police.seizable",
 	"coma.skipper",

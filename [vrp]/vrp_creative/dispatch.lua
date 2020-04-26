@@ -32,17 +32,13 @@ end)
 Citizen.CreateThread(function()
     while true do
         --This is the Application ID (Replace this with you own)
-        SetDiscordAppId(697128175225798658)
+        SetDiscordAppId(697128175225798658) 
 
         --Here you will have to put the image name for the "large" icon.
         SetDiscordRichPresenceAsset('logo')
-
-        --(11-11-2018) New Natives:
-
-        --Here you can add hover text for the "large" icon.
-        SetDiscordRichPresenceAssetText('discord.gg/ZhpcU6g')
-
-        SetDiscordRichPresenceAssetSmallText('This is a lsmall icon with text')
+        SetDiscordRichPresenceAssetText('discord.gg/VUmdPh5')
+		SetDiscordRichPresenceAssetSmallText('Whitelist On') -- PNG DESCRIÇÃO 2 TEXTO
+        SetRichPresence("Seu RG: ".. user_id .." Cidadao: ".. #players .."")
         Citizen.Wait(10000)
     end
 end)

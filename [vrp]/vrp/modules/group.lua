@@ -307,7 +307,7 @@ AddEventHandler("vRP:playerSpawn",function(user_id,source,first_spawn)
 		end
 
 		if vRP.getUserGroupByType(user_id,"job") == "" then
-			vRP.addUserGroup(user_id,"Civil")
+			vRP.addUserGroup(user_id,"user")
 		end
 	end
 
