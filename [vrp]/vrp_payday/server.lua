@@ -46,12 +46,12 @@ salarii = {
   {"PeritoCriminalPC.permissao", 8000},
   {"EscrivaoPC.permissao", 6000},
   -- SAMU
-  {"ChefeSAMU.permissao", 15000},
-  {"CoordenadorSAMU.permissao", 12000},
-  {"MedicoSAMU.permissao", 11000},
-  {"EnfermeiroSAMU.permissao", 7000},
-  {"TecSAMU.permissao", 4000},
-  {"SocorristaSAMU.permissao", 3000},
+  {"ChefeSAMU.permissao", 20000},
+  {"CoordenadorSAMU.permissao", 16000},
+  {"MedicoSAMU.permissao", 14000},
+  {"EnfermeiroSAMU.permissao", 10000},
+  {"TecSAMU.permissao", 8000},
+  {"SocorristaSAMU.permissao", 5000},
   -- Jornalista
   {"Jornalista.permissao", 5000},
   {"Reporter.permissao", 5500},

@@ -293,6 +293,16 @@ config.garages = {
         }
     },
 	{
+        name = "Garagem Nova9",  
+        open = {'Carros'},
+        point = {
+        { x = 29.69, y = 3723.31, z = 39.67 }
+        },
+        spaces = {
+            { x = 35.95, y = 3723.35, z = 39.66, h =  223.5 }
+        }
+    },
+	{
         name = "Garagem Paleto",
         open = {'Carros'},
         point = {

@@ -89,16 +89,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('toogle',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
-	if vRP.hasPermission(user_id,"pmerj.permissao") then
-		TriggerEvent('eblips:remove',source)
-		vRP.addUserGroup(user_id,"PaisanaPolicia")
-		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
-	elseif vRP.hasPermission(user_id,"paisanapolicia.permissao") then
-		TriggerEvent('eblips:add',{ name = "Policial", src = source, color = 47 })
-		vRP.addUserGroup(user_id,"PMERJ")
-		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
-
-    elseif vRP.hasPermission(user_id,"recom.permissao") then
+	if vRP.hasPermission(user_id,"recom.permissao") then
 		vRP.addUserGroup(user_id,"PaisanaRECOM")
 		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
 	elseif vRP.hasPermission(user_id,"paisanapoliciarecom.permissao") then
@@ -112,7 +103,112 @@ RegisterCommand('toogle',function(source,args,rawCommand)
 		vRP.addUserGroup(user_id,"PRF")
 		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
 
+----------------------------- PM RJ
+--
+--
+--
 
+	elseif vRP.hasPermission(user_id,"pmerj.permissaoRecruta") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJRecruta")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerjRecruta.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - Recruta")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissaoSoldado") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJSoldado")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerjSoldado.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - Soldado")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+	
+	elseif vRP.hasPermission(user_id,"pmerj.permissaoCabo") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJCabo")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerjCabo.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - Cabo")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+	
+	elseif vRP.hasPermission(user_id,"pmerj.permissao3Sargento") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJ3Sargento")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerj3Sargento.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - 3° Sargento")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissao2Sargento") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJ2Sargento")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerj2Sargento.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - 2° Sargento")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissao1Sargento") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJ1Sargento")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerj1Sargento.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - 1° Sargento")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissaoSubTenente") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJSubTenente")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerjSubTenente.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - Subtenente")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissao2Tenente") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJ2Tenente")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerj2Tenente.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - 2° Tenente")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissao1Tenente") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJ1Tenente")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerj1Tenente.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - 1° Tenente")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissaoCapitao") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJCapitao")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerjCapitao.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - Capitão")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissaoMajor") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJMajor")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerjMajor.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - Major")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissaoTenenteCoronel") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJTenenteCoronel")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerjTenenteCoronel.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - Tenente Coronel")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissaoCoronel") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJCoronel")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerjCoronel.permissao") then
+		vRP.addUserGroup(user_id,"[PMRJ] - Coronel")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+		
+	elseif vRP.hasPermission(user_id,"pmerj.permissaoComandante") then
+		vRP.addUserGroup(user_id,"PaisanaPMERJComandante")
+		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")
+	elseif vRP.hasPermission(user_id,"paisanapoliciapmerjComandante.permissao") then
+		vRP.addUserGroup(user_id,"CMD PMERJ")
+		TriggerClientEvent("Notify",source,"sucesso","Você entrou em serviço.")
+
+--
+--
+--
 	elseif vRP.hasPermission(user_id,"pfederal.permissao") then
 		vRP.addUserGroup(user_id,"PaisanaPoliciaPF")
 		TriggerClientEvent("Notify",source,"sucesso","Você saiu de serviço.")

@@ -114,7 +114,7 @@ cfg.groups = {
   },
   
   --== PMERJ ==--
-  ["CMD PMERJ"] = {
+["CMD PMERJ"] = {
     _config = {
       gtype = "cargo",
       onjoin = function(player) vRPclient._setCop(player,true) end,
@@ -132,6 +132,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissaoComandante",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -183,6 +185,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissaoRecruta",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -233,6 +237,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissaoSoldado",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -283,6 +289,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissaoCabo",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -333,6 +341,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissao3Sargento",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -383,6 +393,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissao2Sargento",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -433,6 +445,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissao1Sargento",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -483,6 +497,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissaoSubTenente",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -534,6 +550,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissao2Tenente",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -586,6 +604,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissao1Tenente",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -637,6 +657,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissaoCapitao",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -688,6 +710,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissaoMajor",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -739,6 +763,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissaoTenenteCoronel",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -790,6 +816,8 @@ cfg.groups = {
 	"police.assalto",
 	"naotoma.multa",
 	-----------------
+	"pmerj.permissaoCoronel",
+	"polpar.permissao",
     "police.menu",
 	"police.spikes",
     "police.pc",
@@ -821,6 +849,106 @@ cfg.groups = {
 	-- Salario
 	"Coronel.permissao"
   },
+  
+  
+  ["PaisanaPMERJRecruta"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerjRecruta.permissao"
+	},
+	["PaisanaPMERJSoldado"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerjSoldado.permissao"
+	},
+	["PaisanaPMERJCabo"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerjCabo.permissao"
+	},
+	["PaisanaPMERJ3Sargento"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerj3Sargento.permissao"
+	},
+	["PaisanaPMERJ2Sargento"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerj2Sargento.permissao"
+	},
+	["PaisanaPMERJ1Sargento"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerj1Sargento.permissao"
+	},
+	["PaisanaPMERJSubTenente"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerjSubTenente.permissao"
+	},
+	["PaisanaPMERJ2Tenente"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerj2Tenente.permissao"
+	},
+	["PaisanaPMERJ1Tenente"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerj1Tenente.permissao"
+	},
+	["PaisanaPMERJCapitao"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerjCapitao.permissao"
+	},
+	["PaisanaPMERJMajor"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerjMajor.permissao"
+	},
+	["PaisanaPMERJTenenteCoronel"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerjTenenteCoronel.permissao"
+	},
+	["PaisanaPMERJCoronel"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerjCoronel.permissao"
+	},
+	["PaisanaPMERJComandante"] = {
+		_config = {
+			title = "À Paisana PMESP",
+			gtype = "cargo"
+		},
+		"paisanapoliciapmerjComandante.permissao"
+	},
 
 ----------------------------------------- RECOM PMERJ --------------------------------------------- 
  
