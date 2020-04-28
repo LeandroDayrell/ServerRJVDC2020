@@ -2311,6 +2311,32 @@ cfg.groups = {
 	"miliciafarm.permissao",
 	"bau.milicia",
   },  
+  ["[Milicia] - Gerente"] = {
+    _config = { 
+		gtype = "cargo",
+		onspawn = function(player) vRPclient._notify(player,"Você é um ~y~miliciano") end
+    },
+    "mlc.garagem",
+	"fac.armas",
+	-----------------
+	"hacker.service",
+	"contrabandista.service",
+	"tartaruga.service",
+	"metanfetamina.service",
+	"cocaina.service",
+	"maconha.service",
+	-----------------
+	"police.menu",
+	"police.bmcuff",
+    "police.drag",
+    "police.putinveh",
+    "police.getoutveh",
+    "police.check",
+	"miliciarmas.permissao",
+	"miliciaentrada.permissao",
+	"miliciafarm.permissao",
+	"bau.milicia",
+  },  
   ["[Milicia] - Membro"] = {
     _config = { 
 		gtype = "cargo",
@@ -2435,7 +2461,8 @@ cfg.groups = {
 	"yakuzafarm.permissao",
 	"yakuzaentrada.permissao",
 	"yakuzaarmas.permissao",
-	"yakuzaliderentrada.permissao"
+	"yakuzaliderentrada.permissao",
+	"bau.yakuza"
   },  
   ["[YAKUZA] - Gerente"] = {
     _config = { 
@@ -2460,6 +2487,7 @@ cfg.groups = {
     "police.check",
 	"yakuzafarm.permissao",
 	"yakuzaentrada.permissao",
+	"bau.yakuza",
 	"yakuzaarmas.permissao"
   },  
   ["[YAKUZA] - Membro"] = {
@@ -2485,6 +2513,7 @@ cfg.groups = {
     "police.check",
 	"yakuzafarm.permissao",
 	"yakuzaentrada.permissao",
+	"bau.yakuza",
 	"yakuzaarmas.permissao"
   },  
   ["[MOTOCLUB] - Lider"] = {

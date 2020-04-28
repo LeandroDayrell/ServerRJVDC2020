@@ -20,25 +20,25 @@ local src = {
 	-- [4] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "capsula", ['itemqtd'] = 40 },
 	-- [5] = { ['re'] = "capsula", ['reqtd'] = 40, ['item'] = "polvora", ['itemqtd'] = 40 },
 
-	[7] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 40 },
-	[8] = { ['re'] = "carbono", ['reqtd'] = 40, ['item'] = "ferro", ['itemqtd'] = 40 },
-	[9] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 40 },
+	[7] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 80 },
+	[8] = { ['re'] = "carbono", ['reqtd'] = 80, ['item'] = "ferro", ['itemqtd'] = 40 },
+	[9] = { ['re'] = "ferro", ['reqtd'] = 80, ['item'] = "aco", ['itemqtd'] = 80 },
 	
-	[10] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 40 },
-	[11] = { ['re'] = "carbono", ['reqtd'] = 40, ['item'] = "ferro", ['itemqtd'] = 40 },
-	[12] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 40 },
+	[10] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 80 },
+	[11] = { ['re'] = "carbono", ['reqtd'] = 80, ['item'] = "ferro", ['itemqtd'] = 80 },
+	[12] = { ['re'] = "ferro", ['reqtd'] = 80, ['item'] = "aco", ['itemqtd'] = 80 },
 	
 	-- [13] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "capsula", ['itemqtd'] = 40 },
 	-- [14] = { ['re'] = "capsula", ['reqtd'] = 40, ['item'] = "polvora", ['itemqtd'] = 40 },
 --	[15] = { ['re'] = "po", ['reqtd'] = 2, ['item'] = "cocaina", ['itemqtd'] = 4 },
 	
-    [16] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 40 },
-	[17] = { ['re'] = "carbono", ['reqtd'] = 40, ['item'] = "ferro", ['itemqtd'] = 40 },
-	[18] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 40 },
+    [16] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 80 },
+	[17] = { ['re'] = "carbono", ['reqtd'] = 80, ['item'] = "ferro", ['itemqtd'] = 80 },
+	[18] = { ['re'] = "ferro", ['reqtd'] = 80, ['item'] = "aco", ['itemqtd'] = 80 },
 	
-	[19] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 40 },
-	[20] = { ['re'] = "carbono", ['reqtd'] = 40, ['item'] = "ferro", ['itemqtd'] = 40 },
-	[21] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 40 },
+	[19] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "carbono", ['itemqtd'] = 80 },
+	[20] = { ['re'] = "carbono", ['reqtd'] = 80, ['item'] = "ferro", ['itemqtd'] = 80 },
+	[21] = { ['re'] = "ferro", ['reqtd'] = 80, ['item'] = "aco", ['itemqtd'] = 80 },
 	
 	-- FACÇÃO
 	-- CV

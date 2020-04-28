@@ -33,8 +33,6 @@ Citizen.CreateThread(function()
     while true do
         --This is the Application ID (Replace this with you own)
         SetDiscordAppId(697128175225798658) 
-
-        --Here you will have to put the image name for the "large" icon.
         SetDiscordRichPresenceAsset('logo')
         SetDiscordRichPresenceAssetText('discord.gg/VUmdPh5')
 		SetDiscordRichPresenceAssetSmallText('Whitelist On') -- PNG DESCRIÇÃO 2 TEXTO

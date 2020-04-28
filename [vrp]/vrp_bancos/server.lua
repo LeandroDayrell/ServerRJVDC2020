@@ -14,7 +14,7 @@ local robbers = {}
 RegisterServerEvent("webhook:enviarlog") --ENVIA O LOG DO BANCO PARA O DISCORD
 AddEventHandler("webhook:enviarlog",function(name,message)
 	if message == nil or message == '' or message:sub(1, 1) == '/' then return FALSE end
-	PerformHttpRequest('https://discordapp.com/api/webhooks/601178581699133440/zhuAdDsGguiVB7YuZCWFUn8dbI11rXKdkR_jYEu6Mg3Yfr4zfBAMPxtJdCYKi-8TOlv', function(err, text, headers) end, 'POST', json.encode({username = name, content = message}), { ['Content-Type'] = 'application/json' })
+	PerformHttpRequest('https://discordapp.com/api/webhooks/704020007327236297/xwkqaw_fm975koM-FkXaQTjgzTgE4aJHm99M4bng1j9Iqw4DktAJqFpWv1b9p74GGGX3 function(err, text, headers) end, 'POST', json.encode({username = name, content = message}), { ['Content-Type'] = 'application/json' })
 end)
 ---------------------------------
 ----------- FUNCTION ------------

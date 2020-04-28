@@ -34,7 +34,7 @@ end
 Citizen.CreateThread(function()
 	SetNuiFocus(false,false)
 	SetEntityInvincible(PlayerPedId(),true)
-	SetEntityVisible(PlayerPedId(),true)
+	SetEntityVisible(PlayerPedId(),false)
 	FreezeEntityPosition(PlayerPedId(),true)
 	SetPedDiesInWater(PlayerPedId(),false)
 	while freezedOnTop do
@@ -45,7 +45,7 @@ Citizen.CreateThread(function()
 			SetPedDiesInWater(PlayerPedId(),false)
 		elseif doStatus == 2 then
 			TriggerCamController(doStatus)
-			SetEntityInvincible(PlayerPedId(),true)
+			SetEntityInvincible(PlayerPedId(),false)
 			SetEntityVisible(PlayerPedId(),true)
 			FreezeEntityPosition(PlayerPedId(),false)
 			SetPedDiesInWater(PlayerPedId(),true)
@@ -53,7 +53,7 @@ Citizen.CreateThread(function()
 			freezedOnTop = false
 		else
 			SetEntityInvincible(PlayerPedId(),true)
-			SetEntityVisible(PlayerPedId(),true)
+			SetEntityVisible(PlayerPedId(),false)
 			FreezeEntityPosition(PlayerPedId(),true)
 		end
 		Citizen.Wait(1)

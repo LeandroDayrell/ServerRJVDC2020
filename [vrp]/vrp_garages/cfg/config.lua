@@ -209,6 +209,90 @@ config.garages = {
         }
     },
 	{
+        name = "Garagem Nova1",
+        open = {'Carros'},
+        point = {
+        { x = 100.96, y = -1073.49, z = 29.37 }
+        },
+        spaces = {
+            { x = 111.43, y = -1080.59, z = 29.19, h =  223.5 },
+			{ x = 104.42, y = -1078.30, z = 29.19, h =  223.5 }
+        }
+    },
+	{
+        name = "Garagem Nova2",
+        open = {'Carros'},
+        point = {
+        { x = -19.44, y = -1086.36, z = 26.59 }
+        },
+        spaces = {
+            { x = -11.99, y = -1082.35, z = 26.67, h =  223.5 },
+            { x = -11.73, y = -1098.04, z = 26.67, h =  223.5 }
+        }
+    },
+	{
+        name = "Garagem Nova3",
+        open = {'Carros'},
+        point = {
+        { x = -191.23, y = -1307.65, z = 31.26 }
+        },
+        spaces = {
+            { x = -187.56, y = -1291.10, z = 31.29, h =  223.5 },
+            { x = -173.76, y = -1306.26, z = 31.33, h =  223.5 }
+        }
+    },
+	{
+        name = "Garagem Nova4",
+        open = {'Carros'},
+        point = {
+        { x = 362.49, y = 298.63, z = 103.88 }
+        },
+        spaces = {
+            { x = 361.62, y = 289.85, z = 103.47, h =  223.5 },
+            { x = -337.62, y = 279.58, z = 85.69, h =  223.5 }
+        }
+    },
+	{
+        name = "Garagem Nova5",
+        open = {'Carros'},
+        point = {
+        { x = 90.30, y = 6340.32, z = 31.37 }
+        },
+        spaces = {
+            { x = 83.92, y = 6336.22, z = 31.22, h =  223.5 }
+        }
+    },
+	{
+        name = "Garagem Nova6", 
+        open = {'Carros'},
+        point = {
+        { x = 878.24, y = -2096.60, z = 30.76 }
+        },
+        spaces = {
+            { x = 882.99, y = -2101.83, z = 30.76, h =  223.5 }
+        }
+    },
+	{
+        name = "Garagem Nova7",  
+        open = {'Carros'},
+        point = {
+        { x = 500.67, y = 3044.87, z = 42.25 }
+        },
+        spaces = {
+            { x = 500.61, y = 3034.65, z = 42.25, h =  223.5 }
+        }
+    },
+	{
+        name = "Garagem Nova8",  
+        open = {'Carros'},
+        point = {
+        { x = 839.19, y = 3081.52, z = 40.35 }
+        },
+        spaces = {
+            { x = 835.80, y = 3089.11, z = 40.54, h =  223.5 }
+        }
+    },
+	{
         name = "Garagem Paleto",
         open = {'Carros'},
         point = {

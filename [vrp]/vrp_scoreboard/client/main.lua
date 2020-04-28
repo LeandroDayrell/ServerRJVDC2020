@@ -28,7 +28,7 @@ Citizen.CreateThread(function()
 	SendNUIMessage({
 		action = 'updateServerInfo',
 
-		maxPlayers = GetConvarInt('sv_maxclients', 1024),
+		maxPlayers = GetConvarInt('sv_maxclients', 128),
 		uptime = 'unknown',
 		playTime = '00h 00m'
 	})
@@ -103,9 +103,9 @@ function UpdatePlayerTable(connectedPlayers)
 			ada = ada + 1
 		elseif (v.job == '[D.K] - Lider' or v.job == '[D.K] - Gerente' or v.job == '[D.K] - Membro') then
 			dk = dk + 1
-		elseif (v.job == '[Lider] - Moto Clube' or v.job == '[Membro] - Moto Clube' ) then
+		elseif (v.job == '[MOTOCLUB] - Lider' or v.job == '[MOTOCLUB] - Gerente' or v.job == '[MOTOCLUB] - Membro' ) then
 			motoclub = motoclub + 1
-		elseif (v.job == '[MILICIA] - Lider' or v.job == '[MILICIA] - Geremte' or v.job == '[MILICIA] - Membro' ) then
+		elseif (v.job == '[Milicia] - Lider' or v.job == '[Milicia] - Geremte' or v.job == '[Milicia] - Membro' ) then
 			milicia = milicia + 1
 		elseif (v.job == '[MAFIA] - Lider' or v.job == '[MAFIA] - Gerente' or v.job == '[MAFIA] - Membro') then
 			cosanostra = cosanostra + 1

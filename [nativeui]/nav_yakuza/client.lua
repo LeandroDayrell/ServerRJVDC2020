@@ -24,7 +24,7 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 	elseif data == "armamentos-comprar-uzi" then
 		TriggerServerEvent("yakuza-comprar","wbody|WEAPON_MICROSMG")
 	elseif data == "armamentos-comprar-ak103" then
-		TriggerServerEvent("yakuza-comprar","wbody|WEAPON_ASSAULTRIFLE")
+		TriggerServerEvent("yakuza-comprar","wbody|WEAPON_ASSAULTSMG")
 	 elseif data == "armamentos-comprar-pumpshotgun" then
 		TriggerServerEvent("yakuza-comprar","wbody|WEAPON_PUMPSHOTGUN_MK2")
 	-- elseif data == "armamentos-comprar-thompson" then
@@ -47,7 +47,7 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 	elseif data == "municoes-comprar-uzi" then
 		TriggerServerEvent("yakuza-comprar","wammo|WEAPON_MICROSMG")
 	elseif data == "municoes-comprar-ak103" then
-		TriggerServerEvent("yakuza-comprar","wammo|WEAPON_ASSAULTRIFLE")
+		TriggerServerEvent("yakuza-comprar","wammo|WEAPON_ASSAULTSMG")
 	elseif data == "municoes-comprar-pumpshotgun" then
 		TriggerServerEvent("yakuza-comprar","wammo|WEAPON_PUMPSHOTGUN_MK2")
 	-- elseif data == "municoes-comprar-thompson" then
@@ -77,7 +77,7 @@ Citizen.CreateThread(function()
 		Citizen.Wait(1)
 		local distance = GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()),-876.46911621094,-1458.8293457031,7.5268054008484,true)
 		if distance <= 30 then
-			DrawMarker(23,-2679.37,1332.54,140.88-0.97,0,0,0,0,0,0,1.0,1.0,0.5,240,200,80,50,0,0,0,0)
+			DrawMarker(23,-876.46,-1458.82,7.52-0.97,0,0,0,0,0,0,1.0,1.0,0.5,240,200,80,50,0,0,0,0)
 			if distance <= 1.1 then
 				if IsControlJustPressed(0,38) and emP.checkPermission() then
 					ToggleActionMenu()

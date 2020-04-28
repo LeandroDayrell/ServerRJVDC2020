@@ -3,18 +3,9 @@ local Config = {}
 -- Priority list can be any identifier. (hex steamid, steamid32, ip) Integer = power over other priorities
 -- A lot of the steamid converting websites are broken rn and give you the wrong steamid. I use https://steamid.xyz/ with no problems.
 Config.Priority = {
-	["steam:110000105aea59e"] = 100, 
-    ["steam:110000107a39f2d"] = 100, 
-    ["steam:1100001121d9b87"] = 100, 
-    ["steam:11000013d132713"] = 100, 
-    ["steam:11000013f9d5410"] = 100,
-    ["steam:11000013674566f"] = 100, 
-    ["steam:110000116b165f8"] = 100, 
-    ["steam:11000013e738fef"] = 100, 
-    ["steam:11000013cbb8489"] = 100, 
-    ["steam:11000011cffd586"] = 100, 
-    ["steam:1100001166d22d0"] = 100,
-} 
+	["steam:1100001059eabc5"] = 100, 
+    ["steam:110000113020a01"] = 100,
+   } 
 
 Config.RequireSteam = true
 Config.PriorityOnly = false -- whitelist only server

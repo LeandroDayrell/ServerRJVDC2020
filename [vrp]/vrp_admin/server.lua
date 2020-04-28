@@ -370,7 +370,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- UNBAN
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterCommand('unban',function(source,args,rawCommand)
+RegisterCommand('desban',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
 	if vRP.hasPermission(user_id,"unban.permissao") then
 		if args[1] then

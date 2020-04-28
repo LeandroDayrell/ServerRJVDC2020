@@ -14,8 +14,8 @@ local valores = {
 	{ item = "colete", quantidade = 1, compra = 500, venda = 250 },
 --	{ item = "wbody|WEAPON_GUSENBERG", quantidade = 1, compra = 15000, venda = 7500 },
   
-	{ item = "wammo|WEAPON_SNSPISTOL", quantidade = 50, compra = 100, venda = 50 },
-    { item = "wammo|WEAPON_MICROSMG", quantidade = 50, compra = 100, venda = 50 },
+	{ item = "wammo|WEAPON_PISTOL_MK2", quantidade = 50, compra = 100, venda = 50 },
+    { item = "wammo|WEAPON_ASSAULTSMG", quantidade = 50, compra = 100, venda = 50 },
 	{ item = "wammo|WEAPON_ASSAULTRIFLE", quantidade = 50, compra = 120, venda = 60 },
     { item = "wammo|WEAPON_PUMPSHOTGUN", quantidade = 50, compra = 120, venda = 60 }
 	--{ item = "wammo|WEAPON_GUSENBERG", quantidade = 50, compra = 120, venda = 60 }

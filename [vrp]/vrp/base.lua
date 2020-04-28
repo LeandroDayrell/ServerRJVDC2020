@@ -286,7 +286,7 @@ AddEventHandler("queue:playerConnecting",function(source,ids,name,setKickReason,
 					TriggerEvent("queue:playerConnectingRemoveQueues",ids)
 				end
 			else
-				deferrals.done("Você foi banido da cidade.")
+				deferrals.done("Você foi banido da cidade."..user_id)
 				TriggerEvent("queue:playerConnectingRemoveQueues",ids)
 			end
 		else
