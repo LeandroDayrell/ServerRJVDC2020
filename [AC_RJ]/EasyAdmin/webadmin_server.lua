@@ -20,11 +20,11 @@ local CONVARS = {
 
     {"EasyAdmin", "General Settings"},
     {"Language",         "ea_LanguageName",          "CV_STRING_R",  "en"},
-	{"Moderation Notification Webhook", "ea_moderationNotification", "CV_STRING", "https://discordapp.com/api/webhooks/000000/AAAA"},
+	{"Moderation Notification Webhook", "ea_moderationNotification", "CV_STRING", "https://discordapp.com/api/webhooks/704785160436187188/TMVdsEev-i-0xcjpoO0QYJNeONm4zv7ah7pK-CnyjO7jT9aPiWth-YIUbwdVt06B5gK5"},
 	{"Enable Debugging", "ea_enableDebugging", "CV_BOOL", false},
 
 	{"", "Menu Settings"},
-	{"Menu Button",      "ea_MenuButton",      "CV_INT_R",    289},
+	{"Menu Button",      "ea_MenuButton",      "CV_INT_R",    207},
 	{"Show All Buttons", "ea_alwaysShowButtons", "CV_BOOL", false},
 	{"", "Banlist Settings"},
 	{"Minimum Matching Identifiers",        "ea_minIdentifierMatches",        "CV_INT",   2,1,3},

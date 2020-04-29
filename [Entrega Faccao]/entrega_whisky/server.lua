@@ -2,30 +2,30 @@ local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
 vRP = Proxy.getInterface("vRP")
 emp = {}
-Tunnel.bindInterface("entrega_whisky",emp) 
+Tunnel.bindInterface("entrega_morfina",emp) 
 vRPclient = Tunnel.getInterface("vRP")
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- FUNÇÕES
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterServerEvent('entrega_whisky:permissao')
-AddEventHandler('entrega_whisky:permissao',function()
+RegisterServerEvent('entrega_morfina:permissao')
+AddEventHandler('entrega_morfina:permissao',function()
 	local source = source
 	local user_id = vRP.getUserId(source)
 	local player = vRP.getUserSource(user_id)
 	if vRP.hasGroup(user_id,"Amarelos") then
-	    TriggerClientEvent('entrega_whisky:permissao', player)
+	    TriggerClientEvent('entrega_morfina:permissao', player)
 	end
 end)
 
-RegisterServerEvent('entrega_whisky:itensReceber')
-AddEventHandler('entrega_whisky:itensReceber', function(quantidade)
+RegisterServerEvent('entrega_morfina:itensReceber')
+AddEventHandler('entrega_morfina:itensReceber', function(quantidade)
 	local src = source
 	local user_id = vRP.getUserId(src)
     local pagamento = math.random(900,950)
     if user_id then
         local new_weight = vRP.getInventoryWeight(user_id)+vRP.getItemWeight("dinheirosujo")*pagamento*quantidade
         if new_weight <= vRP.getInventoryMaxWeight(user_id) then
-            if vRP.tryGetInventoryItem(user_id,"whisky",quantidade,true) then
+            if vRP.tryGetInventoryItem(user_id,"morfina",quantidade,true) then
                 vRPclient._playAnim(src,true,{{"mp_common","givetake1_a",1}},false)
 				vRP.giveInventoryItem(user_id,"dinheirosujo",pagamento*quantidade,false)
                 local typemessage = "sucesso"

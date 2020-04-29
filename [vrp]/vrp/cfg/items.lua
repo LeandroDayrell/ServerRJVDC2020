@@ -122,10 +122,11 @@ cfg.items = {
 	["crack"] = { "Crack",0.8 },
 	
 	
-	["cano_parts"] = {"Cano",10}, --
-	["carregador_parts"] = {"Carregador",5}, --
-	["ferrolho_parts"] = {"Ferrelho", 5},  --
-	["canoestendido_parts"] = {"Cano Estendido",20},  --
+	["canoparts"] = { "Cano",1 }, --
+	["carregadorparts"] = { "Carregador",1 }, --
+	["ferrolhoparts"] = { "Ferrelho", 1 },  --
+	["canoestendidoparts"] = { "Cano Estendido",1 },  --
+	["cano"] = { "Cano Test",0.0038 },
 	
 	
 	
@@ -134,11 +135,28 @@ cfg.items = {
   ["capsula"] = {"Capsula", 0.30},
   ["kevlar"] = {"Kevlar", 1},
   ["kitcostura"] = {"Kit De Costura",  1},
-  ["ecstasy"] = {"ecstasy", 1}, -- no choices
-  ["docedeecstasy"] = {"docedeecstasy", 0.50}, -- no choices
+  ["docedeecstasy"] = {"docedeecstasy", 0.50 }, -- no choices
   ["pastadecocaina"] = {"pastadecocaina", 1}, -- no choices 
   ["pinodecoca"] = {"pinodecoca",  0.50}, -- no choices
   ["pedradecrack"] = {"pedradecrack", 0.50},
+  
+  
+	-- DROGAS FACÇÕES
+    ["hidrazida"] = {"hidrazida", 1}, -- no choices
+	["eter"] = {"eter", 1}, -- no choices
+	["lsd"] = {"lsd", 0.50}, -- no choices
+	
+	["pecacacaniquel"] = {"Peça Caça Niquel",1},
+	["placamae"] = {"Placa mãe",1},		
+	["maquinacacaniquel"] = {"Maquina Caça Niquel",0.50},
+	
+	["metil"] = {"metil",  1}, -- no choices 
+	["cafeina"] = {"Cafeina pra Ecstasy",  1}, -- no choices 
+	["ecstasy"] = {"Ecstasy",  0.5}, -- no choices 
+
+	["leitedepapoula"] = {"Leite de Papoula",  1}, -- no choices
+	["alcaloide"] = {"Alcaloide MORFINA",  1}, -- no choices
+	["morfina"] = {"Morfina",  0.50}, -- no choices
 }
 
 local function load_item_pack(name)

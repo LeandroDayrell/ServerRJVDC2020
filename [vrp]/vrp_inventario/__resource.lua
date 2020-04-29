@@ -181,7 +181,14 @@ files {
 	"client/html/assets/icons/municaosmg.png",
 	"client/html/assets/icons/municaorifle.png",
 	"client/html/assets/icons/municao12.png",
-	"client/html/assets/icons/gasolina.png"
+	"client/html/assets/icons/gasolina.png",
+	"client/html/assets/icons/ecstasy.png",
+	"client/html/assets/icons/lsd.png",
+	"client/html/assets/icons/maquina.png",
+	"client/html/assets/icons/morfina.png",
+	"client/html/assets/icons/pecacacaniquel.png",
+	"client/html/assets/icons/placamae.png",
+	"client/html/assets/icons/quimica.png",
 }
 
 client_scripts {

@@ -58,6 +58,14 @@ function tvRP.leaveArea(name)
 	end
 end
 
+function tvRP.inArea(source,name)
+  local areas = client_areas[source]
+  if areas then
+    local area = areas[name]
+    if area then return area.inside end
+  end
+end
+
 local cfg = module("cfg/blips_markers")
 AddEventHandler("vRP:playerSpawn",function(user_id,source,first_spawn)
 	if first_spawn then

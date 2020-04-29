@@ -2215,6 +2215,7 @@ cfg.groups = {
 	"cocaina.service",
 	"maconha.service",
 	-----------------
+	"comando.vermelho.cocaina.farm", -- teste de farm antigo
 	"build.gun.cv", -- ITEM TRANSFORME
 	"police.menu",
 	"police.bmcuff",
@@ -2438,6 +2439,7 @@ cfg.groups = {
 	"miliciaentrada.permissao",
 	"miliciafarm.permissao",
 	"bau.milicia",
+	"milicia.permissao",
   },  
   ["[Milicia] - Gerente"] = {
     _config = { 
@@ -2464,6 +2466,7 @@ cfg.groups = {
 	"miliciaentrada.permissao",
 	"miliciafarm.permissao",
 	"bau.milicia",
+	"milicia.permissao",
   },  
   ["[Milicia] - Membro"] = {
     _config = { 
@@ -2488,7 +2491,8 @@ cfg.groups = {
     "police.check",
 	"merryweather.permissao",
 	"miliciaentrada.permissao",
-	"miliciafarm.permissao"
+	"miliciafarm.permissao",
+	"milicia.permissao",
   },
   ----------- NEWS
   ["[MAFIA] - Lider"] = {
@@ -2515,6 +2519,7 @@ cfg.groups = {
 	"mafiafarm.permissao",
 	"mafiaarmas.permissao",
 	"bau.cosanostra",
+	"mafia.permissao",
   },
   ["[MAFIA] - Gerente"] = {
     _config = { 
@@ -2540,6 +2545,7 @@ cfg.groups = {
 	"mafiafarm.permissao",
 	"mafiaarmas.permissao",
 	"bau.cosanostra",
+	"mafia.permissao",
   },
   ["[MAFIA] - Membro"] = {
     _config = { 
@@ -2564,6 +2570,7 @@ cfg.groups = {
     "police.check",
 	"mafiafarm.permissao",
 	"mafiaarmas.permissao",
+	"mafia.permissao",
   },
   ["[YAKUZA] - Lider"] = {
     _config = { 
@@ -2590,7 +2597,8 @@ cfg.groups = {
 	"yakuzaentrada.permissao",
 	"yakuzaarmas.permissao",
 	"yakuzaliderentrada.permissao",
-	"bau.yakuza"
+	"bau.yakuza",
+	"yakuza.permissao",
   },  
   ["[YAKUZA] - Gerente"] = {
     _config = { 
@@ -2616,7 +2624,8 @@ cfg.groups = {
 	"yakuzafarm.permissao",
 	"yakuzaentrada.permissao",
 	"bau.yakuza",
-	"yakuzaarmas.permissao"
+	"yakuzaarmas.permissao",
+	"yakuza.permissao",
   },  
   ["[YAKUZA] - Membro"] = {
     _config = { 
@@ -2642,7 +2651,8 @@ cfg.groups = {
 	"yakuzafarm.permissao",
 	"yakuzaentrada.permissao",
 	"bau.yakuza",
-	"yakuzaarmas.permissao"
+	"yakuzaarmas.permissao",
+	"yakuza.permissao",
   },  
   ["[MOTOCLUB] - Lider"] = {
     _config = { 
@@ -2671,6 +2681,7 @@ cfg.groups = {
 	"motoclub.permissao",
 	"motoclubliderentrada.permissao",
 	"bau.mc",
+	"mcfarm.permissao",
   },  
   ["[MOTOCLUB] - Gerente"] = {
     _config = { 
@@ -2697,6 +2708,7 @@ cfg.groups = {
 	"entrada.permissao",
 	"motoclub.permissao",
 	"bau.mc",
+	"mcfarm.permissao",
   },  
   ["[MOTOCLUB] - Membro"] = {
     _config = { 
@@ -2722,6 +2734,7 @@ cfg.groups = {
 	"motoclub.permissao",
 	"entrada.permissao",
 	"motoclub.permissao",
+	"mcfarm.permissao",
   },  
   ["[COSA NOSTRA] - Lider"] = {
     _config = { 

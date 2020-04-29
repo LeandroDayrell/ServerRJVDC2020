@@ -89,8 +89,8 @@ end)
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1)
-		if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), 696.38690185547,-305.33325195313,59.247798919678,true) <= 1 then
-			DrawText3Ds(696.38690185547,-305.33325195313,59.247798919678+0.5,"PRESSIONE ~r~E~w~ PARA COMEÇAR MISSÃO")
+		if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), 719.96209716797,2944.3254394531,45.365356445313,true) <= 1 then
+			DrawText3Ds(719.96209716797,2944.3254394531,45.365356445313+0.5,"PRESSIONE ~r~E~w~ PARA COMEÇAR MISSÃO")
             if IsControlJustPressed(0,38) then	
 				TriggerEvent('entrega_maquinacacaniquel:permissao') 
 			end
@@ -103,14 +103,14 @@ Citizen.CreateThread(function()
 			end
 			if statuses then
 				drawTxt(ui.right_x+0.050,ui.bottom_y-0.076,1.0,1.0,0.35,"PRESSIONE ~r~U ~w~PARA CANCELAR A MISSÃO",255,255,255,150)
-				drawTxt(ui.right_x+0.050,ui.bottom_y-0.058,1.0,1.0,0.45,"ENTREGUE ~g~"..quantidade.."~w~ MAQUINA CACA NIQUEL",255,255,255,255)
+				drawTxt(ui.right_x+0.050,ui.bottom_y-0.058,1.0,1.0,0.45,"MONTE ~g~"..quantidade.."~w~ MAQUINA CACA NIQUEL, NO BUTECO DO SEU ZÉ",255,255,255,255)
 			else
 				drawTxt(ui.right_x+0.050,ui.bottom_y-0.040,1.0,1.0,0.35,"PRESSIONE ~r~Y ~w~PARA VER A MISSÃO",255,255,255,150)
 			end
 			if distance <= 50 then
 				DrawMarker(21,entregas[destino].x,entregas[destino].y,entregas[destino].z+0.10,0,0,0,0,180.0,130.0,1.0,1.0,1.0,211,176,72,100,1,0,0,1)
 				if distance < 3 then
-					DrawText3Ds(entregas[destino].x,entregas[destino].y,entregas[destino].z, "[H] ENTREGAR")
+					DrawText3Ds(entregas[destino].x,entregas[destino].y,entregas[destino].z, "[H] MONTE AS MAQUINA LOGO MANO")
                     if IsControlJustPressed(0,101) then
                         destinoantigo = destino
                         RemoveBlip(blip)

@@ -1,6 +1,6 @@
 local Tunnel = module("vrp","lib/Tunnel")
 local Proxy = module("vrp","lib/Proxy")
-emp = Tunnel.getInterface("entrega_whisky")
+emp = Tunnel.getInterface("entrega_morfina")
 vRP = Proxy.getInterface("vRP")
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- VARIAVEIS
@@ -74,8 +74,8 @@ local entregas = {
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- INICIANDO TRABALHO
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterNetEvent('entrega_whisky:permissao')
-AddEventHandler('entrega_whisky:permissao',function()
+RegisterNetEvent('entrega_morfina:permissao')
+AddEventHandler('entrega_morfina:permissao',function()
 	if not emservico then
 		emservico = true
 		destino = math.random(1,38)
@@ -89,10 +89,10 @@ end)
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1)
-		if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), 696.38690185547,-305.33325195313,59.247798919678,true) <= 1 then
-			DrawText3Ds(696.38690185547,-305.33325195313,59.247798919678+0.5,"PRESSIONE ~r~E~w~ PARA COMEÇAR MISSÃO")
+		if GetDistanceBetweenCoords(GetEntityCoords(PlayerPedId()), -2674.2543945313,1336.1904296875,144.25773620605,true) <= 1 then
+			DrawText3Ds(-2674.2543945313,1336.1904296875,144.25773620605+0.5,"PRESSIONE ~r~E~w~ PARA COMEÇAR MISSÃO")
             if IsControlJustPressed(0,38) then	
-				TriggerEvent('entrega_whisky:permissao') 
+				TriggerEvent('entrega_morfina:permissao') 
 			end
 		end
 		if emservico then
@@ -103,18 +103,18 @@ Citizen.CreateThread(function()
 			end
 			if statuses then
 				drawTxt(ui.right_x+0.050,ui.bottom_y-0.076,1.0,1.0,0.35,"PRESSIONE ~r~U ~w~PARA CANCELAR A MISSÃO",255,255,255,150)
-				drawTxt(ui.right_x+0.050,ui.bottom_y-0.058,1.0,1.0,0.45,"ENTREGUE ~g~"..quantidade.."~w~ WHISKY",255,255,255,255)
+				drawTxt(ui.right_x+0.050,ui.bottom_y-0.058,1.0,1.0,0.45,"FAÇA O CORRE E ENTREGUE ~g~"..quantidade.."~w~ MORFINA",255,255,255,255)
 			else
 				drawTxt(ui.right_x+0.050,ui.bottom_y-0.040,1.0,1.0,0.35,"PRESSIONE ~r~Y ~w~PARA VER A MISSÃO",255,255,255,150)
 			end
 			if distance <= 50 then
 				DrawMarker(21,entregas[destino].x,entregas[destino].y,entregas[destino].z+0.10,0,0,0,0,180.0,130.0,1.0,1.0,1.0,211,176,72,100,1,0,0,1)
 				if distance < 3 then
-					DrawText3Ds(entregas[destino].x,entregas[destino].y,entregas[destino].z, "[H] ENTREGAR")
+					DrawText3Ds(entregas[destino].x,entregas[destino].y,entregas[destino].z, "[H] ENTREGAR ESSA PORRA")
                     if IsControlJustPressed(0,101) then
                         destinoantigo = destino
                         RemoveBlip(blip)
-                        TriggerServerEvent('entrega_whisky:itensReceber', quantidade)
+                        TriggerServerEvent('entrega_morfina:itensReceber', quantidade)
                         while true do
                             if destinoantigo == destino then
                                 destino = math.random(1,38)

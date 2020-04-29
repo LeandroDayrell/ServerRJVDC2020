@@ -11,11 +11,11 @@ local Teleport = {
 	},
 
 	["TRAFICO02"] = { -- Bunker
-		positionFrom = { ['x'] = -928.237, ['y'] = -1510.992, ['z'] = 5.176, ['perm'] = "yakuzaentrada.permissao" }, 
+		positionFrom = { ['x'] = -3043.1281738281, ['y'] = 3332.1940917969, ['z'] = 11.807974815369, ['perm'] = "yakuzaentrada.permissao" }, 
 		positionTo = { ['x'] = 911.04437255859, ['y'] = -3213.6423339844, ['z'] = -98.231483459473, ['perm'] = "yakuzaentrada.permissao" }
 	},
 	["TRAFICO03"] = { -- Bunker
-		positionFrom = { ['x'] = 850.74, ['y'] = 3044.23, ['z'] = 41.65, ['perm'] = "miliciaentrada.permissao" },
+		positionFrom = { ['x'] = -3169.3679199219, ['y'] = 1375.1413574219, ['z'] = 18.555246353149, ['perm'] = "miliciaentrada.permissao" },
 		positionTo = { ['x'] = 1003.95, ['y'] = -2997.73, ['z'] = -39.64, ['perm'] = "miliciaentrada.permissao" },
 	},
 	["TRAFICO04"] = { -- Bunker
@@ -73,22 +73,25 @@ local locais = {
 
 	-- { ['id'] = 4, ['x'] = 1110.08, ['y'] = -2007.81, ['z'] = 31.04, ['text'] = "CAPSULA", ['perm'] = "motoclub.permissao" }, -- motoclub
 	-- { ['id'] = 5, ['x'] = 1088.10, ['y'] = -2002.08, ['z'] = 30.88, ['text'] = "POLVORA", ['perm'] = "motoclub.permissao" }, -- motoclub
-
-	{ ['id'] = 7, ['x'] = -2676.3020019531, ['y'] = 1325.1457519531, ['z'] = 144.25776672363, ['text'] = "CARBONO", ['perm'] = "mafiafarm.permissao" }, -- 
-	{ ['id'] = 8, ['x'] = -2679.5637207031, ['y'] = 1336.4680175781, ['z'] = 144.25773620605, ['text'] = "FERRO", ['perm'] = "mafiafarm.permissao" }, -- liberty  
-	{ ['id'] = 9, ['x'] = -2675.1325683594, ['y'] = 1326.7222900391, ['z'] = 140.88153076172, ['text'] = "AÇO", ['perm'] = "mafiafarm.permissao" }, -- liberty 
+    -- MC
+	{ ['id'] = 34, ['x'] = 1397.6040039063, ['y'] = 3602.501953125, ['z'] = 38.941890716553, ['text'] = "Reagentes", ['perm'] = "mcfarm.permissao" }, 
+	{ ['id'] = 35, ['x'] = 1392.2895507813, ['y'] = 3606.3125, ['z'] = 38.941890716553, ['text'] = "Processamento", ['perm'] = "mcfarm.permissao" }, 
+	{ ['id'] = 36, ['x'] = 1389.5310058594, ['y'] = 3603.8933105469, ['z'] = 38.941890716553, ['text'] = "Produto Final", ['perm'] = "mcfarm.permissao" },
+		
+	-- MILICIA
+	{ ['id'] = 37, ['x'] = 993.17462158203, ['y'] = -3020.9677734375, ['z'] = -39.646953582764, ['text'] = "Reagentes", ['perm'] = "miliciafarm.permissao" }, 
+	{ ['id'] = 38, ['x'] = 980.38238525391, ['y'] = -3030.0056152344, ['z'] = -39.646953582764, ['text'] = "Processamento", ['perm'] = "milicia.permissao" }, 
+	{ ['id'] = 39, ['x'] = 962.98211669922, ['y'] = -3016.5417480469, ['z'] = -39.646953582764, ['text'] = "Produto Final", ['perm'] = "milicia.permissao" },
 	
-	{ ['id'] = 10, ['x'] = 905.96, ['y'] = -3230.74, ['z'] = -98.29, ['text'] = "CARBONO", ['perm'] = "yakuzafarm.permissao" }, 
-	{ ['id'] = 11, ['x'] = 896.55, ['y'] = -3217.45, ['z'] = -98.22, ['text'] = "FERRO", ['perm'] = "yakuzafarm.permissao" }, 
-	{ ['id'] = 12, ['x'] = 884.78, ['y'] = -3199.77, ['z'] = -98.19, ['text'] = "AÇO", ['perm'] = "yakuzafarm.permissao" },  
+	--YAKUZA
+	{ ['id'] = 40, ['x'] = 905.96, ['y'] = -3230.74, ['z'] = -98.29, ['text'] = "Reagentes", ['perm'] = "yakuza.permissao" }, 
+	{ ['id'] = 41, ['x'] = 896.55, ['y'] = -3217.45, ['z'] = -98.22, ['text'] = "Processamento", ['perm'] = "yakuza.permissao" }, 
+	{ ['id'] = 42, ['x'] = 884.78, ['y'] = -3199.77, ['z'] = -98.19, ['text'] = "Produto Final", ['perm'] = "yakuza.permissao" },
 	
-    { ['id'] = 16, ['x'] = 2592.59, ['y'] = 2832.22, ['z'] = 39.64, ['text'] = "CARBONO", ['perm'] = "motoclub.permissao" }, 
-	{ ['id'] = 17, ['x'] = 2601.85, ['y'] = 2790.25, ['z'] = 33.83, ['text'] = "FERRO", ['perm'] = "motoclub.permissao" }, 
-	{ ['id'] = 18, ['x'] = 2632.01, ['y'] = 2802.03, ['z'] = 33.82, ['text'] = "AÇO", ['perm'] = "motoclub.permissao" }, 
-	
-	{ ['id'] = 19, ['x'] = 993.17462158203, ['y'] = -3020.9677734375, ['z'] = -39.646953582764, ['text'] = "CARBONO", ['perm'] = "miliciafarm.permissao" }, 
-	{ ['id'] = 20, ['x'] = 980.38238525391, ['y'] = -3030.0056152344, ['z'] = -39.646953582764, ['text'] = "FERRO", ['perm'] = "miliciafarm.permissao" }, 
-	{ ['id'] = 21, ['x'] = 962.98211669922, ['y'] = -3016.5417480469, ['z'] = -39.646953582764, ['text'] = "AÇO", ['perm'] = "miliciafarm.permissao" }, 
+	--MARFIA
+	{ ['id'] = 43, ['x'] = 1944.3961181641, ['y'] = 5025.7705078125, ['z'] = 42.284278869629, ['text'] = "Reagentes", ['perm'] = "mafia.permissao" }, 
+	{ ['id'] = 44, ['x'] = 1959.6571044922, ['y'] = 5047.6948242188, ['z'] = 41.358818054199, ['text'] = "Processamento", ['perm'] = "mafia.permissao" }, 
+	{ ['id'] = 45, ['x'] = 2013.3995361328, ['y'] = 4989.0385742188, ['z'] = 41.207672119141, ['text'] = "Produto Final", ['perm'] = "mafia.permissao" },
 	
 	-- FACÇÃO 
 	-- C.V

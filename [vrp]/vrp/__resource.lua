@@ -21,6 +21,7 @@ server_scripts {
 	"modules/basic_items.lua",
 	"modules/basic_skinshop.lua",
 	"modules/cloakroom.lua",
+	"modules/item_transformer.lua",
 }
 
 client_scripts {
