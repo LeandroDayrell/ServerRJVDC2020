@@ -266,10 +266,10 @@ config.garages = {
         name = "Garagem Nova6", 
         open = {'Carros'},
         point = {
-        { x = 878.24, y = -2096.60, z = 30.76 }
+        { x = 896.37, y = -2092.65, z = 30.79 }
         },
         spaces = {
-            { x = 882.99, y = -2101.83, z = 30.76, h =  223.5 }
+            { x = 900.75, y = -2087.54, z = 30.69, h =  223.5 }
         }
     },
 	{
@@ -300,6 +300,326 @@ config.garages = {
         },
         spaces = {
             { x = 35.95, y = 3723.35, z = 39.66, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova10",  
+        open = {'Carros'},
+        point = {
+        { x = 1413.16, y = 1115.14, z = 114.83 }
+        },
+        spaces = {
+            { x = 1408.25, y = 1118.48, z = 114.83, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova11",  
+        open = {'Carros'},
+        point = {
+        { x = -811.37, y = 187.20, z = 72.47 }
+        },
+        spaces = {
+            { x = -819.13, y = 184.54, z = 72.20, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova12",  
+        open = {'Carros'},
+        point = {
+        { x = -188.09, y = 500.55, z = 134.65 }
+        },
+        spaces = {
+            { x = -189.72, y = 505.58, z = 134.50, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova13",  
+        open = {'Carros'},
+        point = {
+        { x = 351.45, y = 436.87, z = 147.42 }
+        },
+        spaces = {
+            { x = 360.24, y = 442.61, z = 145.23, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova14",  
+        open = {'Carros'},
+        point = {
+        { x = -683.21, y = 601.65, z = 143.65 }
+        },
+        spaces = {
+            { x = -686.27, y = 606.17, z = 143.84, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova15",  
+        open = {'Carros'},
+        point = {
+        { x = -754.27, y = 626.08, z = 142.68	 }
+        },
+        spaces = {
+            { x = -749.63, y = 629.21, z = 142.48, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova16",  
+        open = {'Carros'},
+        point = {
+        { x = -864.77, y = 696.67, z = 149.00 }
+        },
+        spaces = {
+            { x = -862.49, y = 704.30, z = 149.10, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova17",  
+        open = {'Carros'},
+        point = {
+        { x = 130.87, y = 567.03, z = 183.66 }
+        },
+        spaces = {
+            { x = 127.77, y = 573.12, z = 183.38, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova18",  
+        open = {'Carros'},
+        point = {
+        { x = -1321.76, y = 446.35, z = 99.78 }
+        },
+        spaces = {
+            { x = -1324.58, y = 455.64, z = 99.74, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova19",  
+        open = {'Carros'},
+        point = {
+        { x = -101.24, y = 6340.22, z = 31.49 }
+        },
+        spaces = {
+            { x = -97.44, y = 6344.35, z = 31.49, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova20",  
+        open = {'Carros'},
+        point = {
+        { x = -1493.68, y = 420.83, z = 111.24 }
+        },
+        spaces = {
+            { x = -1509.14, y = 431.19, z = 110.98, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova21",  
+        open = {'Carros'},
+        point = {
+        { x = 332.98, y = -203.19, z = 54.22 }
+        },
+        spaces = {
+            { x = 336.32, y = -210.15, z = 54.08, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova22",  
+        open = {'Carros'},
+        point = {
+        { x = 16.76, y = 553.21, z = 176.91 }
+        },
+        spaces = {
+            { x = 9.01, y = 549.45, z = 175.71, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova23",  
+        open = {'Carros'},
+        point = {
+        { x = -72.68, y = -20.81, z = 67.28 }
+        },
+        spaces = {
+            { x = -67.00, y = -26.90, z = 66.28, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova24",  
+        open = {'Carros'},
+        point = {
+        { x = -443.98, y = 678.95, z = 152.03 }
+        },
+        spaces = {
+            { x = -435.34, y = 682.00, z = 153.88, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova25",  
+        open = {'Carros'},
+        point = {
+        { x = -963.52, y = 764.44, z = 175.43 }
+        },
+        spaces = {
+            { x = -973.09, y = 767.77, z = 174.97, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Nova26",  
+        open = {'Carros'},
+        point = {
+        { x = -1095.93, y = -255.64, z = 37.64 }
+        },
+        spaces = {
+            { x = -1095.55, y = -272.98, z = 37.61, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem tcp1",  
+        open = {'Carros'},
+        point = {
+        { x = 804.54, y = 1162.03, z = 321.17 }
+        },
+        spaces = {
+            { x = 811.19, y = 1160.70, z = 320.03, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem tcp2",  
+        open = {'Carros'},
+        point = {
+        { x = 940.28, y = 1040.89, z = 264.78 }
+        },
+        spaces = {
+            { x = -1096.46, y = -273.17, z = 37.60, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem tcp3",  
+        open = {'Carros'},
+        point = {
+        { x = 998.37, y = 886.33, z = 209.08 }
+        },
+        spaces = {
+            { x = 996.82, y = 894.66, z = 209.73, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem ADA	",  
+        open = {'Carros'},
+        point = {
+        { x = 1498.80, y = -1699.93, z = 88.19 }
+        },
+        spaces = {
+            { x = 1499.74, y = -1690.64, z = 88.19, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem CV",  
+        open = {'Carros'},
+        point = {
+        { x = -964.11, y = 762.16, z = 175.46 }
+        },
+        spaces = {
+            { x = -969.42, y = 766.45, z = 175.19, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem CV1",  
+        open = {'Carros'},
+        point = {
+        { x = -795.37, y = 596.60, z = 127.27 }
+        },
+        spaces = {
+            { x = -798.97, y = 602.24, z = 127.39, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem CV2",  
+        open = {'Carros'},
+        point = {
+        { x = -811.27, y = 805.56, z = 202.19 }
+        },
+        spaces = {
+            { x = -816.02, y = 818.31, z = 201.14, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem ADA",  
+        open = {'Carros'},
+        point = {
+        { x = 1390.93, y = -1613.16, z = 56.81 }
+        },
+        spaces = {
+            { x = 1390.59, y = -1615.96, z = 56.82, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem ADA1",  
+        open = {'Carros'},
+        point = {
+        { x = 1541.64, y = -1645.17, z = 87.97 }
+        },
+        spaces = {
+            { x = 1549.08, y = -1643.09, z = 88.01, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem ADA2",  
+        open = {'Carros'},
+        point = {
+        { x = 1678.94, y = -1500.65, z = 113.06 }
+        },
+        spaces = {
+            { x = 1687.27, y = -1496.47, z = 112.99, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem PCC",  
+        open = {'Carros'},
+        point = {
+        { x = 69.68, y = 3629.56, z = 39.41 }
+        },
+        spaces = {
+            { x = 66.21, y = 3639.79, z = 39.67, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem PCC2",  
+        open = {'Carros'},
+        point = {
+        { x = 53.35, y = 3729.14, z = 39.57 }
+        },
+        spaces = {
+            { x = 60.20, y = 3737.08, z = 39.70, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem MLC1",  
+        open = {'Carros'},
+        point = {
+        { x = 702.71, y = 3084.10, z = 44.11 }
+        },
+        spaces = {
+            { x = 704.41, y = 3090.42, z = 44.24, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Mafia",  
+        open = {'Carros'},
+        point = {
+        { x = -2636.45, y = 1322.46, z = 143.59 }
+        },
+        spaces = {
+            { x = -2631.94, y = 1326.53, z = 143.26, h =  223.5 }
+        }
+    },
+		{
+        name = "Garagem Aeroporto",  
+        open = {'Carros'},
+        point = {
+        { x = -989.92, y = 2706.77, z = 13.83 }
+        },
+        spaces = {
+            { x = -981.72, y = -2706.19, z = 13.85, h =  223.5 }
         }
     },
 	{

@@ -136,29 +136,6 @@ items["safira2"] = {"none", 0 ,0 ,0 , "safira2.png"}
 items["topazio2"] = {"none", 0 ,0 ,0 , "topazio2.png"}
 items["ametista2"] = {"none", 0 ,0 ,0 , "ametista2.png"}
 
-----------------------------------------------------------
-items["hidrazida"] = {"none", 0 ,0 ,0 , "quimica.png"}
-items["eter"] = {"none", 0 ,0 ,0 , "quimica.png"}
-items["metil"] = {"none", 0 ,0 ,0 , "quimica.png"}
-items["cafeina"] = {"none", 0 ,0 ,0 , "quimica.png"}
-items["leitedepapoula"] = {"none", 0 ,0 ,0 , "quimica.png"}
-items["alcaloide"] = {"none", 0 ,0 ,0 , "quimica.png"}
-
-items["placamae"] = {"none", 0 ,0 ,0 , "placamae.png"}
-items["pecacacaniquel"] = {"none", 0 ,0 ,0 , "pecacacaniquel.png"}
-items["morfina"] = {"none", 0 ,0 ,0 , "morfina.png"}
-items["maquinacacaniquel"] = {"none", 0 ,0 ,0 , "maquina.png"}
-items["lsd"] = {"none", 0 ,0 ,0 , "lsd.png"}
-items["ecstasy"] = {"none", 0 ,0 ,0 , "ecstasy.png"}
-
-
-items["canoparts"] = {"none", 0 ,0 ,0 , "pecacacaniquel"}
-items["carregadorparts"] = {"none", 0 ,0 ,0 , "pecacacaniquel"}
-items["ferrolhoparts"] = {"none", 0 ,0 ,0 , "pecacacaniquel"}
-items["canoestendidoparts"] = {"none", 0 ,0 ,0 , "pecacacaniquel"}
-items["cano"] = {"none", 0 ,0 ,0 , "pecacacaniquel.png"}
-
-
 ------------------------------ARMAS-----------------------------------
 
 items["wbody|WEAPON_DAGGER"] = {"weapon", 0 ,0 ,0 , "WEAPON_DAGGER.png"}
@@ -229,6 +206,28 @@ items["wammo|WEAPON_CARBINERIFLE"] = {"ammo",0 ,0 ,0 , "municaorifle.png"}
 items["wammo|WEAPON_ASSAULTRIFLE"] = {"ammo",0 ,0 ,0 , "municaorifle.png"}
 items["wammo|WEAPON_GUSENBERG"] = {"ammo",0 ,0 ,0 , "municaorifle.png"}
 items["wammo|WEAPON_PETROLCAN"] = {"ammo",0 ,0 ,0 , "gasolina.png"}
+
+------------------------------MERCADONEGRO-----------------------------------
+
+items["ferrolho_parts"] = {"ferrolho_parts",0 ,0 ,0 , "ferrolho_parts.png"}
+items["cano_parts"] = {"cano_parts",0 ,0 ,0 , "cano_parts.png"}
+items["canoestendido_parts"] = {"canoestendido_parts",0 ,0 ,0 , "canoestendido_parts.png"}
+items["carregador_parts"] = {"carregador_parts",0 ,0 ,0 , "carregador_parts.png"}
+items["polvora"] = {"polvora",0 ,0 ,0 , "polvora.png"}
+items["capsula"] = {"capsula",0 ,0 ,0 , "capsula.png"}
+items["kevlar"] = {"kevlar",0 ,0 ,0 , "kevlar.png"}
+items["kitcostura"] = {"kitcostura",0 ,0 ,0 , "kitcostura.png"}
+
+
+items["ecstasy"] = {"ecstasy",0 ,0 ,0 , "ecstasy.png"}
+items["docedeecstasy"] = {"docedeecstasy",0 ,0 ,0 , "docedeecstasy.png"}
+items["pastadecocaina"] = {"pastadecocaina",0 ,0 ,0 , "pastadecocaina.png"}
+items["pinodecoca"] = {"pinodecoca",0 ,0 ,0 , "pinodecoca.png"}
+items["pedradecrack"] = {"pedradecrack",0 ,0 ,0 , "pedradecrack.png"}
+
+
+
+
 
 
 

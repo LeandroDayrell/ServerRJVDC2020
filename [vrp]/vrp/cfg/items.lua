@@ -122,41 +122,22 @@ cfg.items = {
 	["crack"] = { "Crack",0.8 },
 	
 	
-	["canoparts"] = { "Cano",1 }, --
-	["carregadorparts"] = { "Carregador",1 }, --
-	["ferrolhoparts"] = { "Ferrelho", 1 },  --
-	["canoestendidoparts"] = { "Cano Estendido",1 },  --
-	["cano"] = { "Cano Test",0.0038 },
+	["cano_parts"] = {"Cano",1}, --
+	["carregador_parts"] = {"Carregador",1}, --
+	["ferrolho_parts"] = {"Ferrolho", 1},  --
+	["canoestendido_parts"] = {"Cano Estendido",1},  --
 	
 	
 	
-	
-	  ["polvora"] = {"Polvora", 0.30},
+	["polvora"] = {"Polvora", 0.30},
   ["capsula"] = {"Capsula", 0.30},
   ["kevlar"] = {"Kevlar", 1},
   ["kitcostura"] = {"Kit De Costura",  1},
-  ["docedeecstasy"] = {"docedeecstasy", 0.50 }, -- no choices
-  ["pastadecocaina"] = {"pastadecocaina", 1}, -- no choices 
+  ["ecstasy"] = {"ecstasy", 0.50}, -- no choices
+  ["docedeecstasy"] = {"docedeecstasy", 0.50}, -- no choices
+  ["pastadecocaina"] = {"pastadecocaina", 0.50}, -- no choices 
   ["pinodecoca"] = {"pinodecoca",  0.50}, -- no choices
   ["pedradecrack"] = {"pedradecrack", 0.50},
-  
-  
-	-- DROGAS FACÇÕES
-    ["hidrazida"] = {"hidrazida", 1}, -- no choices
-	["eter"] = {"eter", 1}, -- no choices
-	["lsd"] = {"lsd", 0.50}, -- no choices
-	
-	["pecacacaniquel"] = {"Peça Caça Niquel",1},
-	["placamae"] = {"Placa mãe",1},		
-	["maquinacacaniquel"] = {"Maquina Caça Niquel",0.50},
-	
-	["metil"] = {"metil",  1}, -- no choices 
-	["cafeina"] = {"Cafeina pra Ecstasy",  1}, -- no choices 
-	["ecstasy"] = {"Ecstasy",  0.5}, -- no choices 
-
-	["leitedepapoula"] = {"Leite de Papoula",  1}, -- no choices
-	["alcaloide"] = {"Alcaloide MORFINA",  1}, -- no choices
-	["morfina"] = {"Morfina",  0.50}, -- no choices
 }
 
 local function load_item_pack(name)

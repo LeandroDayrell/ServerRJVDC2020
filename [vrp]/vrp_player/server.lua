@@ -61,7 +61,25 @@ local itemlist = {
 	["lambari"] = { index = "lambari", nome = "Lambari" },
 	["energetico"] = { index = "energetico", nome = "Energético" },
 	["mochila"] = { index = "mochila", nome = "Mochila" },
+	------------------- mercado negro ----------------------
+	["ferrolho_parts"] = { index = "ferrolho_parts", nome = "Ferrolho" },
+	["cano_parts"] = { index = "cano_parts", nome = "Cano" },
+	["canoestendido_parts"] = { index = "canoestendido_parts", nome = "Cano Estendido" },
+	["carregador_parts"] = { index = "carregador_parts", nome = "Carregador" },
+	["polvora"] = { index = "polvora", nome = "Polvora" },
+	["capsula"] = { index = "capsula", nome = "Capsula" },
+	["kevlar"] = { index = "kevlar", nome = "Kevlar" },
+	["kitcostura"] = { index = "kitcostura", nome = "Kit Costura" },
 	
+	["ecstasy"] = { index = "ecstasy", nome = "ecstasy" },
+	["docedeecstasy"] = { index = "docedeecstasy", nome = "docedeecstasy" },
+	["pastadecocaina"] = { index = "pastadecocaina", nome = "pastadecocaina" },
+	["pinodecoca"] = { index = "pinodecoca", nome = "pinodecoca" },
+	["pedradecrack"] = { index = "pedradecrack", nome = "pedradecrack" },
+	
+	
+	
+	----------------------------------------------
 	["adubo"] = { index = "adubo", nome = "Adubo" },
 	["cannabis"] = { index = "cannabis", nome = "Cannabis" },
 	["maconha"] = { index = "maconha", nome = "Maconha" },

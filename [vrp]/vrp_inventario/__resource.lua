@@ -181,14 +181,19 @@ files {
 	"client/html/assets/icons/municaosmg.png",
 	"client/html/assets/icons/municaorifle.png",
 	"client/html/assets/icons/municao12.png",
-	"client/html/assets/icons/gasolina.png",
+	"client/html/assets/icons/ferrolho_parts.png",
+	"client/html/assets/icons/cano_parts.png",
+	"client/html/assets/icons/canoestendido_parts.png",
+	"client/html/assets/icons/carregador_parts.png",
+	"client/html/assets/icons/polvora.png",
+	"client/html/assets/icons/capsula.png",
+	"client/html/assets/icons/kevlar.png",
+	"client/html/assets/icons/kitcostura.png",
 	"client/html/assets/icons/ecstasy.png",
-	"client/html/assets/icons/lsd.png",
-	"client/html/assets/icons/maquina.png",
-	"client/html/assets/icons/morfina.png",
-	"client/html/assets/icons/pecacacaniquel.png",
-	"client/html/assets/icons/placamae.png",
-	"client/html/assets/icons/quimica.png",
+	"client/html/assets/icons/docedeecstasy.png",
+	"client/html/assets/icons/pastadecocaina.png",
+	"client/html/assets/icons/pinodecoca.png",
+	"client/html/assets/icons/gasolina.png"
 }
 
 client_scripts {
