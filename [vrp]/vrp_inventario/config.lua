@@ -227,7 +227,26 @@ items["pedradecrack"] = {"pedradecrack",0 ,0 ,0 , "pedradecrack.png"}
 
 
 
+items["hidrazida"] = {"none", 0 ,0 ,0 , "quimica.png"}
+items["eter"] = {"none", 0 ,0 ,0 , "quimica.png"}
+items["metil"] = {"none", 0 ,0 ,0 , "quimica.png"}
+items["cafeina"] = {"none", 0 ,0 ,0 , "quimica.png"}
+items["leitedepapoula"] = {"none", 0 ,0 ,0 , "quimica.png"}
+items["alcaloide"] = {"none", 0 ,0 ,0 , "quimica.png"}
 
+items["placamae"] = {"none", 0 ,0 ,0 , "placamae.png"}
+items["pecacacaniquel"] = {"none", 0 ,0 ,0 , "pecacacaniquel.png"}
+items["morfina"] = {"none", 0 ,0 ,0 , "morfina.png"}
+items["maquinacacaniquel"] = {"none", 0 ,0 ,0 , "maquina.png"}
+items["lsd"] = {"none", 0 ,0 ,0 , "lsd.png"}
+items["ecstasy"] = {"none", 0 ,0 ,0 , "ecstasy.png"}
+
+
+items["canoparts"] = {"none", 0 ,0 ,0 , "pecacacaniquel"}
+items["carregadorparts"] = {"none", 0 ,0 ,0 , "pecacacaniquel"}
+items["ferrolhoparts"] = {"none", 0 ,0 ,0 , "pecacacaniquel"}
+items["canoestendidoparts"] = {"none", 0 ,0 ,0 , "pecacacaniquel"}
+items["cano"] = {"none", 0 ,0 ,0 , "pecacacaniquel.png"}
 
 
 

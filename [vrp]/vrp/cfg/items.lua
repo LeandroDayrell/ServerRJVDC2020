@@ -133,11 +133,28 @@ cfg.items = {
   ["capsula"] = {"Capsula", 0.30},
   ["kevlar"] = {"Kevlar", 1},
   ["kitcostura"] = {"Kit De Costura",  1},
-  ["ecstasy"] = {"ecstasy", 0.50}, -- no choices
   ["docedeecstasy"] = {"docedeecstasy", 0.50}, -- no choices
   ["pastadecocaina"] = {"pastadecocaina", 0.50}, -- no choices 
   ["pinodecoca"] = {"pinodecoca",  0.50}, -- no choices
   ["pedradecrack"] = {"pedradecrack", 0.50},
+  
+  
+  
+  ["hidrazida"] = {"hidrazida", 1}, -- no choices
+	["eter"] = {"eter", 1}, -- no choices
+	["lsd"] = {"lsd", 0.50}, -- no choices
+	
+	["pecacacaniquel"] = {"Peça Caça Niquel",1},
+	["placamae"] = {"Placa mãe",1},		
+	["maquinacacaniquel"] = {"Maquina Caça Niquel",0.50},
+	
+	["metil"] = {"metil",  1}, -- no choices 
+	["cafeina"] = {"Cafeina pra Ecstasy",  1}, -- no choices 
+	["ecstasy"] = {"Ecstasy",  0.5}, -- no choices 
+
+	["leitedepapoula"] = {"Leite de Papoula",  1}, -- no choices
+	["alcaloide"] = {"Alcaloide MORFINA",  1}, -- no choices
+	["morfina"] = {"Morfina",  0.50}, -- no choices
 }
 
 local function load_item_pack(name)
