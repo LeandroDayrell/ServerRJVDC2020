@@ -151,7 +151,6 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- REVIVER TODOS
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterServerEvent("trydeleteped")
 RegisterCommand('reviveall', function(source, args, rawCommand)
     local user_id = vRP.getUserId(source)
     if vRP.hasPermission(user_id,"admin.permissao") then

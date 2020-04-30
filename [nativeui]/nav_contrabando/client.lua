@@ -37,7 +37,24 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 		TriggerServerEvent("contrabando-comprar","placa")
 	elseif data == "utilidades-comprar-colete" then
 		TriggerServerEvent("contrabando-comprar","colete")
-
+		------
+		elseif data == "utilidades-comprar-cano_parts" then
+		TriggerServerEvent("contrabando-comprar","cano_parts")
+		elseif data == "utilidades-comprar-carregador_parts" then
+		TriggerServerEvent("contrabando-comprar","carregador_parts")
+		elseif data == "utilidades-comprar-ferrolho_parts" then
+		TriggerServerEvent("contrabando-comprar","ferrolho_parts")
+		elseif data == "utilidades-comprar-canoestendido_parts" then
+		TriggerServerEvent("contrabando-comprar","canoestendido_parts")
+		elseif data == "utilidades-comprar-polvora" then
+		TriggerServerEvent("contrabando-comprar","polvora")
+		elseif data == "utilidades-comprar-capsula" then
+		TriggerServerEvent("contrabando-comprar","capsula")
+		elseif data == "utilidades-comprar-kevlar" then
+		TriggerServerEvent("contrabando-comprar","kevlar")
+		elseif data == "utilidades-comprar-kitcostura" then
+		TriggerServerEvent("contrabando-comprar","kitcostura")
+-----------------
 	elseif data == "utilidades-vender-algemas" then
 		TriggerServerEvent("contrabando-vender","algemas")
 	elseif data == "utilidades-vender-capuz" then

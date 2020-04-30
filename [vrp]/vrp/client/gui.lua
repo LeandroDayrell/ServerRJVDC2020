@@ -18,6 +18,27 @@ AddEventHandler("status:celular",function(status)
 	menu_celular = status
 end)
 
+
+-- create/update a progress bar
+function tvRP.setProgressBar(name,anchor,text,r,g,b,value)
+  local pbar = {name=name,anchor=anchor,text=text,r=r,g=g,b=b,value=value}
+
+  -- default values
+  if pbar.value == nil then pbar.value = 0 end
+
+  SendNUIMessage({act="set_pbar",pbar = pbar})
+end
+
+-- set progress bar value in percent
+function tvRP.setProgressBarValue(name,value)
+  SendNUIMessage({act="set_pbar_val", name = name, value = value})
+end
+
+-- set progress bar text
+function tvRP.setProgressBarText(name,text)
+  SendNUIMessage({act="set_pbar_text", name = name, text = text})
+end
+
 Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(1)

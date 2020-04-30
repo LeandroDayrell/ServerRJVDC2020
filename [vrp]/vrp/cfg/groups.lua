@@ -101,6 +101,7 @@ cfg.groups = {
 	"mobile.charge",
 	"mobile.pay",
 	"store.money",
+	"mercadonegro.permissao",
 	"store.bodyarmor",
 	"store.weapons",
 	"bikezin.permissao",

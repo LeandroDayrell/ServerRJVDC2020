@@ -18,6 +18,14 @@ function vRP.setArea(source,name,x,y,z,radius,height,cb_enter,cb_leave)
 	vRPclient._setArea(source,name,x,y,z,radius,height)
 end
 
+function tvRP.inArea(source,name)
+  local areas = client_areas[source]
+  if areas then
+    local area = areas[name]
+    if area then return area.inside end
+  end
+end
+
 function vRP.removeArea(source,name)
 	vRPclient._removeArea(source,name)
 	local areas = client_areas[source]
@@ -58,13 +66,6 @@ function tvRP.leaveArea(name)
 	end
 end
 
-function tvRP.inArea(source,name)
-  local areas = client_areas[source]
-  if areas then
-    local area = areas[name]
-    if area then return area.inside end
-  end
-end
 
 local cfg = module("cfg/blips_markers")
 AddEventHandler("vRP:playerSpawn",function(user_id,source,first_spawn)

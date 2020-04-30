@@ -6,19 +6,27 @@
 	<body>
 		<div id="actionmenu">
 			<div id="mainmenu">
-				<button class="menuoption" data-sub="utilidades">Utilidades</button>
-				<button class="menuoption" data-action="fechar">Fechar</button>
+				<button class="menuoption" data-sub="armamentos">Armamentos</button>
 			</div>
 
-			<div data-parent="mainmenu" id="utilidades" style="display: none;">
-				<button class="menuoption" data-sub="utilidades-comprar">Comprar</button>
+			<div data-parent="mainmenu" id="armamentos" style="display: none;">
+				<button class="menuoption" data-sub="mercadonegro-comprar">Comprar</button>
+				<button class="menuoption" data-sub="armamentos-vender">Vender</button>
 			</div>
-			<div data-parent="utilidades" id="utilidades-comprar" style="display: none;">
-				<button class="menuoption" data-action="utilidades-comprar-cano_parts"><l>Cano</l><r>$1.000</r></button>
-				<button class="menuoption" data-action="utilidades-comprar-carregador_parts"><l>Carregador</l><r>$1.000</r></button>
-				<button class="menuoption" data-action="utilidades-comprar-ferrolho_parts"><l>Ferrolho</l><r>$1.000</r></button>
-				<button class="menuoption" data-action="utilidades-comprar-canoestendido_parts"><l>Cano Estendido</l><r>$1.000</r></button>
+			<div data-parent="armamentos" id="mercadonegro-comprar" style="display: none;">
+				<button class="menuoption" data-action="mercadonegro-comprar-cano_parts"><l>Cano Partes</l><r>3.000</r></button>
+				<button class="menuoption" data-action="mercadonegro-comprar-carregador_parts"><l>Carregador</l><r>10.000</r></button>
+			    <button class="menuoption" data-action="mercadonegro-comprar-ferrolho_parts"><l>Ferrolho</l><r>500</r></button>
+				<button class="menuoption" data-action="mercadonegro-comprar-canoestendido_parts"><l>Cano Estendido</l><r>500</r></button>
 			</div>
+			<div data-parent="armamentos" id="armamentos-vender" style="display: none;">
+			</div>
+
+			<div data-parent="mainmenu" id="municoes" style="display: none;">
+				<button class="menuoption" data-sub="municoes-comprar">Comprar</button>
+			    --<button class="menuoption" data-sub="municoes-vender">Vender</button> 
+			</div>
+			
 		</div>
 		<script src="ui.js" type="text/javascript"></script>
 	</body>

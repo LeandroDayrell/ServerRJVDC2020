@@ -49,7 +49,6 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 		TriggerServerEvent("armamentos-comprar","wammo|WEAPON_MUSKET")
 	elseif data == "municoes-comprar-sinalizador" then
 		TriggerServerEvent("armamentos-comprar","wammo|WEAPON_FLARE")
-
 	elseif data == "municoes-vender-m1922" then
 		TriggerServerEvent("armamentos-vender","wammo|WEAPON_VINTAGEPISTOL")
 	elseif data == "municoes-vender-m1911" then
@@ -60,8 +59,6 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 		TriggerServerEvent("armamentos-vender","wammo|WEAPON_MUSKET")
 	elseif data == "municoes-vender-sinalizador" then
 		TriggerServerEvent("armamentos-vender","wammo|WEAPON_FLARE")
-
-
 	elseif data == "armamentos-comprar-faca" then
 		TriggerServerEvent("armamentos-comprar","wbody|WEAPON_KNIFE")
 	elseif data == "armamentos-comprar-adaga" then
@@ -94,7 +91,6 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 		TriggerServerEvent("armamentos-comprar","wbody|WEAPON_POOLCUE")
 	elseif data == "armamentos-comprar-pedra" then
 		TriggerServerEvent("armamentos-comprar","wbody|WEAPON_STONE_HATCHET")
-
 	elseif data == "armamentos-vender-faca" then
 		TriggerServerEvent("armamentos-vender","wbody|WEAPON_KNIFE")
 	elseif data == "armamentos-vender-adaga" then
@@ -127,8 +123,6 @@ RegisterNUICallback("ButtonClick",function(data,cb)
 		TriggerServerEvent("armamentos-vender","wbody|WEAPON_POOLCUE")
 	elseif data == "armamentos-vender-pedra" then
 		TriggerServerEvent("armamentos-vender","wbody|WEAPON_STONE_HATCHET")
-
-
 	elseif data == "utilidades-comprar-paraquedas" then
 		TriggerServerEvent("armamentos-comprar","wbody|GADGET_PARACHUTE")
 	elseif data == "armamentos-comprar-colete" then

@@ -69,7 +69,7 @@ function init() {
 }
 
 function sendData(name,data){
-	$.post("http://nav_ammunation/"+name,JSON.stringify(data),function(datab){
+	$.post("http://nav_mercadonegro/"+name,JSON.stringify(data),function(datab){
 		if (datab != "ok"){
 			console.log(datab);
 		}

@@ -15,7 +15,16 @@ local valores = {
 	{ item = "pendrive", quantidade = 1, compra = 35000, venda = 17500 },
 	{ item = "rebite", quantidade = 1, compra = 250, venda = 125 },
 	{ item = "colete", quantidade = 1, compra = 5000, venda = 2500 },
-	{ item = "placa", quantidade = 1, compra = 5000, venda = 2500 }
+	{ item = "placa", quantidade = 1, compra = 5000, venda = 2500 },
+	--
+	{ item = "cano_parts", quantidade = 1, compra = 90000},
+	{ item = "carregador_parts", quantidade = 1, compra = 20000},
+	{ item = "ferrolho_parts", quantidade = 1, compra = 30000},
+	{ item = "canoestendido_parts", quantidade = 1, compra = 150000},
+	{ item = "polvora", quantidade = 1, compra = 2000},
+	{ item = "capsula", quantidade = 1, compra = 2000},
+	{ item = "kevlar", quantidade = 1, compra = 8000},
+	{ item = "kitcostura", quantidade = 1, compra = 8000},
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- COMPRAR
@@ -65,5 +74,5 @@ end)
 function emP.checkPermission()
 	local source = source
 	local user_id = vRP.getUserId(source)
-	return vRP.hasPermission(user_id,"milicia.permissao")
+	return vRP.hasPermission(user_id,"mercadonegro.permissao")
 end

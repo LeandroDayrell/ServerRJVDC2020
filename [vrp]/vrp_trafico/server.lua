@@ -70,23 +70,76 @@ local src = {
 	[32] = { ['re'] = "adubo", ['reqtd'] = 1, ['item'] = "pastadecrack", ['itemqtd'] = 2 },
 	[33] = { ['re'] = "pastadecrack", ['reqtd'] = 2, ['item'] = "pedradecrack", ['itemqtd'] = 3 },
 	
-	-- [16] = { ['re'] = "polvora", ['reqtd'] = 40, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
-	-- [17] = { ['re'] = "polvora", ['reqtd'] = 40, ['item'] = "wammo|WEAPON_SAWNOFFSHOTGUN", ['itemqtd'] = 50 },
-	-- [18] = { ['re'] = "polvora", ['reqtd'] = 40, ['item'] = "wammo|WEAPON_ASSAULTRIFLE", ['itemqtd'] = 50 },
-	-- [19] = { ['re'] = "polvora", ['reqtd'] = 40, ['item'] = "wammo|WEAPON_MACHINEPISTOL", ['itemqtd'] = 50 },
-	-- [20] = { ['re'] = "polvora", ['reqtd'] = 40, ['item'] = "wammo|WEAPON_GUSENBERG", ['itemqtd'] = 50 },
-	-- [21] = { ['re'] = "polvora", ['reqtd'] = 40, ['item'] = "wammo|WEAPON_ASSAULTSMG", ['itemqtd'] = 50 },
 	
-	-- [22] = { ['re'] = nil, ['reqtd'] = nil, ['item'] = "capsula", ['itemqtd'] = 40 },
-	-- [23] = { ['re'] = "capsula", ['reqtd'] = 40, ['item'] = "polvora", ['itemqtd'] = 40 },
-	-- [24] = { ['re'] = "ferro", ['reqtd'] = 40, ['item'] = "aco", ['itemqtd'] = 40 },
 	
-	-- [25] = { ['re'] = "aco", ['reqtd'] = 3000, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
-	-- [26] = { ['re'] = "aco", ['reqtd'] = 20000, ['item'] = "wbody|WEAPON_SAWNOFFSHOTGUN", ['itemqtd'] = 1 },
-	-- [27] = { ['re'] = "aco", ['reqtd'] = 12000, ['item'] = "wbody|WEAPON_ASSAULTSMG", ['itemqtd'] = 1 },
-	-- [28] = { ['re'] = "aco", ['reqtd'] = 21000, ['item'] = "wbody|WEAPON_ASSAULTRIFLE", ['itemqtd'] = 1 },
-	-- [29] = { ['re'] = "aco", ['reqtd'] = 10000, ['item'] = "wbody|WEAPON_MACHINEPISTOL", ['itemqtd'] = 1 },
-	-- [30] = { ['re'] = "aco", ['reqtd'] = 15000, ['item'] = "wbody|WEAPON_GUSENBERG", ['itemqtd'] = 1 },
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	-- ADA
+	[48] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[49] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[50] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
+	[51] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MACHINEPISTOL", ['itemqtd'] = 50 },
+
+	-- TCP
+	[52] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[53] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[54] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
+	[55] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MACHINEPISTOL", ['itemqtd'] = 50 },
+
+	-- CV
+	[56] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[57] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[5] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
+	[59] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MACHINEPISTOL", ['itemqtd'] = 50 },
+
+
+	--PCC
+	[60] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[61] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[62] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
+	[63] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MACHINEPISTOL", ['itemqtd'] = 50 },
+
+
+
+	-------------------------------------
+	-- MC
+	[64] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[65] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[66] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 6, ['item'] = "wbody|WEAPON_ASSAULTSMG", ['itemqtd'] = 1 },
+	[67] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_ASSAULTSMG", ['itemqtd'] = 50 },
+	[68] = { ['re'] = "kevlar", "kitcostura", ['reqtd'] = 1, ['item'] = "body_armor", ['itemqtd'] = 1 },
+
+
+	-- YAKUZA
+	[69] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[70] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[71] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 6, ['item'] = "wbody|WEAPON_ASSAULTSMG", ['itemqtd'] = 1 },
+	[72] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_ASSAULTSMG", ['itemqtd'] = 50 },
+	[73] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 4, ['item'] = "wbody|WEAPON_PUMPSHOTGUN_MK2", ['itemqtd'] = 1 },
+	[74] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PUMPSHOTGUN_MK2", ['itemqtd'] = 50 },
+
+	-- MAFIA
+	[75] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[76] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[77] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 6, ['item'] = "wbody|WEAPON_GUSENBERG", ['itemqtd'] = 1 },
+	[78] = { ['re'] = "capsula", "polvora", ['reqtd'] = 2, ['item'] = "wammo|WEAPON_GUSENBERG", ['itemqtd'] = 50 },
+
+	-- MILICIA
+	[79] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[80] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[81] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 7, ['item'] = "wbody|WEAPON_ASSAULTRIFLE", ['itemqtd'] = 1 },
+	[82] = { ['re'] = "capsula", "polvora", ['reqtd'] = 2, ['item'] = "wammo|WEAPON_ASSAULTRIFLE", ['itemqtd'] = 50 },
+
+
 }
 
 function func.checkPayment(id)

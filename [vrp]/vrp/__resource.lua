@@ -21,7 +21,7 @@ server_scripts {
 	"modules/basic_items.lua",
 	"modules/basic_skinshop.lua",
 	"modules/cloakroom.lua",
-	"modules/item_transformer.lua",
+	--"modules/item_transformer.lua",
 }
 
 client_scripts {
@@ -55,7 +55,8 @@ files {
 	"gui/RequestManager.js",
 	"gui/Div.js",
 	"gui/dynamic_classes.js",
-	"gui/bebas.ttf"
+	"gui/bebas.ttf",
+	"gui/ProgressBar.js",
 }
 
 loadscreen "loading/index.html"
