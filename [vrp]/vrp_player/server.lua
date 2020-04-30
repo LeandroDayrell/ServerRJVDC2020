@@ -77,6 +77,23 @@ local itemlist = {
 	["pinodecoca"] = { index = "pinodecoca", nome = "pinodecoca" },
 	["pedradecrack"] = { index = "pedradecrack", nome = "pedradecrack" },
 	
+	["hidrazida"] = { index = "hidrazida", nome = "hidrazida" },
+	["eter"] = { index = "eter", nome = "eter" },
+	["lsd"] = { index = "lsd", nome = "lsd" },
+	
+	["pecacacaniquel"] = { index = "pecacacaniquel", nome = "pecacacaniquel" },
+	["placamae"] = { index = "placamae", nome = "placamae" },
+	["maquinacacaniquel"] = { index = "maquinacacaniquel", nome = "maquinacacaniquel" },
+	
+	["metil"] = { index = "metil", nome = "metil" },
+	["cafeina"] = { index = "cafeina", nome = "cafeina" },
+	["ecstasy"] = { index = "ecstasy", nome = "ecstasy" },
+	
+	["leitedepapoula"] = { index = "leitedepapoula", nome = "leitedepapoula" },
+	["alcaloide"] = { index = "alcaloide", nome = "alcaloide" },
+	["morfina"] = { index = "morfina", nome = "morfina" },
+	
+	
 	
 	
 	----------------------------------------------
