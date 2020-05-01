@@ -51,8 +51,22 @@ cfg.items = {
 	["mesmeralda"] = { "Esmeralda",0.6 },	
 	["mrubi"] = { "Rubi",0.6 },	
 	["diamante"] = { "Diamante",0.5 },	
+	
+	--CONFERIR
+	["ak103pack"] = { "Ak 103 Pack",5 },
+	["coletepack"] = { "Colete Pack",5 },
+	["fivesevenpack"] = { "Five-Seven Pack",5 },
+	["mtarpack"] = { "Mtar Pack",5 },
+	["pumpshotgunpack"] = { "Pump Shotgun Pack",5 },
+	["thompsonpack"] = { "Thompson Pack",5 },
+	["uzipack"] = { "Uzi Pack",5 },
+	["municaoakpack"] = { "Municao Ak Pack",5 },
+	["municaofamaspack"] = { "Municao Mtar Pack",5 },
+	["municaopistolpack"] = { "Municao Five-Seven Pack",5 },
+	["municaopumppack"] = { "Municao PumpShotgun Pack",5 },
+	["municaothompsonpack"] = { "Municao Thompson Pack",5 },
+	["municaouzipack"] = { "Municao Uzi Pack",5 },
 
----------------------------------
     ["agua"] = { "Água",0.5 },	
     ["limonada"] = { "Limonada",0.4 },	
     ["refrigerante"] = { "Refrigerante",0.4 },	

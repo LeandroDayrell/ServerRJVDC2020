@@ -341,7 +341,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- KICK
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterCommand('kick',function(source,args,rawCommand)
+RegisterCommand('expulsar',function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
 	if vRP.hasPermission(user_id,"kick.permissao") then
 		if args[1] then
@@ -355,7 +355,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- BAN
 -----------------------------------------------------------------------------------------------------------------------------------------
-RegisterCommand('ban',function(source,args,rawCommand)
+RegisterCommand('banir',function(source,args,rawCommand)
     local user_id = vRP.getUserId(source)
     if vRP.hasPermission(user_id,"ban.permissao") then
         if args[1] then

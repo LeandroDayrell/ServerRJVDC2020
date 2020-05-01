@@ -84,60 +84,60 @@ local src = {
 	
 	
 	-- ADA
-	[48] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
-	[49] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
-	[50] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
-	[51] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MACHINEPISTOL", ['itemqtd'] = 50 },
+	[48] = { ['re'] = "fivesevenpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[49] = { ['re'] = "municaopistolpack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[50] = { ['re'] = "uzipack", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
+	[51] = { ['re'] = "municaouzipack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MICROSMG", ['itemqtd'] = 50 },
 
 	-- TCP
-	[52] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
-	[53] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
-	[54] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
-	[55] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MACHINEPISTOL", ['itemqtd'] = 50 },
+	[52] = { ['re'] = "fivesevenpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[53] = { ['re'] = "municaopistolpack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[54] = { ['re'] = "uzipack", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
+	[55] = { ['re'] = "municaouzipack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MACHINEPISTOL", ['itemqtd'] = 50 },
 
 	-- CV
-	[56] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
-	[57] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
-	[5] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
-	[59] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MACHINEPISTOL", ['itemqtd'] = 50 },
+	[56] = { ['re'] = "fivesevenpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[57] = { ['re'] = "municaopistolpack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[5] = { ['re'] = "uzipack", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
+	[59] = { ['re'] = "municaouzipack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MICROSMG", ['itemqtd'] = 50 },
 
 
 	--PCC
-	[60] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
-	[61] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
-	[62] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
-	[63] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MACHINEPISTOL", ['itemqtd'] = 50 },
+	[60] = { ['re'] = "fivesevenpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[61] = { ['re'] = "municaopistolpack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[62] = { ['re'] = "uzipack", ['reqtd'] = 2, ['item'] = "wbody|WEAPON_MICROSMG", ['itemqtd'] = 1 },
+	[63] = { ['re'] = "municaouzipack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_MICROSMG", ['itemqtd'] = 50 },
 
 
 
 	-------------------------------------
 	-- MC
-	[64] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
-	[65] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
-	[66] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 6, ['item'] = "wbody|WEAPON_ASSAULTSMG", ['itemqtd'] = 1 },
-	[67] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_ASSAULTSMG", ['itemqtd'] = 50 },
-	[68] = { ['re'] = "kevlar", "kitcostura", ['reqtd'] = 1, ['item'] = "body_armor", ['itemqtd'] = 1 },
+	[64] = { ['re'] = "fivesevenpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[65] = { ['re'] = "municaopistolpack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[66] = { ['re'] = "mtarpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_ASSAULTSMG", ['itemqtd'] = 1 },
+	[67] = { ['re'] = "municaofamaspack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_ASSAULTSMG", ['itemqtd'] = 50 },
+	[68] = { ['re'] = "coletepack", ['reqtd'] = 1, ['item'] = "body_armor", ['itemqtd'] = 1 },
 
 
 	-- YAKUZA
-	[69] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
-	[70] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
-	[71] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 6, ['item'] = "wbody|WEAPON_ASSAULTSMG", ['itemqtd'] = 1 },
-	[72] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_ASSAULTSMG", ['itemqtd'] = 50 },
-	[73] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 4, ['item'] = "wbody|WEAPON_PUMPSHOTGUN_MK2", ['itemqtd'] = 1 },
-	[74] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PUMPSHOTGUN_MK2", ['itemqtd'] = 50 },
+	[69] = { ['re'] = "fivesevenpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[70] = { ['re'] = "municaopistolpack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[71] = { ['re'] = "mtarpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_ASSAULTSMG", ['itemqtd'] = 1 },
+	[72] = { ['re'] = "municaofamaspack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_ASSAULTSMG", ['itemqtd'] = 50 },
+	[73] = { ['re'] = "pumpshotgunpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PUMPSHOTGUN_MK2", ['itemqtd'] = 1 },
+	[74] = { ['re'] = "municaopumppack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PUMPSHOTGUN_MK2", ['itemqtd'] = 50 },
 
 	-- MAFIA
-	[75] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
-	[76] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
-	[77] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 6, ['item'] = "wbody|WEAPON_GUSENBERG", ['itemqtd'] = 1 },
-	[78] = { ['re'] = "capsula", "polvora", ['reqtd'] = 2, ['item'] = "wammo|WEAPON_GUSENBERG", ['itemqtd'] = 50 },
+	[75] = { ['re'] = "fivesevenpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[76] = { ['re'] = "municaopistolpack", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[77] = { ['re'] = "thompsonpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_GUSENBERG", ['itemqtd'] = 1 },
+	[78] = { ['re'] = "municaothompsonpack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_GUSENBERG", ['itemqtd'] = 50 },
 
 	-- MILICIA
-	[79] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
-	[80] = { ['re'] = "capsula", "polvora", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
-	[81] = { ['re'] = "cano_parts", "carregador_parts", "ferrolho_parts", ['reqtd'] = 7, ['item'] = "wbody|WEAPON_ASSAULTRIFLE", ['itemqtd'] = 1 },
-	[82] = { ['re'] = "capsula", "polvora", ['reqtd'] = 2, ['item'] = "wammo|WEAPON_ASSAULTRIFLE", ['itemqtd'] = 50 },
+	[79] = { ['re'] = "fivesevenpack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_PISTOL_MK2", ['itemqtd'] = 1 },
+	[80] = { ['re'] = "municaopistolpack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_PISTOL_MK2", ['itemqtd'] = 50 },
+	[81] = { ['re'] = "ak103pack", ['reqtd'] = 1, ['item'] = "wbody|WEAPON_ASSAULTRIFLE", ['itemqtd'] = 1 },
+	[82] = { ['re'] = "municaoakpack", ['reqtd'] = 1, ['item'] = "wammo|WEAPON_ASSAULTRIFLE", ['itemqtd'] = 50 },
 
 
 }

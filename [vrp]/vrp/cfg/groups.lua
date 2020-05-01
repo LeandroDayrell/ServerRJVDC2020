@@ -60,7 +60,6 @@ cfg.groups = {
 	"Administrador.permissao"
 	},
 	["ModeradorCMDRJ"] = {
-	"admin.permissao",
 	"fix.permissao",
 	"dv.permissao",
 	"god.permissao",

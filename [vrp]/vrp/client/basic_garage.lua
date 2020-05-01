@@ -54,6 +54,14 @@ end
 -- MODELHASH
 -----------------------------------------------------------------------------------------------------------------------------------------
 local vehList = {
+	{ hash = -1997505609, name = "a8fsi", price = 60000, banido = false },
+	{ hash = -178350184, name = "G65", price = 60000, banido = false },
+	{ hash = -1845487887, name = "volatus", price = 5000000, banido = false },
+	{ hash = 708207258, name = "m3e92", price = 60000, banido = false },
+	{ hash = -1340182238, name = "ma45", price = 60000, banido = false },
+	{ hash = 119794591, name = "sq72016", price = 60000, banido = false },
+	{ hash = -583019632, name = "giulia", price = 60000, banido = false },
+	{ hash = -1273978259, name = "vgt12", price = 60000, banido = false },
 	{ hash = -344943009, name = "blista", price = 60000, banido = false },
 	{ hash = 1549126457, name = "brioso", price = 30000, banido = false },
 	{ hash = -1130810103, name = "dilettante", price = 60000, banido = false },
@@ -83,6 +91,8 @@ local vehList = {
 	{ hash = -1193103848, name = "zion2", price = 60000, banido = false },
 	{ hash = -1205801634, name = "blade", price = 100000, banido = false },
 	{ hash = -682211828, name = "buccaneer", price = 120000, banido = false },
+	{ hash = -1337524170, name = "can", price = 120000, banido = false },
+	{ hash = 1053107333, name = "camaro_ss", price = 120000, banido = false },
 	{ hash = 1826651862, name = "xt66", price = 200000, banido = false },
 	{ hash = 1876694905, name = "veloster", price = 250000, banido = false },
 	{ hash = -1013450936, name = "buccaneer2", price = 240000, banido = false },
@@ -473,6 +483,8 @@ local vehList = {
 	{ hash = -486920242, name = "dm1200", price = 300000, banido = false },
 	{ hash = 1744543800, name = "z1000", price = 290000, banido = false },
 	{ hash = 991407206, name = "r1250", price = 320000, banido = false },
+	{ hash = -1978168465, name = "hondacivictr", price = 320000, banido = false },
+	{ hash = 934775262, name = "rmodm4gts", price = 320000, banido = false },
 	-- CAMINHÃO
 	{ hash = -561714437, name = "608", price = 13000, banido = false },
 	{ hash = 1572672863, name = "atroncar", price = 13000, banido = false },

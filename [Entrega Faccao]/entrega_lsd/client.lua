@@ -79,7 +79,7 @@ AddEventHandler('entrega_lsd:permissao',function()
 	if not emservico then
 		emservico = true
 		destino = math.random(1,38)
-		quantidade = math.random(1,4)
+		quantidade = math.random(6,8)
 		CriandoBlip(entregas,destino)
 	end
 end)

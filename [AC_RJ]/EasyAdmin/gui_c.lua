@@ -9,7 +9,7 @@ isAdmin = false
 showLicenses = false
 
 settings = {
-	button = 207,
+	button = 289,
 	forceShowGUIButtons = false,
 }
 

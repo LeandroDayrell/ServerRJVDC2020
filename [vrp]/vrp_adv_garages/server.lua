@@ -703,12 +703,27 @@ function openGarage(source,gid,payprice,location)
 												return
 											end
 										elseif vRP.hasPermission(user_id,"platina.permissao") then
-											if parseInt(totalv[1].quantidade) >= totalgaragem + 10 then
+											if parseInt(totalv[1].quantidade) >= totalgaragem + 8 then
 												TriggerClientEvent("Notify",source,"importante","Atingiu o número máximo de veículos em sua garagem.")
 												return
 											end
 										elseif vRP.hasPermission(user_id,"diamante.permissao") then
 											if parseInt(totalv[1].quantidade) >= totalgaragem + 10 then
+												TriggerClientEvent("Notify",source,"importante","Atingiu o número máximo de veículos em sua garagem.")
+												return
+											end
+										elseif vRP.hasPermission(user_id,"mafioso.permissao") then
+											if parseInt(totalv[1].quantidade) >= totalgaragem + 10 then
+												TriggerClientEvent("Notify",source,"importante","Atingiu o número máximo de veículos em sua garagem.")
+												return
+											end
+										elseif vRP.hasPermission(user_id,"supremo.permissao") then
+											if parseInt(totalv[1].quantidade) >= totalgaragem + 12 then
+												TriggerClientEvent("Notify",source,"importante","Atingiu o número máximo de veículos em sua garagem.")
+												return
+											end
+										elseif vRP.hasPermission(user_id,"supremo.permissao") then
+											if parseInt(totalv[1].quantidade) >= totalgaragem + 12 then
 												TriggerClientEvent("Notify",source,"importante","Atingiu o número máximo de veículos em sua garagem.")
 												return
 											end

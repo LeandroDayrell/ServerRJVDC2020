@@ -51,7 +51,21 @@ files {
 	"client/html/assets/icons/rosquinha.png",
 	"client/html/assets/icons/pizza.png",
 	"client/html/assets/icons/colete.png",
-
+	---------- CONFERIR
+	"client/html/assets/icons/ak103pack.png",
+	"client/html/assets/icons/mtarpack.png",
+	"client/html/assets/icons/thompsonpack.png",
+	"client/html/assets/icons/pumpshotgunpack.png",
+	"client/html/assets/icons/uzipack.png",
+	"client/html/assets/icons/fivesevenpack.png",
+	"client/html/assets/icons/coletepack.png",
+	"client/html/assets/icons/municaoakpack.png",
+	"client/html/assets/icons/municaofamaspack.png",
+	"client/html/assets/icons/municaothompsonpack.png",
+	"client/html/assets/icons/municaopumppack.png",
+	"client/html/assets/icons/municaouzipack.png",
+	"client/html/assets/icons/municaopistolpack.png",
+	-------------------------------------------------
 	"client/html/assets/icons/carteiraroubada.png",
 	"client/html/assets/icons/vibradorroubado.png",
 	"client/html/assets/icons/perfumeroubado.png",

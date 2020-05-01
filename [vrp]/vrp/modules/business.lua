@@ -44,7 +44,7 @@ local function business_enter(source)
 				local business = vRP.getUserBusiness(user_id)
 				local restante = math.min(business.capital-business.laundered,vRP.getInventoryItemAmount(user_id,"dinheirosujo"))
 				local amount = vRP.prompt(player,"Lavagem:","")
-				local random = math.random(100)
+				local random = math.random(99,100)
 				if parseInt(amount) > 0 and parseInt(amount) <= restante then
 					if vRP.tryGetInventoryItem(user_id,"dinheirosujo",parseInt(amount)) then
 						vRP.execute("vRP/add_laundered",{ user_id = user_id, laundered = amount })

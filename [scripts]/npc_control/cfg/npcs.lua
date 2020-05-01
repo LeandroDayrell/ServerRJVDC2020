@@ -1,7 +1,7 @@
 cfg = {}
 
 cfg.density = {
-	peds = 0.2,
+	peds = 0,
 	vehicles = 0
 }
 

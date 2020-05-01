@@ -207,6 +207,23 @@ items["wammo|WEAPON_ASSAULTRIFLE"] = {"ammo",0 ,0 ,0 , "municaorifle.png"}
 items["wammo|WEAPON_GUSENBERG"] = {"ammo",0 ,0 ,0 , "municaorifle.png"}
 items["wammo|WEAPON_PETROLCAN"] = {"ammo",0 ,0 ,0 , "gasolina.png"}
 
+--------------------------CONFERIR-------------------------
+
+items["ak103pack"] = {"ak103pack",0 ,0 ,0 , "ak103pack.png"}
+items["mtarpack"] = {"mtarpack",0 ,0 ,0 , "mtarpack.png"}
+items["thompsonpack"] = {"thompsonpack",0 ,0 ,0 , "thompsonpack.png"}
+items["pumpshotgunpack"] = {"pumpshotgunpack",0 ,0 ,0 , "pumpshotgunpack.png"}
+items["uzipack"] = {"uzipack",0 ,0 ,0 , "uzipack.png"}
+items["fivesevenpack"] = {"fivesevenpack",0 ,0 ,0 , "fivesevenpack.png"}
+items["coletepack"] = {"coletepack",0 ,0 ,0 , "coletepack.png"}
+
+items["municaoakpack"] = {"municaoakpack",0 ,0 ,0 , "municaoakpack.png"}
+items["municaofamaspack"] = {"municaofamaspack",0 ,0 ,0 , "municaofamaspack.png"}
+items["municaothompsonpack"] = {"municaothompsonpack",0 ,0 ,0 , "municaothompsonpack.png"}
+items["municaopumppack"] = {"municaopumppack",0 ,0 ,0 , "municaopumppack.png"}
+items["municaouzipack"] = {"municaouzipack",0 ,0 ,0 , "municaouzipack.png"}
+items["municaopistolpack"] = {"municaopistolpack",0 ,0 ,0 , "municaopistolpack.png"}
+
 ------------------------------MERCADONEGRO-----------------------------------
 
 items["ferrolho_parts"] = {"ferrolho_parts",0 ,0 ,0 , "ferrolho_parts.png"}
@@ -217,6 +234,7 @@ items["polvora"] = {"polvora",0 ,0 ,0 , "polvora.png"}
 items["capsula"] = {"capsula",0 ,0 ,0 , "capsula.png"}
 items["kevlar"] = {"kevlar",0 ,0 ,0 , "kevlar.png"}
 items["kitcostura"] = {"kitcostura",0 ,0 ,0 , "kitcostura.png"}
+
 
 
 items["ecstasy"] = {"ecstasy",0 ,0 ,0 , "ecstasy.png"}

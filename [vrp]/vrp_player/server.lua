@@ -131,6 +131,22 @@ local itemlist = {
 	["cloridratoecgonina"] = { index = "cloridratoecgonina", nome = "Cloridratoecgonina" },
 	["cloridratococa"] = { index = "cloridrato", nome = "Cloridratococa" },
 	["pastadecoca"] = { index = "pastadecoca", nome = "Pasta de Cocaina" },
+	
+	----------------------------------CONFERIR
+	["ak103pack"] = { index = "ak103pack", nome = "Ak 103 Pack" },
+	["coletepack"] = { index = "coletepack", nome = "Colete Pack" },
+	["fivesevenpack"] = { index = "fivesevenpack", nome = "Five-Seven Pack" },
+	["mtarpack"] = { index = "mtarpack", nome = "Mtar Pack" },
+	["pumpshotgunpack"] = { index = "pumpshotgunpack", nome = "Pump Shotgun Pack" },
+	["thompsonpack"] = { index = "thompsonpack", nome = "Thompson Pack" },
+	["uzipack"] = { index = "uzipack", nome = "Uzi Pack" },
+	["municaoakpack"] = { index = "municaoakpack", nome = "Municao Ak Pack" },
+	["municaofamaspack"] = { index = "municaofamaspack", nome = "Municao Mtar Pack" },
+	["municaopistolpack"] = { index = "municaopistolpack", nome = "Municao Five-Seven Pack" },
+	["municaopumppack"] = { index = "municaopumppack", nome = "Municao PumpShotgun Pack" },
+	["municaothompsonpack"] = { index = "municaothompsonpack", nome = "Municao Thompson Pack" },
+	["municaouzipack"] = { index = "municaouzipack", nome = "Municao Uzi Pack" },
+	---------------------------------
 
 	["placa"] = { index = "placa", nome = "Placa" },
 	["rebite"] = { index = "rebite", nome = "Rebite" },
